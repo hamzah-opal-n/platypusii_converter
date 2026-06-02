@@ -13,7 +13,7 @@ TITLE_TEXT = ("------------------------------------\n"
               "|    Developed by ASTRAN FELINE    |\n"
               "------------------------------------")
 MENU = (f"\n(D)ecompile {LEVEL_DATA_EXTENSION} file\n"
-        f"(R)ecompile {JSON_EXTENSION} files\n"
+        f"(R)ecompile {JSON_EXTENSION} files (Not working yet!)\n"
         f"(Q)uit")
 DECOMPILE_PROMPT = "Enter level data filename, leave blank to go back: "
 RECOMPILE_PROMPT = "Enter json filename, leave blank to go back: "
@@ -35,6 +35,7 @@ def main():
             print("Invalid choice!")
         print(MENU)
         user_choice = input(">>> ").upper()
+    print(QUIT_MESSAGE)
 
 
 def decompile():
@@ -62,6 +63,10 @@ def convert_level_data(filename):
 
 
 def recompile():
+    print("This doesn't work yet! Please use the old version in the Claymatic Discord server if you want to recompile data, or wait for this to be implemented at a later date!")
+
+
+def recompile_old():
     input_file = input(RECOMPILE_PROMPT)
     while input_file != "":
         if input_file[-len(JSON_EXTENSION):] != JSON_EXTENSION:
