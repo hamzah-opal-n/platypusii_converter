@@ -54,19 +54,19 @@ TODO
 ## buoy (6)
 ![buoy](images/scenery/buoy.png)
 
-TODO
+A single buoy. Sprite/layer can be customised.
 
 ### args:
-TODO
+- **sprite (arg2):** sprite number to use (HELP WANTED - needs testing)
 
 
-## buoy_far (7)
-![buoy_far](images/scenery/buoy_far.png)
+## buoy_row (7)
+![buoy_row](images/scenery/buoy_row.png)
 
-TODO
+A whole row of buoys that appear across different background layers.
 
 ### args:
-TODO
+None (HELP WANTED - needs testing)
 
 
 ## windmill (8)
