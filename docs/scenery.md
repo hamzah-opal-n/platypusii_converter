@@ -195,10 +195,12 @@ TODO
 ## icbm (22)
 ![icbm](images/scenery/icbm.png)
 
-TODO
+Large missile that launches upwards sometime after spawning.
 
 ### args:
-TODO
+- **xOffset (arg2):** spawn x-position offset. Negative values shift x-position to the left, positive values shift x-position to the right (HELP WANTED - needs testing)
+- **yOffset (arg3):** spawn y-position offset. Negative values shift y-position upwards, positive values shift y-position downwards (HELP WANTED - needs testing)
+- **launchDelay (arg4):** time to wait before launching after spawning, in game ticks (HELP WANTED - needs testing)
 
 
 ## yellowie (23)
