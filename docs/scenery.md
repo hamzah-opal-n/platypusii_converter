@@ -10,342 +10,342 @@ Scenery type numbers are used in spawnScenery (action 23) as arg1.
 ## cloud (1)
 ![cloud](images/scenery/cloud.png)
 
-Red flip plane that flies from the left to the right of the screen while dropping bombs.
+TODO
 
 ### args:
-- **yPos (arg2):** y-position to spawn at
+TODO
 
 
 ## unknownScenery2 (2)
 
-Red flip plane that flies from the left to the right of the screen while dropping bombs.
+TODO
 
 ### args:
-- **yPos (arg2):** y-position to spawn at
+TODO
 
 
 ## arch (3)
 ![arch](images/scenery/arch.png)
 
-Red flip plane that flies from the left to the right of the screen while dropping bombs.
+TODO
 
 ### args:
-- **yPos (arg2):** y-position to spawn at
+TODO
 
 
 ## pylon (4)
 ![pylon](images/scenery/pylon.png)
 
-Red flip plane that flies from the left to the right of the screen while dropping bombs.
+TODO
 
 ### args:
-- **yPos (arg2):** y-position to spawn at
+TODO
 
 
 ## telegraph (5)
 ![telegraph](images/scenery/telegraph.png)
 
-Red flip plane that flies from the left to the right of the screen while dropping bombs.
+TODO
 
 ### args:
-- **yPos (arg2):** y-position to spawn at
+TODO
 
 
 ## buoy (6)
 ![buoy](images/scenery/buoy.png)
 
-Red flip plane that flies from the left to the right of the screen while dropping bombs.
+TODO
 
 ### args:
-- **yPos (arg2):** y-position to spawn at
+TODO
 
 
 ## buoy_far (7)
 ![buoy_far](images/scenery/buoy_far.png)
 
-Red flip plane that flies from the left to the right of the screen while dropping bombs.
+TODO
 
 ### args:
-- **yPos (arg2):** y-position to spawn at
+TODO
 
 
 ## windmill (8)
 ![windmill](images/scenery/windmill.png)
 
-Red flip plane that flies from the left to the right of the screen while dropping bombs.
+TODO
 
 ### args:
-- **yPos (arg2):** y-position to spawn at
+TODO
 
 
 ## volcano (9)
 ![volcano](images/scenery/volcano.png)
 
-Red flip plane that flies from the left to the right of the screen while dropping bombs.
+TODO
 
 ### args:
-- **yPos (arg2):** y-position to spawn at
+TODO
 
 
 ## unknownScenery10 (10)
 
-Red flip plane that flies from the left to the right of the screen while dropping bombs.
+TODO
 
 ### args:
-- **yPos (arg2):** y-position to spawn at
+TODO
 
 
 ## waterfall (11)
 ![waterfall](images/scenery/waterfall.png)
 
-Red flip plane that flies from the left to the right of the screen while dropping bombs.
+TODO
 
 ### args:
-- **yPos (arg2):** y-position to spawn at
+TODO
 
 
 ## unknownScenery12 (12)
 
-Red flip plane that flies from the left to the right of the screen while dropping bombs.
+TODO
 
 ### args:
-- **yPos (arg2):** y-position to spawn at
+TODO
 
 
 ## boat (13)
 ![boat](images/scenery/boat.png)
 
-Red flip plane that flies from the left to the right of the screen while dropping bombs.
+TODO
 
 ### args:
-- **yPos (arg2):** y-position to spawn at
+TODO
 
 
 ## boatfar (14)
 ![boatfar](images/scenery/boatfar.png)
 
-Red flip plane that flies from the left to the right of the screen while dropping bombs.
+TODO
 
 ### args:
-- **yPos (arg2):** y-position to spawn at
+TODO
 
 
 ## unknownScenery15 (15)
 
-Red flip plane that flies from the left to the right of the screen while dropping bombs.
+TODO
 
 ### args:
-- **yPos (arg2):** y-position to spawn at
+TODO
 
 
 ## building (16)
 ![building](images/scenery/building.png)
 
-Red flip plane that flies from the left to the right of the screen while dropping bombs.
+TODO
 
 ### args:
-- **yPos (arg2):** y-position to spawn at
+TODO
 
 
 ## tank (17)
 ![tank](images/scenery/tank.png)
 
-Red flip plane that flies from the left to the right of the screen while dropping bombs.
+TODO
 
 ### args:
-- **yPos (arg2):** y-position to spawn at
+TODO
 
 
 ## parrot (18)
 ![parrot](images/scenery/parrot.png)
 
-Red flip plane that flies from the left to the right of the screen while dropping bombs.
+TODO
 
 ### args:
-- **yPos (arg2):** y-position to spawn at
+TODO
 
 
 ## bird (19)
 ![bird](images/scenery/bird.png)
 
-Red flip plane that flies from the left to the right of the screen while dropping bombs.
+TODO
 
 ### args:
-- **yPos (arg2):** y-position to spawn at
+TODO
 
 
 ## birdred (20)
 ![birdred](images/scenery/birdred.png)
 
-Red flip plane that flies from the left to the right of the screen while dropping bombs.
+TODO
 
 ### args:
-- **yPos (arg2):** y-position to spawn at
+TODO
 
 
 ## birdyellow (21)
 ![birdyellow](images/scenery/birdyellow.png)
 
-Red flip plane that flies from the left to the right of the screen while dropping bombs.
+TODO
 
 ### args:
-- **yPos (arg2):** y-position to spawn at
+TODO
 
 
 ## icbm (22)
 ![icbm](images/scenery/icbm.png)
 
-Red flip plane that flies from the left to the right of the screen while dropping bombs.
+TODO
 
 ### args:
-- **yPos (arg2):** y-position to spawn at
+TODO
 
 
 ## yellowie (23)
 ![yellowie](images/scenery/yellowie.png)
 
-Red flip plane that flies from the left to the right of the screen while dropping bombs.
+TODO
 
 ### args:
-- **yPos (arg2):** y-position to spawn at
+TODO
 
 
 ## yellowie2 (24)
 ![yellowie2](images/scenery/yellowie2.png)
 
-Red flip plane that flies from the left to the right of the screen while dropping bombs.
+TODO
 
 ### args:
-- **yPos (arg2):** y-position to spawn at
+TODO
 
 
 ## greenie (25)
 ![greenie](images/scenery/greenie.png)
 
-Red flip plane that flies from the left to the right of the screen while dropping bombs.
+TODO
 
 ### args:
-- **yPos (arg2):** y-position to spawn at
+TODO
 
 
 ## reddie (26)
 ![reddie](images/scenery/reddie.png)
 
-Red flip plane that flies from the left to the right of the screen while dropping bombs.
+TODO
 
 ### args:
-- **yPos (arg2):** y-position to spawn at
+TODO
 
 
 ## roof_start (27)
 ![roof_start](images/scenery/roof_start.png)
 
-Red flip plane that flies from the left to the right of the screen while dropping bombs.
+TODO
 
 ### args:
-- **yPos (arg2):** y-position to spawn at
+TODO
 
 
 ## roof_end (28)
 ![roof_end](images/scenery/roof_end.png)
 
-Red flip plane that flies from the left to the right of the screen while dropping bombs.
+TODO
 
 ### args:
-- **yPos (arg2):** y-position to spawn at
+TODO
 
 
 ## unknownScenery29 (29)
 
-Red flip plane that flies from the left to the right of the screen while dropping bombs.
+TODO
 
 ### args:
-- **yPos (arg2):** y-position to spawn at
+TODO
 
 
 ## last_start (30)
 ![last_start](images/scenery/last_start.png)
 
-Red flip plane that flies from the left to the right of the screen while dropping bombs.
+TODO
 
 ### args:
-- **yPos (arg2):** y-position to spawn at
+TODO
 
 
 ## unknownScenery31 (31)
 
-Red flip plane that flies from the left to the right of the screen while dropping bombs.
+TODO
 
 ### args:
-- **yPos (arg2):** y-position to spawn at
+TODO
 
 
 ## greenhead (32)
 ![greenhead](images/scenery/greenhead.png)
 
-Red flip plane that flies from the left to the right of the screen while dropping bombs.
+TODO
 
 ### args:
-- **yPos (arg2):** y-position to spawn at
+TODO
 
 
 ## mine (33)
 ![mine](images/scenery/mine.png)
 
-Red flip plane that flies from the left to the right of the screen while dropping bombs.
+TODO
 
 ### args:
-- **yPos (arg2):** y-position to spawn at
+TODO
 
 
 ## nuxship (34)
 ![nuxship](images/scenery/nuxship.png)
 
-Red flip plane that flies from the left to the right of the screen while dropping bombs.
+TODO
 
 ### args:
-- **yPos (arg2):** y-position to spawn at
+TODO
 
 
 ## unknownScenery35 (35)
 
-Red flip plane that flies from the left to the right of the screen while dropping bombs.
+TODO
 
 ### args:
-- **yPos (arg2):** y-position to spawn at
+TODO
 
 
 ## tonsil (36)
 ![tonsil](images/scenery/tonsil.png)
 
-Red flip plane that flies from the left to the right of the screen while dropping bombs.
+TODO
 
 ### args:
-- **yPos (arg2):** y-position to spawn at
+TODO
 
 
 ## ulcer (37)
 ![ulcer](images/scenery/ulcer.png)
 
-Red flip plane that flies from the left to the right of the screen while dropping bombs.
+TODO
 
 ### args:
-- **yPos (arg2):** y-position to spawn at
+TODO
 
 
 ## eyeball (38)
 ![eyeball](images/scenery/eyeball.png)
 
-Red flip plane that flies from the left to the right of the screen while dropping bombs.
+TODO
 
 ### args:
-- **yPos (arg2):** y-position to spawn at
+TODO
 
 
 ## podship (39)
 ![podship](images/scenery/podship.png)
 
-Red flip plane that flies from the left to the right of the screen while dropping bombs.
+TODO
 
 ### args:
-- **yPos (arg2):** y-position to spawn at
+TODO

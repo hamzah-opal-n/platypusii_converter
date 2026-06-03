@@ -430,271 +430,271 @@ TODO
 ## lasership (48)
 ![lasership](images/enemies/lasership.png)
 
-Red flip plane that flies from the left to the right of the screen while dropping bombs.
+TODO
 
 ### args:
-- **yPos (arg2):** y-position to spawn at
+TODO
 
 
 ## flameship (49)
 ![flameship](images/enemies/flameship.png)
 
-Red flip plane that flies from the left to the right of the screen while dropping bombs.
+TODO
 
 ### args:
-- **yPos (arg2):** y-position to spawn at
+TODO
 
 
 ## homingship (50)
 ![homingship](images/enemies/homingship.png)
 
-Red flip plane that flies from the left to the right of the screen while dropping bombs.
+TODO
 
 ### args:
-- **yPos (arg2):** y-position to spawn at
+TODO
 
 
 ## car (51)
 ![car](images/enemies/car.png)
 
-Red flip plane that flies from the left to the right of the screen while dropping bombs.
+TODO
 
 ### args:
-- **yPos (arg2):** y-position to spawn at
+TODO
 
 
 ## gunboat (52)
 ![gunboat](images/enemies/gunboat.png)
 
-Red flip plane that flies from the left to the right of the screen while dropping bombs.
+TODO
 
 ### args:
-- **yPos (arg2):** y-position to spawn at
+TODO
 
 
 ## missileboat (53)
 ![missileboat](images/enemies/missileboat.png)
 
-Red flip plane that flies from the left to the right of the screen while dropping bombs.
+TODO
 
 ### args:
-- **yPos (arg2):** y-position to spawn at
+TODO
 
 
 ## flameboat (54)
 ![flameboat](images/enemies/flameboat.png)
 
-Red flip plane that flies from the left to the right of the screen while dropping bombs.
+TODO
 
 ### args:
-- **yPos (arg2):** y-position to spawn at
+TODO
 
 
 ## boss1 (55)
 ![boss1](images/enemies/boss1.png)
 
-Red flip plane that flies from the left to the right of the screen while dropping bombs.
+TODO
 
 ### args:
-- **yPos (arg2):** y-position to spawn at
+TODO
 
 
 ## boss2 (56)
 ![boss2](images/enemies/boss2.png)
 
-Red flip plane that flies from the left to the right of the screen while dropping bombs.
+TODO
 
 ### args:
-- **yPos (arg2):** y-position to spawn at
+TODO
 
 
 ## unknownEnemy57 (57)
 
-Red flip plane that flies from the left to the right of the screen while dropping bombs.
+TODO
 
 ### args:
-- **yPos (arg2):** y-position to spawn at
+TODO
 
 
 ## boss2_intro (58)
 
-Red flip plane that flies from the left to the right of the screen while dropping bombs.
+TODO
 
 ### args:
-- **yPos (arg2):** y-position to spawn at
+TODO
 
 
 ## unknownEnemy59 (59)
 
-Red flip plane that flies from the left to the right of the screen while dropping bombs.
+TODO
 
 ### args:
-- **yPos (arg2):** y-position to spawn at
+TODO
 
 
 ## boss3 (60)
 ![boss3](images/enemies/boss3.png)
 
-Red flip plane that flies from the left to the right of the screen while dropping bombs.
+TODO
 
 ### args:
-- **yPos (arg2):** y-position to spawn at
+TODO
 
 
 ## unknownEnemy61CRASH (61)
 
-Red flip plane that flies from the left to the right of the screen while dropping bombs.
+TODO
 
 ### args:
-- **yPos (arg2):** y-position to spawn at
+TODO
 
 
 ## boss4 (62)
 ![boss4](images/enemies/boss4.png)
 
-Red flip plane that flies from the left to the right of the screen while dropping bombs.
+TODO
 
 ### args:
-- **yPos (arg2):** y-position to spawn at
+TODO
 
 
 ## boss5 (63)
 ![boss5](images/enemies/boss5.png)
 
-Red flip plane that flies from the left to the right of the screen while dropping bombs.
+TODO
 
 ### args:
-- **yPos (arg2):** y-position to spawn at
+TODO
 
 
 ## boss5_unknown (64)
 
-Red flip plane that flies from the left to the right of the screen while dropping bombs.
+TODO
 
 ### args:
-- **yPos (arg2):** y-position to spawn at
+TODO
 
 
 ## boss5_intro (65)
 
-Red flip plane that flies from the left to the right of the screen while dropping bombs.
+TODO
 
 ### args:
-- **yPos (arg2):** y-position to spawn at
+TODO
 
 
 ## boss6 (66)
 ![boss6](images/enemies/boss6.png)
 
-Red flip plane that flies from the left to the right of the screen while dropping bombs.
+TODO
 
 ### args:
-- **yPos (arg2):** y-position to spawn at
+TODO
 
 
 ## unknownEnemy67 (67)
 
-Red flip plane that flies from the left to the right of the screen while dropping bombs.
+TODO
 
 ### args:
-- **yPos (arg2):** y-position to spawn at
+TODO
 
 
 ## unknownEnemy68CRASH (68)
 
-Red flip plane that flies from the left to the right of the screen while dropping bombs.
+TODO
 
 ### args:
-- **yPos (arg2):** y-position to spawn at
+TODO
 
 
 ## unknownEnemy69CRASH (69)
 
-Red flip plane that flies from the left to the right of the screen while dropping bombs.
+TODO
 
 ### args:
-- **yPos (arg2):** y-position to spawn at
+TODO
 
 
 ## worm (70)
 ![worm](images/enemies/worm.png)
 
-Red flip plane that flies from the left to the right of the screen while dropping bombs.
+TODO
 
 ### args:
-- **yPos (arg2):** y-position to spawn at
+TODO
 
 
 ## eyeball (71)
 ![eyeball](images/enemies/eyeball.png)
 
-Red flip plane that flies from the left to the right of the screen while dropping bombs.
+TODO
 
 ### args:
-- **yPos (arg2):** y-position to spawn at
+TODO
 
 
 ## blob (72)
 ![blob](images/enemies/blob.png)
 
-Red flip plane that flies from the left to the right of the screen while dropping bombs.
+TODO
 
 ### args:
-- **yPos (arg2):** y-position to spawn at
+TODO
 
 
 ## rollship (73)
 ![rollship](images/enemies/rollship.png)
 
-Red flip plane that flies from the left to the right of the screen while dropping bombs.
+TODO
 
 ### args:
-- **yPos (arg2):** y-position to spawn at
+TODO
 
 
 ## chicken (74)
 ![chicken](images/enemies/chicken.png)
 
-Red flip plane that flies from the left to the right of the screen while dropping bombs.
+TODO
 
 ### args:
-- **yPos (arg2):** y-position to spawn at
+TODO
 
 
 ## bug (75)
 ![bug](images/enemies/bug.png)
 
-Red flip plane that flies from the left to the right of the screen while dropping bombs.
+TODO
 
 ### args:
-- **yPos (arg2):** y-position to spawn at
+TODO
 
 
 ## tonsil (76)
 ![tonsil](images/enemies/tonsil.png)
 
-Red flip plane that flies from the left to the right of the screen while dropping bombs.
+TODO
 
 ### args:
-- **yPos (arg2):** y-position to spawn at
+TODO
 
 
 ## virus (77)
 ![virus](images/enemies/virus.png)
 
-Red flip plane that flies from the left to the right of the screen while dropping bombs.
+TODO
 
 ### args:
-- **yPos (arg2):** y-position to spawn at
+TODO
 
 
 ## spinner (78)
 ![spinner](images/enemies/spinner.png)
 
-Red flip plane that flies from the left to the right of the screen while dropping bombs.
+TODO
 
 ### args:
-- **yPos (arg2):** y-position to spawn at
+TODO
 
 
 ## fang (79)
@@ -711,25 +711,25 @@ Sharp tooth that flies in the direction it's facing upon encountering the player
 ## squid (80)
 ![squid](images/enemies/squid.png)
 
-Red flip plane that flies from the left to the right of the screen while dropping bombs.
+TODO
 
 ### args:
-- **yPos (arg2):** y-position to spawn at
+TODO
 
 
 ## podship (81)
 ![podship](images/enemies/podship.png)
 
-Red flip plane that flies from the left to the right of the screen while dropping bombs.
+TODO
 
 ### args:
-- **yPos (arg2):** y-position to spawn at
+TODO
 
 
 ## miniserpent (82)
 ![miniserpent](images/enemies/miniserpent.png)
 
-Red flip plane that flies from the left to the right of the screen while dropping bombs.
+TODO
 
 ### args:
-- **yPos (arg2):** y-position to spawn at
+TODO
