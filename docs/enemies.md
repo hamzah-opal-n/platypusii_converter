@@ -10,133 +10,133 @@ Enemy type numbers are used in both spawnFormation (action 21) and spawnEnemy (a
 ## bullet (1)
 ![bullet](images/enemies/bullet.png)
 
-TODO
+Normal enemy bullet. Not encountered on its own during normal gameplay.
 
 ### args:
-TODO
+(HELP WANTED - needs testing)
 
 
 ## flame (2)
 ![flame](images/enemies/flame.png)
 
-TODO
+Flame that can be fired by an enemy or flamejet. Deals damage to the player and disappears after a while. Not encountered on its own during normal gameplay.
 
 ### args:
-TODO
+(HELP WANTED - needs testing)
 
 
 ## missile (3)
 ![missile](images/enemies/missile.png)
 
-TODO
+Missile that homes in on the player while leaving a smoke trail. Explodes after a while if not destroyed by the player. Not encountered on its own during normal gameplay.
 
 ### args:
-TODO
+(HELP WANTED - needs testing)
 
 
 ## laser (4)
 ![laser](images/enemies/laser.png)
 
-TODO
+Laser that is fired by enemies such as squidyellow or lasership. Not encountered on its own during normal gameplay.
 
 ### args:
-TODO
+(HELP WANTED - needs testing)
 
 
 ## orb (5)
 ![orb](images/enemies/orb.png)
 
-TODO
+Large projectile that is typically fired upwards from red turrets before falling down. Not encountered on its own during normal gameplay.
 
 ### args:
-TODO
+(HELP WANTED - needs testing)
 
 
 ## glob (6)
 ![glob](images/enemies/glob.png)
 
-TODO
+Indestructible projectile that is fired by some enemies in level 5 (e.g. podship). Not encountered on its own during normal gameplay.
 
 ### args:
-TODO
+(HELP WANTED - needs testing)
 
 
 ## bomb (7)
 ![bomb](images/enemies/bomb.png)
 
-TODO
+Explosive bomb that is dropped by bomber and squidcangreen. Explodes into bombfrags when shot by the player. Not encountered on its own during normal gameplay.
 
 ### args:
-TODO
+(HELP WANTED - needs testing)
 
 
 ## bombfrag (8)
 ![bombfrag](images/enemies/bombfrag.png)
 
-TODO
+Damaging fragments emitted when a bomb or mine explodes. Not encountered on its own during normal gameplay.
 
 ### args:
-TODO
+(HELP WANTED - needs testing)
 
 
 ## mine (9)
 ![mine](images/enemies/mine.png)
 
-TODO
+Bomb that is tied to a balloon. The balloon can be safely shot down while releasing some fruit. Spawns at a random y position (HELP WANTED - needs testing).
 
 ### args:
-TODO
+(HELP WANTED - needs testing)
 
 
 ## rock (10)
 ![rock](images/enemies/rock.png)
 
-TODO
+Red-hot rock that falls from the top of the screen during volcanic eruptions. Size/sprite is randomised (HELP WANTED - needs testing). Not encountered on its own during normal gameplay.
 
 ### args:
-TODO
+(HELP WANTED - needs testing)
 
 
 ## unknownEnemy11 (11)
 
-TODO
+(HELP WANTED - needs testing)
 
 ### args:
-TODO
+(HELP WANTED - needs testing)
 
 
 ## unknownEnemy12 (12)
 
-TODO
+(HELP WANTED - needs testing)
 
 ### args:
-TODO
+(HELP WANTED - needs testing)
 
 
 ## unknownEnemy13 (13)
 
-TODO
+(HELP WANTED - needs testing)
 
 ### args:
-TODO
+(HELP WANTED - needs testing)
 
 
 ## flamejet (14)
 ![flamejet](images/enemies/flamejet.png)
 
-TODO
+Spawns a jet of flames upwards.
 
 ### args:
-TODO
+None (HELP WANTED - needs testing)
 
 
 ## buoy (15)
 ![buoy](images/enemies/buoy.png)
 
-TODO
+Buoy equipped with a cannon that fires two lasers upwards.
 
 ### args:
-TODO
+None (HELP WANTED - needs testing)
 
 
 ## dish (16)
@@ -151,19 +151,19 @@ TODO
 ## building (17)
 ![building](images/enemies/building.png)
 
-TODO
+Destructible building that spawns at the bottom of the screen. Not used in normal gameplay (HELP WANTED - needs testing).
 
 ### args:
-TODO
+(HELP WANTED - needs testing)
 
 
 ## tank (18)
 ![tank](images/enemies/tank.png)
 
-TODO
+Destructible tank that spawns at the bottom of the screen. Not used in normal gameplay (HELP WANTED - needs testing).
 
 ### args:
-TODO
+(HELP WANTED - needs testing)
 
 
 ## wallgun (19)
