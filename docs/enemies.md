@@ -206,151 +206,155 @@ Sprite-swapped variant of domeship with otherwise identical behaviour (HELP WANT
 ## saucer (23)
 ![saucer](images/enemies/saucer.png)
 
-TODO
+Grey flying saucer enemy that flies leftwards from the right of the screen, occasionally shooting bullets at the player. Normally encountered in formations.
 
 ### args:
-TODO
+(HELP WANTED - needs testing)
 
 
 ## saucer2 (24)
 ![saucer2](images/enemies/saucer2.png)
 
-TODO
+Yellow flying saucer enemy that flies leftwards from the right of the screen, occasionally shooting bullets at the player. Normally encountered in formations.
 
 ### args:
-TODO
+(HELP WANTED - needs testing)
 
 
 ## saucer_red (25)
 ![saucer_red](images/enemies/saucer_red.png)
 
-TODO
+Reddish-brown flying saucer enemy that flies leftwards from the right of the screen. Normally encountered in formations that grant weapon stars upon complete destruction.
 
 ### args:
-TODO
+(HELP WANTED - needs testing)
 
 
 ## zipper (26)
 ![zipper](images/enemies/zipper.png)
 
-TODO
+Small orange gunship-like enemy that flies rightwards from the left of the screen until it reaches the right, then slowly moves off-screen to the left. Normally encountered in formations.
 
 ### args:
-TODO
+(HELP WANTED - needs testing)
 
 
 ## fish (27)
 ![fish](images/enemies/fish.png)
 
-TODO
+Grey fish-shaped enemy that flies leftwards from the right of the screen (HELP WANTED - needs testing). Normally encountered in formations.
 
 ### args:
-TODO
+(HELP WANTED - needs testing)
 
 
 ## fish_red (28)
 ![fish_red](images/enemies/fish_red.png)
 
-TODO
+Reddish-brown fish-shaped enemy that flies leftwards from the right of the screen (HELP WANTED - needs testing). Normally encountered in formations that grant weapon stars upon complete destruction.
 
 ### args:
-TODO
+(HELP WANTED - needs testing)
 
 
 ## fish_green (29)
 ![fish_green](images/enemies/fish_green.png)
 
-TODO
+Green fish-shaped enemy with unknown single behaviour (HELP WANTED - needs testing). Normally encountered in formations.
 
 ### args:
-TODO
+(HELP WANTED - needs testing)
 
 
 ## horseshoe (30)
 ![horseshoe](images/enemies/horseshoe.png)
 
-TODO
+Blue horseshoe-shaped enemy that flies in from the right before turning and flying leftwards, then turning once more to fly rightwards off-screen. Normally encountered in formations.
 
 ### args:
-TODO
+(HELP WANTED - needs testing)
 
 
 ## jumper (31)
 ![jumper](images/enemies/jumper.png)
 
-TODO
+Yellow horseshoe-shaped enemy that flies upwards from the bottom before turning and flying downwards off-screen. Normally encountered in formations. Single and formation spawns do not work in level 1 (HELP WANTED - see if other levels are affected).
 
 ### args:
-TODO
+(HELP WANTED - needs testing)
 
 
 ## ray (32)
 ![ray](images/enemies/ray.png)
 
-TODO
+Might be identical to the ray from the original Platypus and/or v2ray (HELP WANTED - needs testing). Unused during normal gameplay.
 
 ### args:
-TODO
+(HELP WANTED - needs testing)
 
 
 ## v2ray (33)
 ![v2ray](images/enemies/v2ray.png)
 
-TODO
+Teal-coloured variant of the classic ray enemy. Flies leftwards before spinning and flying upwards or downwards.
 
 ### args:
-TODO
+- **yPos (arg2):** y-position to spawn at
+- **arg3 (arg3):** (HELP WANTED - needs testing)
+- **ySpeed (arg4):** y-speed when spinning. Negative values for upwards movement, positive values for downwards movement.
 
 
 ## goldfish (34)
 ![goldfish](images/enemies/goldfish.png)
 
-TODO
+Purple (not gold) enemy that flies in leftwards from the right of the screen and shoots several bullets in a spread formation before flying rightwards off-screen. Normally encountered in formations.
 
 ### args:
-TODO
+(HELP WANTED - needs testing)
 
 
 ## turretred (35)
 ![turretred](images/enemies/turretred.png)
 
-TODO
+Red flying turret with squid fins that shoots orbs. Flies directly downwards from the top of the screen until it reaches a specified y-position, then flies to the right before finally moving leftwards off-screen.
 
 ### args:
-TODO
+- **xPos (arg2):** x-position to spawn at (HELP WANTED - needs testing)
+- **yTarget (arg3):** final y-position after downwards movement (HELP WANTED - needs testing)
 
 
 ## turretpurple (36)
 ![turretpurple](images/enemies/turretpurple.png)
 
-TODO
+Has identical behaviour to turretred, but is purple and shoots missiles instead.
 
 ### args:
-TODO
+- **xPos (arg2):** x-position to spawn at (HELP WANTED - needs testing)
+- **yTarget (arg3):** final y-position after downwards movement (HELP WANTED - needs testing)
 
 
 ## flipplane (37)
 ![flipplane](images/enemies/flipplane.png)
 
-TODO
+Purple enemy that flies in from the left before reaching the right of the screen and turning to reveal its true wingspan and two mounted turrets. Shoots bullets at the player as it flies back off-screen to the left.
 
 ### args:
-TODO
+- **yPos (arg2):** y-position to spawn at
 
 
 ## flipplane_orange (38)
 ![flipplane_orange](images/enemies/flipplane_orange.png)
 
-TODO
+Slower orange variant of flipplane.
 
 ### args:
-TODO
+- **yPos (arg2):** y-position to spawn at
 
 
 ## bomber (39)
 ![bomber](images/enemies/bomber.png)
 
-Red flip plane that flies from the left to the right of the screen while dropping bombs.
+Red flipplane that flies from the left to the right of the screen while dropping bombs.
 
 ### args:
 - **yPos (arg2):** y-position to spawn at
@@ -359,37 +363,37 @@ Red flip plane that flies from the left to the right of the screen while droppin
 ## squidyellow (40)
 ![squidyellow](images/enemies/squidyellow.png)
 
-TODO
+Small yellow squid enemy that hovers around its position on the right of the screen while shooting lasers directly leftwards before moving leftwards off-screen.
 
 ### args:
-TODO
+- **yPos (arg2):** y-position to spawn at
 
 
 ## squidgreen (41)
 ![squidgreen](images/enemies/squidgreen.png)
 
-TODO
+Large green squid variant with similar movement patterns but shoots several bullets in a spread formation.
 
 ### args:
-TODO
+- **yPos (arg2):** y-position to spawn at
 
 
 ## squidcan (42)
 ![squidcan](images/enemies/squidcan.png)
 
-TODO
+Brown trashcan-shaped squid variant with similar movement patterns but shoots lightning.
 
 ### args:
-TODO
+- **yPos (arg2):** y-position to spawn at
 
 
 ## squidcangreen (43)
 ![squidcangreen](images/enemies/squidcangreen.png)
 
-TODO
+Teal trashcan-shaped squid variant with similar movement patterns but drops bombs.
 
 ### args:
-TODO
+- **yPos (arg2):** y-position to spawn at
 
 
 ## yellowie (44)
