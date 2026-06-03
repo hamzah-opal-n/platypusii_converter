@@ -195,7 +195,7 @@ TODO
 ## icbm (22)
 ![icbm](images/scenery/icbm.png)
 
-Large missile that launches upwards sometime after spawning.
+Large missile that launches upwards sometime after spawning. Spawned on layer 5 and positioned based on the newest tile.
 
 ### args:
 - **xOffset (arg2):** spawn x-position offset. Negative values shift x-position to the left, positive values shift x-position to the right (HELP WANTED - needs testing)
