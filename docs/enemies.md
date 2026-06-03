@@ -169,7 +169,7 @@ Destructible tank that spawns at the bottom of the screen. Not used in normal ga
 ## wallgun (19)
 ![wallgun](images/enemies/wallgun.png)
 
-Destructible wall-mounted gun that aims and fires bullets at the player.
+Destructible wall-mounted gun that aims and fires bullets at the player. Spawned on layer 1 and positioned based on the newest tile.
 
 ### args:
 - **xOffset (arg2):** spawn x-position offset. Negative values shift x-position to the left, positive values shift x-position to the right (HELP WANTED - needs testing)
