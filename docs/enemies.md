@@ -82,7 +82,7 @@ Damaging fragments emitted when a bomb or mine explodes. Not encountered on its 
 ## mine (9)
 ![mine](images/enemies/mine.png)
 
-Bomb that is tied to a balloon. The balloon can be safely shot down while releasing some fruit. Spawns at a random y position (HELP WANTED - needs testing).
+Bomb that is tied to a balloon. The balloon can be safely shot down while releasing some fruit. Spawns at a random y-position (HELP WANTED - needs testing).
 
 ### args:
 (HELP WANTED - needs testing)
@@ -142,10 +142,10 @@ None (HELP WANTED - needs testing)
 ## dish (16)
 ![dish](images/enemies/dish.png)
 
-TODO
+Destructible satellite dish that appears near the bottom of the screen. Spawns on top of tile 99 on layer 1.
 
 ### args:
-TODO
+None (HELP WANTED - needs testing)
 
 
 ## building (17)
@@ -169,37 +169,38 @@ Destructible tank that spawns at the bottom of the screen. Not used in normal ga
 ## wallgun (19)
 ![wallgun](images/enemies/wallgun.png)
 
-TODO
+Destructible wall-mounted gun that aims and fires bullets at the player.
 
 ### args:
-TODO
+- **xOffset (arg2):** spawn x-position offset. Negative values shift x-position to the left, positive values shift x-position to the right (HELP WANTED - needs testing)
+- **yPos (arg3):** y-position to spawn at (HELP WANTED - needs testing)
 
 
 ## icbm (20)
 ![icbm](images/enemies/icbm.png)
 
-TODO
+Large missile that flies downwards from the left of the screen at an angle.
 
 ### args:
-TODO
+- **yPos (arg2):** y-position to spawn at
 
 
 ## domeship (21)
 ![domeship](images/enemies/domeship.png)
 
-TODO
+Small spherical/dome-shaped enemy that flies along a path (HELP WANTED - needs testing). Normally encountered in formations.
 
 ### args:
-TODO
+(HELP WANTED - needs testing)
 
 
 ## domeship2 (22)
 ![domeship2](images/enemies/domeship2.png)
 
-TODO
+Sprite-swapped variant of domeship with otherwise identical behaviour (HELP WANTED - needs testing). Encountered in level 5.
 
 ### args:
-TODO
+(HELP WANTED - needs testing)
 
 
 ## saucer (23)
