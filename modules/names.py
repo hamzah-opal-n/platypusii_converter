@@ -141,7 +141,7 @@ SCENERY_NAMES = {
     4: "pylon",
     5: "telegraph",
     6: "buoy",
-    7: "buoy_far",
+    7: "buoy_row",
     8: "windmill",
     9: "volcano",
     10: "unknownScenery10",
