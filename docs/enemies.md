@@ -10,7 +10,7 @@ Enemy type numbers are used in both spawnFormation (action 21) and spawnEnemy (a
 ## bullet (1)
 ![bullet](images/enemies/bullet.png)
 
-Normal enemy bullet. Not encountered on its own during normal gameplay.
+Normal enemy bullet. Unused on its own during normal gameplay.
 
 ### args:
 (HELP WANTED - needs testing)
@@ -19,7 +19,7 @@ Normal enemy bullet. Not encountered on its own during normal gameplay.
 ## flame (2)
 ![flame](images/enemies/flame.png)
 
-Flame that can be fired by an enemy or flamejet. Deals damage to the player and disappears after a while. Not encountered on its own during normal gameplay.
+Flame that can be fired by an enemy or flamejet. Deals damage to the player and disappears after a while. Unused on its own during normal gameplay.
 
 ### args:
 (HELP WANTED - needs testing)
@@ -28,7 +28,7 @@ Flame that can be fired by an enemy or flamejet. Deals damage to the player and 
 ## missile (3)
 ![missile](images/enemies/missile.png)
 
-Missile that homes in on the player while leaving a smoke trail. Explodes after a while if not destroyed by the player. Not encountered on its own during normal gameplay.
+Missile that homes in on the player while leaving a smoke trail. Explodes after a while if not destroyed by the player. Unused on its own during normal gameplay.
 
 ### args:
 (HELP WANTED - needs testing)
@@ -37,7 +37,7 @@ Missile that homes in on the player while leaving a smoke trail. Explodes after 
 ## laser (4)
 ![laser](images/enemies/laser.png)
 
-Laser that is fired by enemies such as squidyellow or lasership. Not encountered on its own during normal gameplay.
+Laser that is fired by some enemies. Unused on its own during normal gameplay.
 
 ### args:
 (HELP WANTED - needs testing)
@@ -46,7 +46,7 @@ Laser that is fired by enemies such as squidyellow or lasership. Not encountered
 ## orb (5)
 ![orb](images/enemies/orb.png)
 
-Large projectile that is typically fired upwards from red turrets before falling down. Not encountered on its own during normal gameplay.
+Large projectile that is typically fired upwards from red turrets before falling down. Unused on its own during normal gameplay.
 
 ### args:
 (HELP WANTED - needs testing)
@@ -55,7 +55,7 @@ Large projectile that is typically fired upwards from red turrets before falling
 ## glob (6)
 ![glob](images/enemies/glob.png)
 
-Indestructible projectile that is fired by some enemies in level 5 (e.g. podship). Not encountered on its own during normal gameplay.
+Indestructible projectile that is fired by some enemies in level 5 (e.g. podship). Unused on its own during normal gameplay.
 
 ### args:
 (HELP WANTED - needs testing)
@@ -64,7 +64,7 @@ Indestructible projectile that is fired by some enemies in level 5 (e.g. podship
 ## bomb (7)
 ![bomb](images/enemies/bomb.png)
 
-Explosive bomb that is dropped by bomber and squidcangreen. Explodes into bombfrags when shot by the player. Not encountered on its own during normal gameplay.
+Explosive bomb that is dropped by bomber and squidcangreen. Explodes into bombfrags when shot by the player. Unused on its own during normal gameplay.
 
 ### args:
 (HELP WANTED - needs testing)
@@ -73,7 +73,7 @@ Explosive bomb that is dropped by bomber and squidcangreen. Explodes into bombfr
 ## bombfrag (8)
 ![bombfrag](images/enemies/bombfrag.png)
 
-Damaging fragments emitted when a bomb or mine explodes. Not encountered on its own during normal gameplay.
+Damaging fragments emitted when a bomb or mine explodes. Unused on its own during normal gameplay.
 
 ### args:
 (HELP WANTED - needs testing)
@@ -82,7 +82,7 @@ Damaging fragments emitted when a bomb or mine explodes. Not encountered on its 
 ## mine (9)
 ![mine](images/enemies/mine.png)
 
-Bomb that is tied to a balloon. The balloon can be safely shot down while releasing some fruit. Spawns at a random y-position (HELP WANTED - needs testing).
+Bomb that is tied to a balloon. The balloon can be safely shot down while releasing some fruit. Spawns at a random y-position with random velocity (HELP WANTED - needs testing).
 
 ### args:
 (HELP WANTED - needs testing)
@@ -91,7 +91,7 @@ Bomb that is tied to a balloon. The balloon can be safely shot down while releas
 ## rock (10)
 ![rock](images/enemies/rock.png)
 
-Red-hot rock that falls from the top of the screen during volcanic eruptions. Size/sprite is randomised (HELP WANTED - needs testing). Not encountered on its own during normal gameplay.
+Red-hot rock that falls from the top of the screen during volcanic eruptions. Size/sprite is randomised (HELP WANTED - needs testing). Unused on its own during normal gameplay.
 
 ### args:
 (HELP WANTED - needs testing)
@@ -99,7 +99,7 @@ Red-hot rock that falls from the top of the screen during volcanic eruptions. Si
 
 ## unknownEnemy11 (11)
 
-(HELP WANTED - needs testing)
+Unused during normal gameplay.
 
 ### args:
 (HELP WANTED - needs testing)
@@ -107,7 +107,7 @@ Red-hot rock that falls from the top of the screen during volcanic eruptions. Si
 
 ## unknownEnemy12 (12)
 
-(HELP WANTED - needs testing)
+Unused during normal gameplay.
 
 ### args:
 (HELP WANTED - needs testing)
@@ -115,7 +115,7 @@ Red-hot rock that falls from the top of the screen during volcanic eruptions. Si
 
 ## unknownEnemy13 (13)
 
-(HELP WANTED - needs testing)
+Unused during normal gameplay.
 
 ### args:
 (HELP WANTED - needs testing)
@@ -151,7 +151,7 @@ None (HELP WANTED - needs testing)
 ## building (17)
 ![building](images/enemies/building.png)
 
-Destructible building that spawns at the bottom of the screen. Not used in normal gameplay (HELP WANTED - needs testing).
+Destructible building that spawns at the bottom of the screen. Unused during normal gameplay (HELP WANTED - needs testing).
 
 ### args:
 (HELP WANTED - needs testing)
@@ -160,7 +160,7 @@ Destructible building that spawns at the bottom of the screen. Not used in norma
 ## tank (18)
 ![tank](images/enemies/tank.png)
 
-Destructible tank that spawns at the bottom of the screen. Not used in normal gameplay (HELP WANTED - needs testing).
+Destructible tank that spawns at the bottom of the screen. Unused during normal gameplay (HELP WANTED - needs testing).
 
 ### args:
 (HELP WANTED - needs testing)
@@ -173,7 +173,7 @@ Destructible wall-mounted gun that aims and fires bullets at the player. Spawned
 
 ### args:
 - **xOffset (arg2):** spawn x-position offset. Negative values shift x-position to the left, positive values shift x-position to the right (HELP WANTED - needs testing)
-- **yPos (arg3):** y-position to spawn at (HELP WANTED - needs testing)
+- **yOffset (arg3):** spawn y-position offset. Negative values shift y-position upwards, positive values shift y-position downwards (HELP WANTED - needs testing)
 
 
 ## icbm (20)
@@ -188,7 +188,7 @@ Large missile that flies downwards from the left of the screen at an angle.
 ## domeship (21)
 ![domeship](images/enemies/domeship.png)
 
-Small spherical/dome-shaped enemy that flies along a path (HELP WANTED - needs testing). Normally encountered in formations.
+Small spherical/dome-shaped enemy that flies along a path (HELP WANTED - needs testing on its own). Normally encountered in formations.
 
 ### args:
 (HELP WANTED - needs testing)
@@ -197,7 +197,7 @@ Small spherical/dome-shaped enemy that flies along a path (HELP WANTED - needs t
 ## domeship2 (22)
 ![domeship2](images/enemies/domeship2.png)
 
-Sprite-swapped variant of domeship with otherwise identical behaviour (HELP WANTED - needs testing). Encountered in level 5.
+Sprite-swapped variant of domeship with otherwise identical behaviour (HELP WANTED - needs testing on its own). Encountered in level 5.
 
 ### args:
 (HELP WANTED - needs testing)
@@ -224,7 +224,7 @@ Yellow flying saucer enemy that flies leftwards from the right of the screen, oc
 ## saucer_red (25)
 ![saucer_red](images/enemies/saucer_red.png)
 
-Reddish-brown flying saucer enemy that flies leftwards from the right of the screen. Normally encountered in formations that grant weapon stars upon complete destruction.
+Reddish-brown flying saucer enemy that flies leftwards from the right of the screen (HELP WANTED - needs testing on its own). Normally encountered in formations that grant weapon stars upon complete destruction.
 
 ### args:
 (HELP WANTED - needs testing)
@@ -233,7 +233,7 @@ Reddish-brown flying saucer enemy that flies leftwards from the right of the scr
 ## zipper (26)
 ![zipper](images/enemies/zipper.png)
 
-Small orange gunship-like enemy that flies rightwards from the left of the screen until it reaches the right, then slowly moves off-screen to the left. Normally encountered in formations.
+Small orange gunship-like enemy that flies rightwards from the left of the screen until it reaches the right, then slowly moves off-screen to the left (HELP WANTED - needs testing on its own). Normally encountered in formations.
 
 ### args:
 (HELP WANTED - needs testing)
@@ -242,7 +242,7 @@ Small orange gunship-like enemy that flies rightwards from the left of the scree
 ## fish (27)
 ![fish](images/enemies/fish.png)
 
-Grey fish-shaped enemy that flies leftwards from the right of the screen (HELP WANTED - needs testing). Normally encountered in formations.
+Grey fish-shaped enemy that flies leftwards from the right of the screen (HELP WANTED - needs testing on its own). Normally encountered in formations.
 
 ### args:
 (HELP WANTED - needs testing)
@@ -251,7 +251,7 @@ Grey fish-shaped enemy that flies leftwards from the right of the screen (HELP W
 ## fish_red (28)
 ![fish_red](images/enemies/fish_red.png)
 
-Reddish-brown fish-shaped enemy that flies leftwards from the right of the screen (HELP WANTED - needs testing). Normally encountered in formations that grant weapon stars upon complete destruction.
+Reddish-brown fish-shaped enemy that flies leftwards from the right of the screen (HELP WANTED - needs testing on its own). Normally encountered in formations that grant weapon stars upon complete destruction.
 
 ### args:
 (HELP WANTED - needs testing)
@@ -260,7 +260,7 @@ Reddish-brown fish-shaped enemy that flies leftwards from the right of the scree
 ## fish_green (29)
 ![fish_green](images/enemies/fish_green.png)
 
-Green fish-shaped enemy with unknown single behaviour (HELP WANTED - needs testing). Normally encountered in formations.
+Green fish-shaped enemy with unknown single behaviour (HELP WANTED - needs testing on its own). Normally encountered in formations.
 
 ### args:
 (HELP WANTED - needs testing)
@@ -269,7 +269,7 @@ Green fish-shaped enemy with unknown single behaviour (HELP WANTED - needs testi
 ## horseshoe (30)
 ![horseshoe](images/enemies/horseshoe.png)
 
-Blue horseshoe-shaped enemy that flies in from the right before turning and flying leftwards, then turning once more to fly rightwards off-screen. Normally encountered in formations.
+Blue horseshoe-shaped enemy that flies in from the right before turning and flying leftwards, then turning once more to fly rightwards off-screen (HELP WANTED - needs testing on its own). Normally encountered in formations.
 
 ### args:
 (HELP WANTED - needs testing)
@@ -278,7 +278,7 @@ Blue horseshoe-shaped enemy that flies in from the right before turning and flyi
 ## jumper (31)
 ![jumper](images/enemies/jumper.png)
 
-Yellow horseshoe-shaped enemy that flies upwards from the bottom before turning and flying downwards off-screen. Normally encountered in formations. Single and formation spawns do not work in level 1 (HELP WANTED - see if other levels are affected).
+Yellow horseshoe-shaped enemy that flies upwards from the bottom before turning and flying downwards off-screen. Normally encountered in formations (HELP WANTED - needs testing on its own). Single and formation spawns do not work in level 1 (HELP WANTED - see if other levels are affected).
 
 ### args:
 (HELP WANTED - needs testing)
@@ -301,13 +301,13 @@ Teal-coloured variant of the classic ray enemy. Flies leftwards before spinning 
 ### args:
 - **yPos (arg2):** y-position to spawn at
 - **arg3 (arg3):** (HELP WANTED - needs testing)
-- **ySpeed (arg4):** y-speed when spinning. Negative values for upwards movement, positive values for downwards movement.
+- **ySpeed (arg4):** y-speed when spinning. Negative values for upwards movement, positive values for downwards movement (HELP WANTED - needs testing/confirmation)
 
 
 ## goldfish (34)
 ![goldfish](images/enemies/goldfish.png)
 
-Purple (not gold) enemy that flies in leftwards from the right of the screen and shoots several bullets in a spread formation before flying rightwards off-screen. Normally encountered in formations.
+Purple (not gold) enemy that flies in leftwards from the right of the screen and shoots several bullets in a spread formation before flying rightwards off-screen (HELP WANTED - needs testing on its own). Normally encountered in formations.
 
 ### args:
 (HELP WANTED - needs testing)
@@ -462,21 +462,22 @@ Large green enemy that flies in from the right before stopping at the far left, 
 ## car (51)
 ![car](images/enemies/car.png)
 
-TODO
+Various cars that spawn at the bottom of the screen and move in from the right. The car type can be specified and multiple cars can be linked to form a train.
 
 ### args:
-- **type (arg2):** (HELP WANTED - needs testing)
-  - 1:
-  - 2:
-  - 3:
-  - 4:
-  - 5:
-  - 6:
-  - 7:
-  - 8:
+- **type (arg2):** (HELP WANTED - needs testing for unknown values and possible unused car types. Also all car types need testing on their own)
+  - 0: unknown
+  - 1: red front car equipped with a missile launcher and a gun
+  - 2: red front car equipped with a red turret that shoots orbs upwards in a spread formation and a gun
+  - 3: empty car with only a chassis
+  - 4: gold passive car that releases fruit when destroyed
+  - 5: unknown
+  - 6: silver car equipped with two guns
+  - 7: silver car equipped with a missile launcher
+  - 8: silver car equipped with a red turret that shoots orbs upwards in a spread formation
 - **link (arg3):** (HELP WANTED - needs testing)
   - 0: setting disabled
-  - 1: link all previous spawned cars together to form a train
+  - 1: link all previously spawned cars together to form a train
 
 
 ## gunboat (52)
@@ -530,10 +531,10 @@ TODO
 
 ## unknownEnemy57 (57)
 
-TODO
+Unused during normal gameplay.
 
 ### args:
-TODO
+(HELP WANTED - needs testing)
 
 
 ## boss2_intro (58)
@@ -546,10 +547,10 @@ TODO
 
 ## unknownEnemy59 (59)
 
-TODO
+Unused during normal gameplay.
 
 ### args:
-TODO
+(HELP WANTED - needs testing)
 
 
 ## boss3 (60)
@@ -563,10 +564,10 @@ None (HELP WANTED - needs testing)
 
 ## unknownEnemy61CRASH (61)
 
-TODO
+Crashes the game. Unused during normal gameplay.
 
 ### args:
-TODO
+None
 
 
 ## boss4 (62)
@@ -614,26 +615,26 @@ TODO
 
 ## unknownEnemy67 (67)
 
-TODO
+Unused during normal gameplay.
 
 ### args:
-TODO
+(HELP WANTED - needs testing)
 
 
 ## unknownEnemy68CRASH (68)
 
-TODO
+Crashes the game. Unused during normal gameplay.
 
 ### args:
-TODO
+None
 
 
 ## unknownEnemy69CRASH (69)
 
-TODO
+Crashes the game. Unused during normal gameplay.
 
 ### args:
-TODO
+None
 
 
 ## worm (70)
