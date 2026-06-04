@@ -149,7 +149,7 @@ None (HELP WANTED - needs testing)
 
 
 ## building (17)
-![building](images/enemies/building.png)
+![building](images/scenery/building.png)
 
 Destructible building that spawns at the bottom of the screen. Unused during normal gameplay (HELP WANTED - needs testing).
 
@@ -158,7 +158,7 @@ Destructible building that spawns at the bottom of the screen. Unused during nor
 
 
 ## tank (18)
-![tank](images/enemies/tank.png)
+![tank](images/scenery/tank.png)
 
 Destructible tank that spawns at the bottom of the screen. Unused during normal gameplay (HELP WANTED - needs testing).
 
