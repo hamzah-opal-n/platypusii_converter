@@ -399,64 +399,64 @@ Teal trashcan-shaped squid variant with similar movement patterns but drops bomb
 ## yellowie (44)
 ![yellowie](images/enemies/yellowie.png)
 
-TODO
+Yellow passive enemy that flies in from the left before stopping at the far right, then flying leftwards off-screen.
 
 ### args:
-TODO
+- **yPos (arg2):** y-position to spawn at
 
 
 ## greenie (45)
 ![greenie](images/enemies/greenie.png)
 
-TODO
+Slow green passive enemy that flies from left to right.
 
 ### args:
-TODO
+- **yPos (arg2):** y-position to spawn at
 
 
 ## reddie (46)
 ![reddie](images/enemies/reddie.png)
 
-TODO
+Large red passive enemy that flies from left to right.
 
 ### args:
-TODO
+- **yPos (arg2):** y-position to spawn at
 
 
 ## gunship (47)
 ![gunship](images/enemies/gunship.png)
 
-TODO
+Classic red gunship enemy that flies in from the left and hovers around the horizontal center of the screen while shooting bullets aimed at the player, before flying rightwards off-screen.
 
 ### args:
-TODO
+- **yPos (arg2):** y-position to spawn at
 
 
 ## lasership (48)
 ![lasership](images/enemies/lasership.png)
 
-TODO
+Purple gunship variant that flies in from the right and hovers around in place while shooting lasers leftwards, before flying leftwards off-screen.
 
 ### args:
-TODO
+- **yPos (arg2):** y-position to spawn at
 
 
 ## flameship (49)
 ![flameship](images/enemies/flameship.png)
 
-TODO
+Yellow gunship variant that with the same movement pattern as the original red gunship, but shoots flames aimed at the player instead.
 
 ### args:
-TODO
+- **yPos (arg2):** y-position to spawn at
 
 
 ## homingship (50)
 ![homingship](images/enemies/homingship.png)
 
-TODO
+Large green enemy that flies in from the right before stopping at the far left, then flying back rightwards off-screen. Shoots missiles in pairs.
 
 ### args:
-TODO
+- **yPos (arg2):** y-position to spawn at
 
 
 ## car (51)
@@ -465,34 +465,49 @@ TODO
 TODO
 
 ### args:
-TODO
+- **type (arg2):** (HELP WANTED - needs testing)
+  - 1:
+  - 2:
+  - 3:
+  - 4:
+  - 5:
+  - 6:
+  - 7:
+  - 8:
+- **link (arg3):** (HELP WANTED - needs testing)
+  - 0: setting disabled
+  - 1: link all previous spawned cars together to form a train
 
 
 ## gunboat (52)
 ![gunboat](images/enemies/gunboat.png)
 
-TODO
+Boat enemy that spawns at the bottom of the screen and travels across horizontally while shooting orbs upwards in a spread formation.
 
 ### args:
-TODO
+- **direction (arg2):**
+  - 0: moves from left to right
+  - 1: moves from right to left
 
 
 ## missileboat (53)
 ![missileboat](images/enemies/missileboat.png)
 
-TODO
+Smaller boat enemy that spawns at the bottom of the screen and travels across horizontally while shooting missiles.
 
 ### args:
-TODO
+(HELP WANTED - test arg2 to see if its direction can be changed like gunboat and flameboat)
 
 
 ## flameboat (54)
 ![flameboat](images/enemies/flameboat.png)
 
-TODO
+Boat enemy that spawns at the bottom of the screen and travels across horizontally while shooting flames aimed at the player.
 
 ### args:
-TODO
+- **direction (arg2):**
+  - 0: moves from left to right
+  - 1: moves from right to left
 
 
 ## boss1 (55)
@@ -543,7 +558,7 @@ TODO
 TODO
 
 ### args:
-TODO
+None (HELP WANTED - needs testing)
 
 
 ## unknownEnemy61CRASH (61)
