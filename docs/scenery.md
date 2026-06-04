@@ -55,10 +55,10 @@ None (HELP WANTED - needs testing)
 ## buoy (6)
 ![buoy](images/scenery/buoy.png)
 
-A single buoy. Sprite/layer can be customised.
+A single buoy. Layer can be customised.
 
 ### args:
-- **sprite (arg2):** sprite number to use (HELP WANTED - needs testing)
+- **layer (arg2):** layer to spawn on (HELP WANTED - needs testing)
 
 
 ## buoy_row (7)
@@ -76,7 +76,7 @@ None (HELP WANTED - needs testing)
 TODO
 
 ### args:
-TODO
+- **layer (arg2):** layer to spawn on (HELP WANTED - needs testing, find where the graphics for the spinning blades are located)
 
 
 ## volcano (9)
@@ -99,10 +99,10 @@ Unused during normal gameplay.
 ## waterfall (11)
 ![waterfall](images/scenery/waterfall.png)
 
-TODO
+Flowing waterfall. Spawns on top of an instance of tile number 54 on the chosen layer (Note: in-game, sprite number 2 is used for layer 1 spawns, while sprite number 1 is used for layer 3 spawns).
 
 ### args:
-TODO
+- **layer (arg2):** layer to spawn on (HELP WANTED - needs testing)
 
 
 ## unknownScenery12 (12)
@@ -116,19 +116,19 @@ Unused during normal gameplay.
 ## boat (13)
 ![boat](images/scenery/boat.png)
 
-TODO
+Boat that moves from right to left in the near background. Sprite is chosen at random.
 
 ### args:
-TODO
+None (HELP WANTED - test if the sprite can be chosen)
 
 
 ## boatfar (14)
 ![boatfar](images/scenery/boatfar.png)
 
-TODO
+Boat that moves from right to left in the far background. Sprite is chosen at random.
 
 ### args:
-TODO
+None (HELP WANTED - test if the sprite can be chosen)
 
 
 ## unknownScenery15 (15)
@@ -243,7 +243,7 @@ None (HELP WANTED - needs testing)
 ## roof_start (27)
 ![roof_start](images/scenery/roof_start.png)
 
-Begin spawning the cave roof tiles seen in level 3.
+Begin spawning the cave roof tiles seen in level 3. On each layer, spawn a single instance of tile number 1 before randomly spawning tiles from number 2 to 4 (HELP WANTED - needs testing to see if additional tiles can be added, and what happens if two roof_start actions are called without roof_end).
 
 ### args:
 None (HELP WANTED - needs testing)
@@ -252,7 +252,7 @@ None (HELP WANTED - needs testing)
 ## roof_end (28)
 ![roof_end](images/scenery/roof_end.png)
 
-Finish spawning the cave roof tiles seen in level 3.
+Finish spawning the cave roof tiles seen in level 3. On each layer, spawn a single instance of tile number 5 before stopping random tile spawns. (HELP WANTED - needs testing to see if additional tiles can be added, and what happens if two roof_end actions are called without roof_start).
 
 ### args:
 None (HELP WANTED - needs testing)
@@ -269,7 +269,7 @@ Unused during normal gameplay.
 ## last_start (30)
 ![last_start](images/scenery/last_start.png)
 
-Begin spawning the alien mouth roof tiles seen in level 5.
+Begin spawning the alien mouth roof tiles seen in level 5.  On each layer, spawn a single instance of tile number 1 before randomly spawning tiles from number 2 to 4 (HELP WANTED - needs testing to see if additional tiles can be added, and what happens if two last_start actions are called).
 
 ### args:
 None (HELP WANTED - needs testing)
