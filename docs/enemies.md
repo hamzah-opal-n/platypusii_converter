@@ -142,7 +142,7 @@ None (HELP WANTED - needs testing)
 ## dish (16)
 ![dish](images/enemies/dish.png)
 
-Destructible satellite dish that appears near the bottom of the screen. Spawns on top of tile 99 on layer 1.
+Destructible satellite dish that appears near the bottom of the screen. Spawns on top of an instance of tile number 99 on layer 1.
 
 ### args:
 None (HELP WANTED - needs testing)
