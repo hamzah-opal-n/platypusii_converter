@@ -85,7 +85,7 @@ Damaging fragments emitted when a bomb or mine explodes. Unused on its own durin
 Bomb that is tied to a balloon. The balloon can be safely shot down while releasing some fruit. Spawns at a random y-position with random velocity (HELP WANTED - needs testing).
 
 ### args:
-(HELP WANTED - needs testing)
+None (HELP WANTED - needs testing)
 
 
 ## rock (10)
@@ -242,7 +242,7 @@ Small orange gunship-like enemy that flies rightwards from the left of the scree
 ## fish (27)
 ![fish](images/enemies/fish.png)
 
-Grey fish-shaped enemy that flies leftwards from the right of the screen (HELP WANTED - needs testing on its own). Normally encountered in formations.
+Grey fish-shaped enemy that flies leftwards from the right of the screen and occasionally fires lasers (HELP WANTED - needs testing on its own). Normally encountered in formations.
 
 ### args:
 (HELP WANTED - needs testing)
@@ -251,7 +251,7 @@ Grey fish-shaped enemy that flies leftwards from the right of the screen (HELP W
 ## fish_red (28)
 ![fish_red](images/enemies/fish_red.png)
 
-Reddish-brown fish-shaped enemy that flies leftwards from the right of the screen (HELP WANTED - needs testing on its own). Normally encountered in formations that grant weapon stars upon complete destruction.
+Reddish-brown fish-shaped enemy that flies leftwards from the right of the screen and occasionally fires lasers (HELP WANTED - needs testing on its own). Normally encountered in formations that grant weapon stars upon complete destruction.
 
 ### args:
 (HELP WANTED - needs testing)
@@ -260,7 +260,7 @@ Reddish-brown fish-shaped enemy that flies leftwards from the right of the scree
 ## fish_green (29)
 ![fish_green](images/enemies/fish_green.png)
 
-Green fish-shaped enemy with unknown single behaviour (HELP WANTED - needs testing on its own). Normally encountered in formations.
+Green fish-shaped enemy with unknown single behaviour and occasionally fires lasers (HELP WANTED - needs testing on its own). Normally encountered in formations.
 
 ### args:
 (HELP WANTED - needs testing)
@@ -514,19 +514,19 @@ Boat enemy that spawns at the bottom of the screen and travels across horizontal
 ## boss1 (55)
 ![boss1](images/enemies/boss1.png)
 
-TODO
+Large flying orange aircraft that hovers around the right of the screen while firing two pairs of missiles at a time. Formations of fish_green and fish_red are also spawned as support. Encountered at the end of level 4 during normal gameplay.
 
 ### args:
-TODO
+None (HELP WANTED - needs testing)
 
 
 ## boss2 (56)
 ![boss2](images/enemies/boss2.png)
 
-TODO
+Large green segmented aircraft that looks and moves like a worm. Each body segment is equipped with a gun, while the head fires pairs of missiles. Flies in from right to left, revealing each segment one by one. Destroying a segment also destroys all previous segments. Once the head is disconnected from its adjacent segment or the left edge of the head touches the left edge of the screen, all undestroyed body segments are despawned and the head hovers around freely while beginning its attack pattern. Formations of saucer2 and saucer_red are also spawned as support. Encountered at the end of level 2 during normal gameplay.
 
 ### args:
-TODO
+None (HELP WANTED - needs testing)
 
 
 ## unknownEnemy57 (57)
@@ -539,10 +539,10 @@ Unused during normal gameplay.
 
 ## boss2_intro (58)
 
-TODO
+Non-destructible variant of boss2 that flies from left to right. Used to introduce the boss before the actual fight begins.
 
 ### args:
-TODO
+None (HELP WANTED - needs testing)
 
 
 ## unknownEnemy59 (59)
@@ -556,7 +556,7 @@ Unused during normal gameplay.
 ## boss3 (60)
 ![boss3](images/enemies/boss3.png)
 
-TODO
+Tall yellow turret that rises from the bottom of the screen at a random x-position before sinking and rising again elsewhere. Fires lasers, launches missiles and shoots orbs upwards in a spread formation. Formations of fish_red are also spawned as support. Encountered at the end of level 1 during normal gameplay.
 
 ### args:
 None (HELP WANTED - needs testing)
@@ -573,44 +573,80 @@ None
 ## boss4 (62)
 ![boss4](images/enemies/boss4.png)
 
-TODO
+Large boat attached to a balloon that hovers around the screen freely. Equipped with a missile launcher. Does not appear to automatically spawn any enemies as support. Encountered near the end of level 4 (right before boss1) during normal gameplay.
 
 ### args:
-TODO
+None (HELP WANTED - needs testing)
 
 
 ## boss5 (63)
 ![boss5](images/enemies/boss5.png)
 
-TODO
+Large segmented orange serpent that flies around the screen along seemingly random paths. The head shoots flames while the tail shoots lasers in a spread formation. Head is initially invulnerable and the body segments must be damaged first. Once all body segments have been fully damaged, the head can be damaged. Formations of fish_green and fish_red are also spawned as support. Encountered at the end of level 3 during normal gameplay.
 
 ### args:
-TODO
+None (HELP WANTED - needs testing)
 
 
 ## boss5_unknown (64)
 
-TODO
+Unused variant of boss5 (HELP WANTED - needs more description).
 
 ### args:
-TODO
+None (HELP WANTED - needs testing)
 
 
 ## boss5_intro (65)
 
-TODO
+Non-destructible variant of boss5 that flies straight up from the bottom of the screen while leaving behind some splashes (HELP WANTED - needs confirmation on splash spawns). Used to introduce the boss before the actual fight begins.
 
 ### args:
-TODO
+None (HELP WANTED - needs testing)
 
 
 ## boss6 (66)
 ![boss6](images/enemies/boss6.png)
 
-TODO
+Large green brain equipped with a gun along with four segmented arms that end with guns. The arms rotate around the brain in a clockwise direction. Each arm (gun) must be destroyed first, then the eye on the brain will open and can be damaged. Each time after the first three arms are destroyed, the boss flies off to the right and several enemies/formations are spawned in a fixed order before the boss returns. Encountered at the end of level 5 during normal gameplay. Full attack pattern and enemy spawns are listed below:
+
+- The boss initially spawns with four arms and its eye closed. The guns on each arm shoot bullets while the gun under the brain shoots globs. Formations of fish_red are spawned as support. Once one arm is destroyed, the boss flies off-screen to the right
+- The following enemies/formations are spawned in order:
+  - squid formation
+  - virus formation
+  - blob
+  - podship
+  - spinner formation
+  - blob
+  - spinner formation
+  - squid formation
+  - squid formation
+- The boss returns with three arms but otherwise the exact same behaviour and support spawns as before
+- The following enemies/formations are spawned in order:
+  - virus formation
+  - worm formation
+  - eyeball
+  - podship
+  - worm formation
+  - eyeball
+  - virus formation
+  - virus formation
+  - virus formation
+- The boss returns with two arms and the same behaviour and supports as before, except the firing rate of all guns has been increased
+- The following enemies/formations are spawned in order:
+  - virus formation
+  - squid formation
+  - eyeball
+  - 2x podships
+  - worm formation
+  - blob
+  - virus formation
+  - spinner formation
+  - virus formation
+- The boss returns with one arm and the firing rate of the last arm gun has been increased further. The gun under the brain now shoots lightning in short bursts instead. Support spawns remain the same.
+- Once the last arm is destroyed, the brain begins flying freely while launching missiles and spawning viruses. Virus spawn rate increases as the brain takes more damage. The eye will occasionally open and fire lasers while leaving it vulnerable to attacks. Also spawns formations of fish_red as support
 
 ### args:
-TODO
+None (HELP WANTED - needs testing)
 
 
 ## unknownEnemy67 (67)
@@ -640,82 +676,82 @@ None
 ## worm (70)
 ![worm](images/enemies/worm.png)
 
-TODO
+Small brightly coloured worm that flies from right to left (HELP WANTED - needs testing on its own). Normally encountered in formations.
 
 ### args:
-TODO
+(HELP WANTED - needs testing)
 
 
 ## eyeball (71)
 ![eyeball](images/enemies/eyeball.png)
 
-TODO
+Large blinking eye that flies in from the left and hovers around the horizontal center of the screen before flying rightwards off-screen. Fires a ring of eight bullets outwards from its center.
 
 ### args:
-TODO
+- **yPos (arg2):** y-position to spawn at
 
 
 ## blob (72)
 ![blob](images/enemies/blob.png)
 
-TODO
+Pink jellyfish that flies from left to right.
 
 ### args:
-TODO
+- **yPos (arg2):** y-position to spawn at
 
 
 ## rollship (73)
 ![rollship](images/enemies/rollship.png)
 
-TODO
+Small blue fish-like enemy that flies leftwards from the right before spinning and flying upwards or downwards (HELP WANTED - needs testing on its own). Normally encountered in formations.
 
 ### args:
-TODO
+(HELP WANTED - needs testing)
 
 
 ## chicken (74)
 ![chicken](images/enemies/chicken.png)
 
-TODO
+Purple bird-like creature that flies from left to right (HELP WANTED - needs testing on its own). Normally encountered in formations.
 
 ### args:
-TODO
+(HELP WANTED - needs testing)
 
 
 ## bug (75)
 ![bug](images/enemies/bug.png)
 
-TODO
+Yellow pterodactyl-like creature that flies in from the top and homes in on the player before moving leftwards off-screen (HELP WANTED - needs testing on its own). Normally encountered in formations.
 
 ### args:
-TODO
+(HELP WANTED - needs testing)
 
 
 ## tonsil (76)
 ![tonsil](images/enemies/tonsil.png)
 
-TODO
+Fleshy hanging object that damages the player upon impact. Can be destroyed. Spawns at a random y-position.
 
 ### args:
-TODO
+None (HELP WANTED - needs testing)
 
 
 ## virus (77)
 ![virus](images/enemies/virus.png)
 
-TODO
+Small yellow virus that homes in on the player before flying off-screen (HELP WANTED - needs testing on its own). Normally encountered in formations or spawned from ulcers.
 
 ### args:
-TODO
+(HELP WANTED - needs testing)
 
 
 ## spinner (78)
 ![spinner](images/enemies/spinner.png)
 
-TODO
+Small spinning eyeball that flies from right to left (HELP WANTED - needs testing on its own). Normally encountered in formations.
 
 ### args:
-TODO
+(HELP WANTED - needs testing)
 
 
 ## fang (79)
@@ -732,25 +768,25 @@ Sharp tooth that flies in the direction it's facing upon encountering the player
 ## squid (80)
 ![squid](images/enemies/squid.png)
 
-TODO
+Small pink jellyfish that flies from right to left (HELP WANTED - needs testing on its own). Normally encountered in formations.
 
 ### args:
-TODO
+(HELP WANTED - needs testing)
 
 
 ## podship (81)
 ![podship](images/enemies/podship.png)
 
-TODO
+Blue gunship-like enemy that shoots globs at the player. Flies in from the left and hovers around the horizontal center of the screen before flying rightwards off-screen.
 
 ### args:
-TODO
+- **yPos (arg2):** y-position to spawn at
 
 
 ## miniserpent (82)
 ![miniserpent](images/enemies/miniserpent.png)
 
-TODO
+Shorter yellow serpent that flies upwards from the bottom of the screen at a random position, turns to the left or right, then falls back down to the bottom of the screen before repeating. Its tail shoots lasers in a spread formation. Only its body segments can be damaged and it explodes after all body segments have been fully damaged.
 
 ### args:
-TODO
+None (HELP WANTED - needs testing)
