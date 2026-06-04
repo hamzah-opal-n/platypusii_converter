@@ -14,3 +14,5 @@ Value No.     Name             Description
 ```
 
 Unused values are typically set to 0. While all event values are stored as numbers internally, they are converted into text strings when decompiling to JSON format for ease of human readability.
+
+For information about each action type, please see [this](actions.md) page.
