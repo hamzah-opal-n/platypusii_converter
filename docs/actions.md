@@ -23,7 +23,7 @@ Require a minimum number of players to allow execution of the next event (all ot
 
 ## unknownAction3 (3)
 
-(HELP WANTED - needs testing)
+Unused during normal gameplay.
 
 ### args:
 (HELP WANTED - needs testing)
@@ -39,7 +39,7 @@ None (HELP WANTED - needs confirmation)
 
 ## unknownAction5 (5)
 
-(HELP WANTED - needs testing)
+Unused during normal gameplay.
 
 ### args:
 (HELP WANTED - needs testing)
@@ -135,7 +135,7 @@ Spawn a planet in the background.
 TODO
 
 ### args:
-None used (HELP WANTED - needs confirmation)
+TODO
 
 
 ## waitForHillPop (16)
@@ -143,7 +143,7 @@ None used (HELP WANTED - needs confirmation)
 TODO
 
 ### args:
-None used (HELP WANTED - needs confirmation)
+TODO
 
 
 ## setRandomTilesBackground (17)
@@ -151,7 +151,7 @@ None used (HELP WANTED - needs confirmation)
 TODO
 
 ### args:
-None used (HELP WANTED - needs confirmation)
+TODO
 
 
 ## forceTile (18)
