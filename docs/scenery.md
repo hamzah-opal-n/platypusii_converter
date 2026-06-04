@@ -10,45 +10,46 @@ Scenery type numbers are used in spawnScenery (action 23) as arg1.
 ## cloud (1)
 ![cloud](images/scenery/cloud.png)
 
-TODO
+Cloud that moves from right to left. Sprite can be customised. Spawns at a random y-position with a random x-speed.
 
 ### args:
-TODO
+- **sprite (arg2):** sprite number to use
+- **xPos (arg3):** x-position to spawn at. If greater than 0, spawn directly on the screen at the specified position. Otherwise, spawn off-screen and slowly move from right to left (HELP WANTED - needs confirmation)
 
 
 ## unknownScenery2 (2)
 
-TODO
+Unused during normal gameplay.
 
 ### args:
-TODO
+(HELP WANTED - needs testing)
 
 
 ## arch (3)
 ![arch](images/scenery/arch.png)
 
-TODO
+Red arch-shaped structure. The top of the structure damages the player upon impact, but the player can safely fly below or above it.
 
 ### args:
-TODO
+None (HELP WANTED - needs testing)
 
 
 ## pylon (4)
 ![pylon](images/scenery/pylon.png)
 
-TODO
+A whole row of power lines on the classic grey poles across different layers. The power lines damage the player upon impact.
 
 ### args:
-TODO
+None (HELP WANTED - needs testing)
 
 
 ## telegraph (5)
 ![telegraph](images/scenery/telegraph.png)
 
-TODO
+A whole row of power lines on brown poles across different layers. The power lines damage the player upon impact.
 
 ### args:
-TODO
+None (HELP WANTED - needs testing)
 
 
 ## buoy (6)
@@ -89,10 +90,10 @@ TODO
 
 ## unknownScenery10 (10)
 
-TODO
+Unused during normal gameplay.
 
 ### args:
-TODO
+(HELP WANTED - needs testing)
 
 
 ## waterfall (11)
@@ -106,10 +107,10 @@ TODO
 
 ## unknownScenery12 (12)
 
-TODO
+Unused during normal gameplay.
 
 ### args:
-TODO
+(HELP WANTED - needs testing)
 
 
 ## boat (13)
@@ -132,64 +133,64 @@ TODO
 
 ## unknownScenery15 (15)
 
-TODO
+Unused during normal gameplay.
 
 ### args:
-TODO
+(HELP WANTED - needs testing)
 
 
 ## building (16)
 ![building](images/scenery/building.png)
 
-TODO
+Destructible building that spawns at the bottom of the screen.
 
 ### args:
-TODO
+None (HELP WANTED - needs testing)
 
 
 ## tank (17)
 ![tank](images/scenery/tank.png)
 
-TODO
+Destructible tank that spawns at the bottom of the screen.
 
 ### args:
-TODO
+None (HELP WANTED - needs testing)
 
 
 ## parrot (18)
 ![parrot](images/scenery/parrot.png)
 
-TODO
+Green parrot that flies from right to left at a slight upward angle. Sprite/layer can be customised. Spawns at a random y-position.
 
 ### args:
-TODO
+- **sprite (arg2):** sprite number to use (HELP WANTED - needs testing)
 
 
 ## bird (19)
 ![bird](images/scenery/bird.png)
 
-TODO
+Distant blue bird that flies along a random path.
 
 ### args:
-TODO
+None (HELP WANTED - needs testing)
 
 
 ## birdred (20)
 ![birdred](images/scenery/birdred.png)
 
-TODO
+Distant red bird that flies along a random path.
 
 ### args:
-TODO
+None (HELP WANTED - needs testing)
 
 
 ## birdyellow (21)
 ![birdyellow](images/scenery/birdyellow.png)
 
-TODO
+Distant yellow bird that flies along a random path.
 
 ### args:
-TODO
+None (HELP WANTED - needs testing)
 
 
 ## icbm (22)
@@ -206,148 +207,149 @@ Large missile that launches upwards sometime after spawning. Spawned on layer 5 
 ## yellowie (23)
 ![yellowie](images/scenery/yellowie.png)
 
-TODO
+Distant yellowie that flies from left to right. Spawns at a random y-position.
 
 ### args:
-TODO
+None (HELP WANTED - needs testing)
 
 
 ## yellowie2 (24)
 ![yellowie2](images/scenery/yellowie2.png)
 
-TODO
+Distant yellowie variant with a grey-ish hue that flies from left to right. Spawns at a random y-position.
 
 ### args:
-TODO
+None (HELP WANTED - needs testing)
 
 
 ## greenie (25)
 ![greenie](images/scenery/greenie.png)
 
-TODO
+Distant greenie that flies from left to right. Spawns at a random y-position.
 
 ### args:
-TODO
+None (HELP WANTED - needs testing)
 
 
 ## reddie (26)
 ![reddie](images/scenery/reddie.png)
 
-TODO
+Distant reddie that flies from left to right. Spawns at a random y-position.
 
 ### args:
-TODO
+None (HELP WANTED - needs testing)
 
 
 ## roof_start (27)
 ![roof_start](images/scenery/roof_start.png)
 
-TODO
+Begin spawning the cave roof tiles seen in level 3.
 
 ### args:
-TODO
+None (HELP WANTED - needs testing)
 
 
 ## roof_end (28)
 ![roof_end](images/scenery/roof_end.png)
 
-TODO
+Finish spawning the cave roof tiles seen in level 3.
 
 ### args:
-TODO
+None (HELP WANTED - needs testing)
 
 
 ## unknownScenery29 (29)
 
-TODO
+Unused during normal gameplay.
 
 ### args:
-TODO
+(HELP WANTED - needs testing)
 
 
 ## last_start (30)
 ![last_start](images/scenery/last_start.png)
 
-TODO
+Begin spawning the alien mouth roof tiles seen in level 5.
 
 ### args:
-TODO
+None (HELP WANTED - needs testing)
 
 
 ## unknownScenery31 (31)
 
-TODO
+Unused during normal gameplay.
 
 ### args:
-TODO
+(HELP WANTED - needs testing)
 
 
 ## greenhead (32)
 ![greenhead](images/scenery/greenhead.png)
 
-TODO
+Cameo appearance of Silthax, the main antagonist of NUX. Briefly pops up from the bottom of the screen before retreating.
 
 ### args:
-TODO
+None (HELP WANTED - needs testing)
 
 
 ## mine (33)
 ![mine](images/scenery/mine.png)
 
-TODO
+Distant mine that spawns on a random layer at a random y-position with random velocity.
 
 ### args:
-TODO
+None (HELP WANTED - needs testing)
 
 
 ## nuxship (34)
 ![nuxship](images/scenery/nuxship.png)
 
-TODO
+NUX's ship from the game of the same name. Spawned on layer 4 and positioned based on the newest tile.
 
 ### args:
-TODO
+- **xOffset (arg2):** spawn x-position offset. Negative values shift x-position to the left, positive values shift x-position to the right (HELP WANTED - needs testing)
+- **yOffset (arg3):** spawn y-position offset. Negative values shift y-position upwards, positive values shift y-position downwards (HELP WANTED - needs testing)
 
 
 ## unknownScenery35 (35)
 
-TODO
+Unused during normal gameplay.
 
 ### args:
-TODO
+(HELP WANTED - needs testing)
 
 
 ## tonsil (36)
 ![tonsil](images/scenery/tonsil.png)
 
-TODO
+Distant tonsil that spawns on a random layer at a random y-position.
 
 ### args:
-TODO
+None (HELP WANTED - needs testing)
 
 
 ## ulcer (37)
 ![ulcer](images/scenery/ulcer.png)
 
-TODO
+Festering ulcer that explodes after a while, releasing three virus enemies. Spawns on layer 6 at a random y-position.
 
 ### args:
-TODO
+None (HELP WANTED - needs testing)
 
 
 ## eyeball (38)
 ![eyeball](images/scenery/eyeball.png)
 
-TODO
+Distant eyeball that flies from left to right. Spawns at a random y-position.
 
 ### args:
-TODO
+None (HELP WANTED - needs testing)
 
 
 ## podship (39)
 ![podship](images/scenery/podship.png)
 
-TODO
+Distant podship that flies from left to right. Spawns at a random y-position.
 
 ### args:
-TODO
+None (HELP WANTED - needs testing)
