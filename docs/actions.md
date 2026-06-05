@@ -181,11 +181,20 @@ Force display of a specific tile on a specific layer.
 
 ## spawnFormation (21)
 
-TODO
+Spawns several enemies in a specified formation. The full list of enemy types can be seen [here](enemies.md) and the list of formations can be seen [here](formations.md).
 
 ### args:
 - **object (arg1):** enemy type
-- TODO
+- **formation (arg2):** formation type
+- **yPos (arg3):** y-position to spawn at, possibly ignored for random formations (HELP WANTED - needs testing)
+- **bonus (arg4):** weapon star to release upon destroying the entire formation (HELP WANTED - test to see if it can be used on *any* enemy formation). Values listed below:
+  - **0:** no weapon star
+  - **1:** shootable star that cycles between Wide, Auto, Pulse and Rockets
+  - **2:** Wide
+  - **3:** Auto
+  - **4:** Pulse
+  - **5:** Rockets
+  - **6:** Lightning
 
 
 ## spawnEnemy (22)
