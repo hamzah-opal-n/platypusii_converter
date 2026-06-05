@@ -466,18 +466,18 @@ Various cars that spawn at the bottom of the screen and move in from the right. 
 
 ### args:
 - **type (arg2):** (HELP WANTED - needs testing for unknown values and possible unused car types. Also all car types need testing on their own)
-  - 0: unknown
-  - 1: red front car equipped with a missile launcher and a gun
-  - 2: red front car equipped with a red turret that shoots orbs upwards in a spread formation and a gun
-  - 3: empty car with only a chassis
-  - 4: gold passive car that releases fruit when destroyed
-  - 5: unknown
-  - 6: silver car equipped with two guns
-  - 7: silver car equipped with a missile launcher
-  - 8: silver car equipped with a red turret that shoots orbs upwards in a spread formation
+  - **0:** unknown
+  - **1:** red front car equipped with a missile launcher and a gun
+  - **2:** red front car equipped with a red turret that shoots orbs upwards in a spread formation and a gun
+  - **3:** empty car with only a chassis
+  - **4:** gold passive car that releases fruit when destroyed
+  - **5:** unknown
+  - **6:** silver car equipped with two guns
+  - **7:** silver car equipped with a missile launcher
+  - **8:** silver car equipped with a red turret that shoots orbs upwards in a spread formation
 - **link (arg3):** (HELP WANTED - needs testing)
-  - 0: setting disabled
-  - 1: link all previously spawned cars together to form a train
+  - **0:** setting disabled
+  - **1:** link all previously spawned cars together to form a train
 
 
 ## gunboat (52)
@@ -487,8 +487,8 @@ Boat enemy that spawns at the bottom of the screen and travels across horizontal
 
 ### args:
 - **direction (arg2):**
-  - 0: moves from left to right
-  - 1: moves from right to left
+  - **0:** moves from left to right
+  - **1:** moves from right to left
 
 
 ## missileboat (53)
@@ -507,8 +507,8 @@ Boat enemy that spawns at the bottom of the screen and travels across horizontal
 
 ### args:
 - **direction (arg2):**
-  - 0: moves from left to right
-  - 1: moves from right to left
+  - **0:** moves from left to right
+  - **1:** moves from right to left
 
 
 ## boss1 (55)
@@ -761,8 +761,8 @@ Sharp tooth that flies in the direction it's facing upon encountering the player
 
 ### args:
 - **direction (arg2):**
-  - 0: spawn at the top of the screen and fly downwards
-  - 1: spawn at the bottom of the screen and fly upwards
+  - **0:** spawn at the top of the screen and fly downwards
+  - **1:** spawn at the bottom of the screen and fly upwards
 
 
 ## squid (80)
