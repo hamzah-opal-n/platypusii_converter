@@ -278,7 +278,7 @@ Blue horseshoe-shaped enemy that flies in from the right before turning and flyi
 ## jumper (31)
 ![jumper](images/enemies/jumper.png)
 
-Yellow horseshoe-shaped enemy that flies upwards from the bottom before turning and flying downwards off-screen. Normally encountered in formations (HELP WANTED - needs testing on its own). Single and formation spawns do not work in level 1 (HELP WANTED - see if other levels are affected).
+Yellow horseshoe-shaped enemy that flies upwards from the bottom before turning and flying downwards off-screen. Has slight horizontal speed during its flight path. Normally encountered in formations (HELP WANTED - needs testing on its own). Single and formation spawns do not work in level 1 (HELP WANTED - see if other levels are affected).
 
 ### args:
 (HELP WANTED - needs testing)
@@ -607,41 +607,41 @@ None (HELP WANTED - needs testing)
 ## boss6 (66)
 ![boss6](images/enemies/boss6.png)
 
-Large green brain equipped with a gun along with four segmented arms that end with guns. The arms rotate around the brain in a clockwise direction. Each arm (gun) must be destroyed first, then the eye on the brain will open and can be damaged. Each time after the first three arms are destroyed, the boss flies off to the right and several enemies/formations are spawned in a fixed order before the boss returns. Encountered at the end of level 5 during normal gameplay. Full attack pattern and enemy spawns are listed below:
+Large green brain equipped with a gun along with four segmented arms that end with guns. The arms rotate around the brain in a clockwise direction. Each arm (gun) must be destroyed first, then the eye on the brain will open and can be damaged. Each time after the first three arms are destroyed, the boss flies off to the right and several enemies/formations are spawned in a fixed order at fixed positions before the boss returns. Encountered at the end of level 5 during normal gameplay. Full attack pattern and enemy spawns are listed below:
 
 - The boss initially spawns with four arms and its eye closed. The guns on each arm shoot bullets while the gun under the brain shoots globs. Formations of fish_red are spawned as support. Once one arm is destroyed, the boss flies off-screen to the right
 - The following enemies/formations are spawned in order:
-  - squid formation
-  - virus formation
+  - squid formation 0
+  - virus formation 0
   - blob
   - podship
-  - spinner formation
+  - spinner formation 0
   - blob
-  - spinner formation
-  - squid formation
-  - squid formation
+  - spinner formation 0
+  - squid formation 0
+  - squid formation 0
 - The boss returns with three arms but otherwise the exact same behaviour and support spawns as before
 - The following enemies/formations are spawned in order:
-  - virus formation
-  - worm formation
+  - virus formation 1
+  - worm formation 0
   - eyeball
   - podship
-  - worm formation
+  - worm formation 0
   - eyeball
-  - virus formation
-  - virus formation
-  - virus formation
+  - virus formation 0
+  - virus formation 1
+  - virus formation 0
 - The boss returns with two arms and the same behaviour and supports as before, except the firing rate of all guns has been increased
 - The following enemies/formations are spawned in order:
-  - virus formation
-  - squid formation
+  - virus formation 1
+  - squid formation 0
   - eyeball
   - 2x podships
-  - worm formation
+  - worm formation 0
   - blob
-  - virus formation
-  - spinner formation
-  - virus formation
+  - virus formation 0
+  - spinner formation 0
+  - virus formation 1
 - The boss returns with one arm and the firing rate of the last arm gun has been increased further. The gun under the brain now shoots lightning in short bursts instead. Support spawns remain the same.
 - Once the last arm is destroyed, the brain begins flying freely while launching missiles and spawning viruses. Virus spawn rate increases as the brain takes more damage. The eye will occasionally open and fire lasers while leaving it vulnerable to attacks. Also spawns formations of fish_red as support
 
