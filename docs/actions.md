@@ -130,12 +130,13 @@ Spawn a planet in the background.
 - **ySpeed (arg4):** y-speed of the planet. Positive values result in downward movement, negative values result in upward movement
 
 
-## setRandomTilesForeground (15)
+## randomTilesForeground (15)
 
-TODO
+TODO (HELP WANTED - needs confirmation)
 
 ### args:
-TODO
+- **tileMin (arg1):** TODO
+- **tileMax (arg2):** TODO
 
 
 ## waitForHillPop (16)
@@ -143,20 +144,22 @@ TODO
 TODO
 
 ### args:
-TODO
+- **layer (arg1):** TODO
 
 
-## setRandomTilesBackground (17)
+## randomTilesBackground (17)
 
-TODO
+Set the range of tiles that can be randomly spawned on a specific layer.
 
 ### args:
-TODO
+- **layer (arg1):** layer number
+- **tileMin (arg2):** lowest tile number
+- **tileMax (arg3):** highest tile number
 
 
 ## forceTile (18)
 
-Force display of a specific tile on a specific layer.
+Spawn a specific tile on a specific layer, temporarily overriding random tile spawns.
 
 ### args:
 - **layer (arg1):** layer number
@@ -260,4 +263,4 @@ None (HELP WANTED - needs confirmation)
 Spawn a balloon crate that contains a Lightning star.
 
 ### args:
-None (HELP WANTED - needs confirmation)
+None (HELP WANTED - needs confirmation, can the bonus be changed?)
