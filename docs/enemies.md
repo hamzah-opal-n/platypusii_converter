@@ -301,7 +301,7 @@ Teal-coloured variant of the classic ray enemy. Flies leftwards before spinning 
 ### args:
 - **yPos (arg2):** y-position to spawn at
 - **arg3 (arg3):** (HELP WANTED - needs testing)
-- **ySpeed (arg4):** y-speed when spinning. Negative values for upwards movement, positive values for downwards movement (HELP WANTED - needs testing/confirmation)
+- **ySpeed (arg4):** y-speed when spinning. Negative values for upwards movement, positive values for downwards movement (HELP WANTED - needs testing/confirmation, test with values other than 1 and -1)
 
 
 ## goldfish (34)
