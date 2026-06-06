@@ -13,9 +13,9 @@ ACTION_NAMES = {
     12: "snowAsh",
     13: "snowRain",
     14: "spawnPlanet",
-    15: "setRandomTilesForeground",
+    15: "randomTilesForeground",
     16: "waitForHillPop",
-    17: "setRandomTilesBackground",
+    17: "randomTilesBackground",
     18: "forceTile",
     19: "unknownAction19",
     20: "unknownAction20",
@@ -30,23 +30,23 @@ ACTION_NAMES = {
     29: "balloonCrateLightningStar"
 }
 
-ARG_NAMES = {
-    "requirePlayers": ["minPlayers"],
-    "skyGradient": ["startPoint", "scrollSpeed"],
-    "waterNormal": ["type"],
-    "waterLava": ["type"],
-    "waterAlien": ["type"],
-    "snowNormal": ["intensity"],
-    "snowAsh": ["intensity"],
-    "snowRain": ["intensity"],
-    "spawnPlanet": ["sprite", "xPos", "yPos", "ySpeed"],
-    "setRandomTilesForeground": ["minTile", "maxTile"],
-    "waitForHillPop": ["layer"],
-    "setRandomTilesBackground": ["layer", "minTile", "maxTile"],
-    "forceTile": ["layer", "tile"],
-    "spawnFormation": ["object", "formation"],
-    "spawnEnemy": ["object"],
-    "spawnScenery": ["object"]
+ACTION_ARG_NAMES = {
+    2: ["minPlayers"],
+    7: ["startPoint", "scrollSpeed"],
+    8: ["type"],
+    9: ["type"],
+    10: ["type"],
+    11: ["intensity"],
+    12: ["intensity"],
+    13: ["intensity"],
+    14: ["sprite", "xPos", "yPos", "ySpeed"],
+    15: ["tileMin", "tileMax"],
+    16: ["layer"],
+    17: ["layer", "tileMin", "tileMax"],
+    18: ["layer", "tile"],
+    21: ["object", "formation", "yPos", "bonus"],
+    22: ["object"],
+    23: ["object"]
 }
 
 ENEMY_NAMES = {
@@ -134,6 +134,35 @@ ENEMY_NAMES = {
     82: "miniserpent"
 }
 
+ENEMY_ARG_NAMES = {
+    19: ["xOffset", "yOffset"],
+    20: ["yPos"],
+    33: ["yPos", "arg3", "ySpeed"],
+    35: ["xPos", "yTarget"],
+    36: ["xPos", "yTarget"],
+    37: ["yPos"],
+    38: ["yPos"],
+    39: ["yPos"],
+    40: ["yPos"],
+    41: ["yPos"],
+    42: ["yPos"],
+    43: ["yPos"],
+    44: ["yPos"],
+    45: ["yPos"],
+    46: ["yPos"],
+    47: ["yPos"],
+    48: ["yPos"],
+    49: ["yPos"],
+    50: ["yPos"],
+    51: ["type", "link"],
+    52: ["direction"],
+    54: ["direction"],
+    71: ["yPos"],
+    72: ["yPos"],
+    79: ["direction"],
+    81: ["yPos"],
+}
+
 SCENERY_NAMES = {
     1: "cloud",
     2: "unknownScenery2",
@@ -174,4 +203,14 @@ SCENERY_NAMES = {
     37: "ulcer",
     38: "eyeball",
     39: "podship"
+}
+
+SCENERY_ARG_NAMES = {
+    1: ["sprite", "xPos"],
+    6: ["layer"],
+    8: ["layer"],
+    11: ["layer"],
+    18: ["sprite"],
+    22: ["xOffset", "yOffset", "launchDelay"],
+    34: ["xOffset", "yOffset"]
 }
