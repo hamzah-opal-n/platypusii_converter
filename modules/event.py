@@ -8,32 +8,43 @@ class Event:
         self.arg_values = []
         self.arg_names = []
         self.arg_values_text = []
-        for i in range(8):
-            self.arg_names.append(f"arg{i + 1}")
 
         if input_format == "bytes":
             self.wait, self.action_number = struct.unpack("<ii", input_data[:8])
-            arg_data = struct.unpack("<iiiiiiii", input_data[8:])
+            self.arg_values = list(struct.unpack("<iiiiiiii", input_data[8:]))
+            self.arg_values_text = [value for value in self.arg_values]
+            for i in range(8):
+                self.arg_names.append(f"arg{i + 1}")
 
-            for arg in arg_data:
-                self.arg_values.append(arg)
+            # Population action name
             if self.action_number in ACTION_NAMES:
                 self.action_name = ACTION_NAMES[self.action_number]
             else:
-                self.action_name = f"unknownAction{self.action_number}"
+                self.action_name = self.action_number
 
-            if self.action_name in ARG_NAMES:
-                for i in range(len(ARG_NAMES[self.action_name])):
-                    self.arg_names[i] = ARG_NAMES[self.action_name][i]
+            # Populate arg names
+            if self.action_number in ACTION_ARG_NAMES:
+                for i in range(len(ACTION_ARG_NAMES[self.action_number])):
+                    self.arg_names[i] = ACTION_ARG_NAMES[self.action_number][i]
 
-            for i in range(8):
-                if self.arg_names[i] == "object":
-                    object_dict = ENEMY_NAMES
-                    if self.action_name == "spawnScenery":
-                        object_dict = SCENERY_NAMES
-                    self.arg_values_text.append(object_dict[self.arg_values[i]])
+            # Enemy and scenery type and arg names
+            if self.arg_names[0] == "object":
+                object_dict = ENEMY_NAMES
+                arg_dict = ENEMY_ARG_NAMES
+                if self.action_number == 23:  # spawnScenery
+                    object_dict = SCENERY_NAMES
+                    arg_dict = SCENERY_ARG_NAMES
+                # Enemy and scenery name
+                if self.arg_values[0] in object_dict:
+                    self.arg_values_text[0] = object_dict[self.arg_values[0]]
                 else:
-                    self.arg_values_text.append(self.arg_values[i])
+                    self.arg_values_text[0] = self.arg_values[0]
+                # Enemy and scenery arg names
+                if self.arg_values[0] in arg_dict:
+                    for i in range(len(arg_dict[self.arg_values[0]])):
+                        self.arg_names[i+1] = arg_dict[self.arg_values[0]][i]
+
+
 
         elif input_format == "json":
             self.wait = input_data["wait"]
