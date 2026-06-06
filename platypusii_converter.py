@@ -30,7 +30,7 @@ def main():
         if user_choice == "D":
             decompile()
         elif user_choice == "R":
-            recompile()
+            wip()
         else:
             print("Invalid choice!")
         print(MENU)
@@ -62,7 +62,7 @@ def convert_level_data(filename):
         print(ERROR_MESSAGE)
 
 
-def recompile():
+def wip():
     print("This doesn't work yet! Please use the old version in the Claymatic Discord server if you want to recompile data, or wait for this to be implemented at a later date!")
 
 
@@ -81,21 +81,13 @@ def recompile_old():
 def convert_json(filename):
     with open(filename) as input_file:
         json_data = json.load(input_file)
+    level_data = []
+    for item in json_data:
+        level_data.append(Event.from_json(item))
     output_string = b""
-    for event in json_data:
-        event_bytes = struct.pack("<iiiiiiiiii",
-                                  event["wait"],
-                                  event["cmd"],
-                                  event["arg1"],
-                                  event["arg2"],
-                                  event["arg3"],
-                                  event["arg4"],
-                                  event["arg5"],
-                                  event["arg6"],
-                                  event["arg7"],
-                                  event["arg8"])
-        output_string += event_bytes
-    with open(f"{os.path.join(filename)}.dat", "wb") as out_file:
+    for event in level_data:
+        output_string += event.to_bytes()
+    with open(f"{os.path.join(filename[:-len(JSON_EXTENSION)])}{LEVEL_DATA_EXTENSION}", "wb") as out_file:
         out_file.write(output_string)
 
 
@@ -108,5 +100,15 @@ def test_decompile():
     convert_level_data("level5.dat")
 
 
+def test_recompile():
+    convert_json("level0.json")
+    convert_json("level1.json")
+    convert_json("level2.json")
+    convert_json("level3.json")
+    convert_json("level4.json")
+    convert_json("level5.json")
+
+
 main()
 # test_decompile()
+# test_recompile()
