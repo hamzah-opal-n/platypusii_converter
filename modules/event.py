@@ -57,10 +57,7 @@ class Event:
             if type(self.action_name) is int:
                 self.action_number = self.action_name
             else:
-                try:
-                    self.action_number = [number for number, name in ACTION_NAMES.items() if self.action_name == name][0]
-                except IndexError:
-                    print(f"Error loading event: unknown action: {self.action_name} encountered")
+                self.action_number = [number for number, name in ACTION_NAMES.items() if self.action_name == name][0]
 
             # Loading argument values from json/text
             for arg_value in self.arg_values_text:
@@ -70,10 +67,7 @@ class Event:
                     object_dict = ENEMY_NAMES
                     if self.action_number == 23:  # spawnScenery
                         object_dict = SCENERY_NAMES
-                    try:
-                        self.arg_values.append([number for number, name in object_dict.items() if arg_value == name][0])
-                    except IndexError:
-                        print(f"Error loading event: unknown object: {arg_value} encountered")
+                    self.arg_values.append([number for number, name in object_dict.items() if arg_value == name][0])
 
 
         # If no format specified - use dummy values
