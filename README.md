@@ -15,7 +15,7 @@ This is a tool for use on level data files from Platypus II (2007). Level data c
 
 ## General Info
 
-- **WARNING:** there is currently no file overwrite warning/prompt. Make a backup of your original files to be safe, use at your own risk. Warning will be implemented as soon as possible.
+- Make a backup of your original level data files, just in case they are overwritten.
 - Text string values in a decompiled .json file (actions, enemy/scenery types) can be replaced with integer values and recompilation to .dat will still work. This can be useful for testing or finding unused content.
 
 For more information about the level data format, action and enemy/scenery types, please look at the [docs](docs) folder.
