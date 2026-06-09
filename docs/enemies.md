@@ -514,7 +514,7 @@ Boat enemy that spawns at the bottom of the screen and travels across horizontal
 ## boss1 (55)
 ![boss1](images/enemies/boss1.png)
 
-Large flying orange aircraft that hovers around the right of the screen while firing two pairs of missiles at a time. Formations of fish_green and fish_red are also spawned as support. Encountered at the end of level 4 during normal gameplay.
+Large flying orange aircraft that hovers around the right of the screen while firing two pairs of missiles at a time. Instances of fish_green formation 1 and fish_red formation 3 are also spawned as support. Encountered at the end of level 4 during normal gameplay.
 
 ### args:
 None (HELP WANTED - needs testing)
@@ -523,7 +523,7 @@ None (HELP WANTED - needs testing)
 ## boss2 (56)
 ![boss2](images/enemies/boss2.png)
 
-Large green segmented aircraft that looks and moves like a worm. Each body segment is equipped with a gun, while the head fires pairs of missiles. Flies in from right to left, revealing each segment one by one. Destroying a segment also destroys all previous segments. Once the head is disconnected from its adjacent segment or the left edge of the head touches the left edge of the screen, all undestroyed body segments are despawned and the head hovers around freely while beginning its attack pattern. Formations of saucer2 and saucer_red are also spawned as support. Encountered at the end of level 2 during normal gameplay.
+Large green segmented aircraft that looks and moves like a worm. Each body segment is equipped with a gun, while the head fires pairs of missiles. Flies in from right to left, revealing each segment one by one. Destroying a segment also destroys all previous segments. Once the head is disconnected from its adjacent segment or the left edge of the head touches the left edge of the screen, all undestroyed body segments are despawned and the head hovers around freely while beginning its attack pattern. Instances of saucer2 formation 0 and saucer_red formation 0 are also spawned as support. Encountered at the end of level 2 during normal gameplay.
 
 ### args:
 None (HELP WANTED - needs testing)
@@ -556,7 +556,7 @@ Unused during normal gameplay.
 ## boss3 (60)
 ![boss3](images/enemies/boss3.png)
 
-Tall yellow turret that rises from the bottom of the screen at a random x-position before sinking and rising again elsewhere. Fires lasers, launches missiles and shoots orbs upwards in a spread formation. Formations of fish_red are also spawned as support. Encountered at the end of level 1 during normal gameplay.
+Tall yellow turret that rises from the bottom of the screen at a random x-position before sinking and rising again elsewhere. Fires lasers, launches missiles and shoots orbs upwards in a spread formation. Instances of fish_red formation 1 are also spawned as support. Encountered at the end of level 1 during normal gameplay.
 
 ### args:
 None (HELP WANTED - needs testing)
@@ -582,7 +582,7 @@ None (HELP WANTED - needs testing)
 ## boss5 (63)
 ![boss5](images/enemies/boss5.png)
 
-Large segmented orange serpent that flies around the screen along seemingly random paths. The head shoots flames while the tail shoots lasers in a spread formation. Head is initially invulnerable and the body segments must be damaged first. Once all body segments have been fully damaged, the head can be damaged. Formations of fish_green and fish_red are also spawned as support. Encountered at the end of level 3 during normal gameplay.
+Large segmented orange serpent that flies around the screen along seemingly random paths. The head shoots flames while the tail shoots lasers in a spread formation. Head is initially invulnerable and the body segments must be damaged first. Once all body segments have been fully damaged, the head can be damaged. Instances of fish_green formation 1 and fish_red formations 1 and 3 are also spawned as support. Encountered at the end of level 3 during normal gameplay.
 
 ### args:
 None (HELP WANTED - needs testing)
@@ -609,7 +609,7 @@ None (HELP WANTED - needs testing)
 
 Large green brain equipped with a gun along with four segmented arms that end with guns. The arms rotate around the brain in a clockwise direction. Each arm (gun) must be destroyed first, then the eye on the brain will open and can be damaged. Each time after the first three arms are destroyed, the boss flies off to the right and several enemies/formations are spawned in a fixed order at fixed positions before the boss returns. Encountered at the end of level 5 during normal gameplay. Full attack pattern and enemy spawns are listed below:
 
-- The boss initially spawns with four arms and its eye closed. The guns on each arm shoot bullets while the gun under the brain shoots globs. Formations of fish_red are spawned as support. Once one arm is destroyed, the boss flies off-screen to the right
+- The boss initially spawns with four arms and its eye closed. The guns on each arm shoot bullets while the gun under the brain shoots globs. Instances of fish_red formation 3 are spawned as support. Once one arm is destroyed, the boss flies off-screen to the right
 - The following enemies/formations are spawned in order:
   - squid formation 0
   - virus formation 0
@@ -643,7 +643,7 @@ Large green brain equipped with a gun along with four segmented arms that end wi
   - spinner formation 0
   - virus formation 1
 - The boss returns with one arm and the firing rate of the last arm gun has been increased further. The gun under the brain now shoots lightning in short bursts instead. Support spawns remain the same.
-- Once the last arm is destroyed, the brain begins flying freely while launching missiles and spawning viruses. Virus spawn rate increases as the brain takes more damage. The eye will occasionally open and fire lasers while leaving it vulnerable to attacks. Also spawns formations of fish_red as support
+- Once the last arm is destroyed, the brain begins flying freely while launching missiles and spawning viruses. Virus spawn rate increases as the brain takes more damage. The eye will occasionally open and fire lasers while leaving it vulnerable to attacks. Also spawns instances of fish_red formations 1 and 3 as support
 
 ### args:
 None (HELP WANTED - needs testing)
