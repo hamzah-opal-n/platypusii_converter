@@ -130,13 +130,12 @@ Spawn a planet in the background.
 - **ySpeed (arg4):** y-speed of the planet. Positive values result in downward movement, negative values result in upward movement
 
 
-## randomTilesForeground (15)
+## stopTiles (15)
 
-TODO (HELP WANTED - needs confirmation)
+Stop spawning tiles on a specific layer.
 
 ### args:
-- **tileMin (arg1):** TODO
-- **tileMax (arg2):** TODO
+- **layer (arg1):** layer number
 
 
 ## waitForHillPop (16)
@@ -147,7 +146,7 @@ TODO
 - **layer (arg1):** TODO
 
 
-## randomTilesBackground (17)
+## randomTiles (17)
 
 Set the range of tiles that can be randomly spawned on a specific layer.
 
