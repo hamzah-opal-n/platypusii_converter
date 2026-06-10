@@ -142,19 +142,19 @@ Unused during normal gameplay.
 ## building (16)
 ![building](images/scenery/building.png)
 
-Destructible building that spawns at the bottom of the screen.
+Destructible building that spawns at the bottom of the screen and leaves behind a base. The destructible portion damages the player on contact and can be spawned on its own using [enemy type 17](enemies.md#building-17).
 
 ### args:
-None (HELP WANTED - needs testing)
+None
 
 
 ## tank (17)
 ![tank](images/scenery/tank.png)
 
-Destructible tank that spawns at the bottom of the screen.
+Destructible tank that spawns at the bottom of the screen and leaves behind a base. The destructible portion damages the player on contact and can be spawned on its own using [enemy type 18](enemies.md#tank-18).
 
 ### args:
-None (HELP WANTED - needs testing)
+None
 
 
 ## parrot (18)
@@ -295,10 +295,10 @@ None (HELP WANTED - needs testing)
 ## mine (33)
 ![mine](images/scenery/mine.png)
 
-Distant mine that spawns on a random layer at a random y-position with random velocity.
+Distant mine that spawns at a random y-position with random velocity.
 
 ### args:
-None (HELP WANTED - needs testing)
+- **sprite (arg2):** sprite number to use. 0 to use a random sprite
 
 
 ## nuxship (34)

@@ -135,6 +135,15 @@ ENEMY_NAMES = {
 }
 
 ENEMY_ARG_NAMES = {
+    1: ["xPos", "yPos", "angle", "speed"],
+    2: ["xPos", "yPos", "angle", "speed"],
+    3: ["xPos", "yPos", "angle", "speed"],
+    4: ["xPos", "yPos", "angle", "speed"],
+    5: ["xPos", "yPos", "angle", "speed"],
+    6: ["xPos", "yPos", "angle", "speed"],
+    7: ["xPos", "yPos", "angle", "speed"],
+    8: ["xPos", "yPos", "angle", "speed"],
+    10: ["xPos", "yPos"],
     19: ["xOffset", "yOffset"],
     20: ["yPos"],
     33: ["yPos", "arg3", "ySpeed"],

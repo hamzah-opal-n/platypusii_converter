@@ -74,7 +74,7 @@ Identical to saucer formations
 - **1:** spawn 4 enemies that fly diagonally downwards before forming a "/" formation on the top half of the screen and flying straight to the left. Ignores yPos value? (HELP WANTED - test with a yPos value other than 0)
 - **2:** spawn 3 pairs of enemies that fly in diagonally from opposite directions before forming a "<" formation near the middle of the screen and flying straight to the left. Enemy pairs are spawned from back to front. Ignores yPos value? (HELP WANTED - test with a yPos value other than 0)
 - **3:** similar to formation type 1 except all vertical movement and y-positions are flipped
-- **4:** spawn 3 pairs of enemies that fly in diagonally from opposite directions before meeting near the middle of the screen and flying straight to the left. Enemy pairs are spawned from back to front. Ignores yPos value? (HELP WANTED - test with a yPos value other than 0)
+- **4:** spawn 3 pairs of enemies that fly in diagonally from opposite directions before meeting near the middle of the screen and flying straight to the left. Enemy pairs are spawned from back to front. Ignores yPos value
 
 
 ## fish_green (29)

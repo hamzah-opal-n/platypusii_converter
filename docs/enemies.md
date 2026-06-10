@@ -13,7 +13,10 @@ Enemy type numbers are used in both spawnFormation (action 21) and spawnEnemy (a
 Normal enemy bullet. Unused on its own during normal gameplay.
 
 ### args:
-(HELP WANTED - needs testing)
+- **xPos (arg2):** x-position to spawn at
+- **yPos (arg3):** y-position to spawn at
+- **angle (arg4):** movement angle (in degrees). 0 degrees is directly leftwards, positive values change direction clockwise, negative values change direction counter-clockwise
+- **speed (arg5):** movement speed. Negative values result in backwards movement, 0 uses default speed
 
 
 ## flame (2)
@@ -22,7 +25,10 @@ Normal enemy bullet. Unused on its own during normal gameplay.
 Flame that can be fired by an enemy or flamejet. Deals damage to the player and disappears after a while. Unused on its own during normal gameplay.
 
 ### args:
-(HELP WANTED - needs testing)
+- **xPos (arg2):** x-position to spawn at
+- **yPos (arg3):** y-position to spawn at
+- **angle (arg4):** movement angle (in degrees). 0 degrees is directly leftwards, positive values change direction clockwise, negative values change direction counter-clockwise
+- **speed (arg5):** movement speed. Negative values result in backwards movement, 0 uses default speed
 
 
 ## missile (3)
@@ -31,7 +37,10 @@ Flame that can be fired by an enemy or flamejet. Deals damage to the player and 
 Missile that homes in on the player while leaving a smoke trail. Explodes after a while if not destroyed by the player. Unused on its own during normal gameplay.
 
 ### args:
-(HELP WANTED - needs testing)
+- **xPos (arg2):** x-position to spawn at
+- **yPos (arg3):** y-position to spawn at
+- **angle (arg4):** movement angle (in degrees). 0 degrees is directly leftwards, positive values change direction clockwise, negative values change direction counter-clockwise
+- **speed (arg5):** movement speed. Negative values result in backwards movement, 0 uses default speed
 
 
 ## laser (4)
@@ -40,7 +49,10 @@ Missile that homes in on the player while leaving a smoke trail. Explodes after 
 Laser that is fired by some enemies. Unused on its own during normal gameplay.
 
 ### args:
-(HELP WANTED - needs testing)
+- **xPos (arg2):** x-position to spawn at
+- **yPos (arg3):** y-position to spawn at
+- **angle (arg4):** movement angle (in degrees). 0 degrees is directly leftwards, positive values change direction clockwise, negative values change direction counter-clockwise
+- **speed (arg5):** movement speed. Negative values result in backwards movement, 0 uses default speed
 
 
 ## orb (5)
@@ -49,7 +61,10 @@ Laser that is fired by some enemies. Unused on its own during normal gameplay.
 Large projectile that is typically fired upwards from red turrets before falling down. Unused on its own during normal gameplay.
 
 ### args:
-(HELP WANTED - needs testing)
+- **xPos (arg2):** x-position to spawn at
+- **yPos (arg3):** y-position to spawn at
+- **angle (arg4):** movement angle (in degrees). 0 degrees is directly leftwards, positive values change direction clockwise, negative values change direction counter-clockwise
+- **speed (arg5):** movement speed. Negative values result in backwards movement, 0 uses default speed
 
 
 ## glob (6)
@@ -58,7 +73,10 @@ Large projectile that is typically fired upwards from red turrets before falling
 Indestructible projectile that is fired by some enemies in level 5 (e.g. podship). Unused on its own during normal gameplay.
 
 ### args:
-(HELP WANTED - needs testing)
+- **xPos (arg2):** x-position to spawn at
+- **yPos (arg3):** y-position to spawn at
+- **angle (arg4):** movement angle (in degrees). 0 degrees is directly leftwards, positive values change direction clockwise, negative values change direction counter-clockwise
+- **speed (arg5):** movement speed. Negative values result in backwards movement, 0 uses default speed
 
 
 ## bomb (7)
@@ -67,7 +85,10 @@ Indestructible projectile that is fired by some enemies in level 5 (e.g. podship
 Explosive bomb that is dropped by bomber and squidcangreen. Explodes into bombfrags when shot by the player. Unused on its own during normal gameplay.
 
 ### args:
-(HELP WANTED - needs testing)
+- **xPos (arg2):** x-position to spawn at
+- **yPos (arg3):** y-position to spawn at
+- **angle (arg4):** movement angle (in degrees). 0 degrees is directly leftwards, positive values change direction clockwise, negative values change direction counter-clockwise
+- **speed (arg5):** movement speed. Negative values result in backwards movement, 0 uses default speed
 
 
 ## bombfrag (8)
@@ -76,25 +97,33 @@ Explosive bomb that is dropped by bomber and squidcangreen. Explodes into bombfr
 Damaging fragments emitted when a bomb or mine explodes. Unused on its own during normal gameplay.
 
 ### args:
-(HELP WANTED - needs testing)
+- **xPos (arg2):** x-position to spawn at
+- **yPos (arg3):** y-position to spawn at
+- **angle (arg4):** movement angle (in degrees). 0 degrees is directly leftwards, positive values change direction clockwise, negative values change direction counter-clockwise
+- **speed (arg5):** movement speed. Negative values result in backwards movement, 0 uses default speed
 
 
 ## mine (9)
 ![mine](images/enemies/mine.png)
 
-Bomb that is tied to a balloon. The balloon can be safely shot down while releasing some fruit. Spawns at a random y-position with random velocity (HELP WANTED - needs testing).
+Bomb that is tied to a balloon. Shooting the balloon will cause the bomb to fall. The balloon type can be customised. Spawns with a random y-speed.
 
 ### args:
-None (HELP WANTED - needs testing)
+- **type (arg2):**
+  - **0:** pale balloon. Shooting it releases some fruit
+  - **1:** red balloon. Shooting it releases 12 bombfrags
+- **yPos (arg3):** y-position to spawn at. Use 0 for random positions
+- **xPos (arg4):** x-position to spawn at. Non-zero values cause the mine to spawn on-screen out of thin air at the specified coordinates. Use 0 to spawn off-screen as usual
 
 
 ## rock (10)
 ![rock](images/enemies/rock.png)
 
-Red-hot rock that falls from the top of the screen during volcanic eruptions. Size/sprite is randomised (HELP WANTED - needs testing). Unused on its own during normal gameplay.
+Red-hot rock that falls from the top of the screen during volcanic eruptions. Size/sprite is randomised. Unused on its own during normal gameplay.
 
 ### args:
-(HELP WANTED - needs testing)
+- **xPos (arg2):** x-position to spawn at
+- **yPos (arg3):** y-position to spawn at
 
 
 ## unknownEnemy11 (11)
@@ -127,7 +156,7 @@ Unused during normal gameplay.
 Spawns a jet of flames upwards.
 
 ### args:
-None (HELP WANTED - needs testing)
+None
 
 
 ## buoy (15)
@@ -136,44 +165,46 @@ None (HELP WANTED - needs testing)
 Buoy equipped with a cannon that fires two lasers upwards.
 
 ### args:
-None (HELP WANTED - needs testing)
+None
 
 
 ## dish (16)
 ![dish](images/enemies/dish.png)
 
-Destructible satellite dish that appears near the bottom of the screen. Spawns on top of an instance of tile number 99 on layer 1.
+Destructible satellite dish that appears near the bottom of the screen and damages the player upon contact. Spawns on top of an instance of tile number 99 on layer 1. If this tile does not exist, it will spawn out of thin air in the middle of the screen.
 
 ### args:
-None (HELP WANTED - needs testing)
+None
 
 
 ## building (17)
 ![building](images/enemies/building.png)
 
-Destructible building that spawns at the bottom of the screen. Unused during normal gameplay (HELP WANTED - needs testing).
+Destructible building that damages the player on contact. Spawns out of thin air at the specified position. Unused during normal gameplay. For the standard version that spawns at the bottom of the screen and leaves behind a base, see [scenery type 16](scenery.md#building-16).
 
 ### args:
-(HELP WANTED - needs testing)
+- **xPos (arg2):** spawn x-position
+- **yPos (arg3):** spawn y-position
 
 
 ## tank (18)
 ![tank](images/enemies/tank.png)
 
-Destructible tank that spawns at the bottom of the screen. Unused during normal gameplay (HELP WANTED - needs testing).
+Destructible tank that damages the player on contact. Spawns out of thin air at the specified position. Unused during normal gameplay. For the standard version that spawns at the bottom of the screen and leaves behind a base, see [scenery type 17](scenery.md#tank-17).
 
 ### args:
-(HELP WANTED - needs testing)
+- **xPos (arg2):** spawn x-position
+- **yPos (arg3):** spawn y-position
 
 
 ## wallgun (19)
 ![wallgun](images/enemies/wallgun.png)
 
-Destructible wall-mounted gun that aims and fires bullets at the player. Spawned on layer 1 and positioned based on the newest tile.
+Destructible wall-mounted gun that aims and fires bullets at the player. Leaves behind its base panel after it is destroyed. If a tile on layer 1 is spawned simultaneously before it, positioning will be based on the top-right corner of the tile. Otherwise, positioning is based on the top-right corner of the whole screen.
 
 ### args:
-- **xOffset (arg2):** spawn x-position offset. Negative values shift x-position to the left, positive values shift x-position to the right (HELP WANTED - needs testing)
-- **yOffset (arg3):** spawn y-position offset. Negative values shift y-position upwards, positive values shift y-position downwards (HELP WANTED - needs testing)
+- **xOffset (arg2):** spawn x-position offset. Negative values shift x-position to the left, positive values shift x-position to the right
+- **yOffset (arg3):** spawn y-position offset. Negative values shift y-position upwards, positive values shift y-position downwards
 
 
 ## icbm (20)
@@ -182,25 +213,27 @@ Destructible wall-mounted gun that aims and fires bullets at the player. Spawned
 Large missile that flies downwards from the left of the screen at an angle.
 
 ### args:
-- **yPos (arg2):** y-position to spawn at
+- **yPos (arg2):** y-position to spawn at (TODO)
 
 
 ## domeship (21)
 ![domeship](images/enemies/domeship.png)
 
-Small spherical/dome-shaped enemy that flies along a path (HELP WANTED - needs testing on its own). Normally encountered in formations.
+Small spherical/dome-shaped enemy that flies straight from the left before doing a loop and flying off-screen to the left. Normally encountered in formations.
 
 ### args:
-(HELP WANTED - needs testing)
+- **yPos (arg2):** y-position to spawn at. If this value is 300 or more, the enemy will do an upwards loop. Otherwise, it will do a downwards loop
+- **xOffset (arg3):** spawn x-position offset. Can cause the enemy to appear on-screen out of thin air
 
 
 ## domeship2 (22)
 ![domeship2](images/enemies/domeship2.png)
 
-Sprite-swapped variant of domeship with otherwise identical behaviour (HELP WANTED - needs testing on its own). Encountered in level 5.
+Sprite-swapped variant of domeship with otherwise identical behaviour. Normally encountered in formations.
 
 ### args:
-(HELP WANTED - needs testing)
+- **yPos (arg2):** y-position to spawn at. If this value is 300 or more, the enemy will do an upwards loop. Otherwise, it will do a downwards loop
+- **xOffset (arg3):** spawn x-position offset. Can cause the enemy to appear on-screen out of thin air
 
 
 ## saucer (23)
@@ -209,7 +242,8 @@ Sprite-swapped variant of domeship with otherwise identical behaviour (HELP WANT
 Grey flying saucer enemy that flies leftwards from the right of the screen, occasionally shooting bullets at the player. Normally encountered in formations.
 
 ### args:
-(HELP WANTED - needs testing)
+- **yPos (arg2):** y-position to spawn at
+- **xOffset (arg3):** spawn x-position offset. Can cause the enemy to appear on-screen out of thin air
 
 
 ## saucer2 (24)
@@ -218,16 +252,18 @@ Grey flying saucer enemy that flies leftwards from the right of the screen, occa
 Yellow flying saucer enemy that flies leftwards from the right of the screen, occasionally shooting bullets at the player. Normally encountered in formations.
 
 ### args:
-(HELP WANTED - needs testing)
+- **yPos (arg2):** y-position to spawn at
+- **xOffset (arg3):** spawn x-position offset. Can cause the enemy to appear on-screen out of thin air
 
 
 ## saucer_red (25)
 ![saucer_red](images/enemies/saucer_red.png)
 
-Reddish-brown flying saucer enemy that flies leftwards from the right of the screen (HELP WANTED - needs testing on its own). Normally encountered in formations that grant weapon stars upon complete destruction.
+Reddish-brown flying saucer enemy that flies leftwards from the right of the screen. Normally encountered in formations that grant weapon stars upon complete destruction.
 
 ### args:
-(HELP WANTED - needs testing)
+- **yPos (arg2):** y-position to spawn at
+- **xOffset (arg3):** spawn x-position offset. Can cause the enemy to appear on-screen out of thin air
 
 
 ## zipper (26)
@@ -242,10 +278,12 @@ Small orange gunship-like enemy that flies rightwards from the left of the scree
 ## fish (27)
 ![fish](images/enemies/fish.png)
 
-Grey fish-shaped enemy that flies leftwards from the right of the screen and occasionally fires lasers (HELP WANTED - needs testing on its own). Normally encountered in formations.
+Grey fish-shaped enemy that flies leftwards from the right of the screen before turning upwards or downwards. Occasionally fires lasers. Normally encountered in formations.
 
 ### args:
-(HELP WANTED - needs testing)
+- **yPos (arg2):** y-position to spawn at
+- **xOffset (arg3):** spawn x-position offset. Can cause the enemy to appear on-screen out of thin air
+- **type (arg4):** some kind of behaviour modifier. TODO
 
 
 ## fish_red (28)
@@ -260,10 +298,14 @@ Reddish-brown fish-shaped enemy that flies leftwards from the right of the scree
 ## fish_green (29)
 ![fish_green](images/enemies/fish_green.png)
 
-Green fish-shaped enemy with unknown single behaviour and occasionally fires lasers (HELP WANTED - needs testing on its own). Normally encountered in formations.
+Green fish-shaped enemy that briefly attempts to home in on the player before flying off-screen. Normally encountered in formations.
 
 ### args:
-(HELP WANTED - needs testing)
+- **yPos (arg2):** y-position to spawn at
+- **xOffset (arg3):** spawn x-position offset. Can cause the enemy to appear on-screen out of thin air
+- **direction (arg4):**
+  - **0:** starts flying rightwards
+  - **1:** starts flying leftwards
 
 
 ## horseshoe (30)
@@ -278,19 +320,23 @@ Blue horseshoe-shaped enemy that flies in from the right before turning and flyi
 ## jumper (31)
 ![jumper](images/enemies/jumper.png)
 
-Yellow horseshoe-shaped enemy that flies upwards from the bottom before turning and flying downwards off-screen. Has slight horizontal speed during its flight path. Normally encountered in formations (HELP WANTED - needs testing on its own). Single and formation spawns do not work in level 1 (HELP WANTED - see if other levels are affected).
+Yellow horseshoe-shaped enemy that flies upwards from the bottom before turning and flying downwards off-screen. Has slight horizontal speed during its flight path. Normally encountered in formations. Single and formation spawns do not work in level 1.
 
 ### args:
-(HELP WANTED - needs testing)
+- **xPos (arg2):** x-position to spawn at
+- **arg3 (arg3):** (HELP WANTED - possibly unused)
+- **xSpeed (arg4):** horizontal movement speed. Negative values for leftwards movement, positive values for rightwards movement
 
 
 ## ray (32)
 ![ray](images/enemies/ray.png)
 
-Might be identical to the ray from the original Platypus and/or v2ray (HELP WANTED - needs testing). Unused during normal gameplay.
+Unused classic ray enemy. Otherwise identical to the new v2ray.
 
 ### args:
-(HELP WANTED - needs testing)
+- **yPos (arg2):** y-position to spawn at
+- **xOffset (arg3):** spawn x-position offset. Can cause the enemy to appear on-screen out of thin air
+- **direction (arg4):** vertical movement direction when spinning. Negative values for upwards movement, 0 and positive values for downwards movement
 
 
 ## v2ray (33)
@@ -300,8 +346,8 @@ Teal-coloured variant of the classic ray enemy. Flies leftwards before spinning 
 
 ### args:
 - **yPos (arg2):** y-position to spawn at
-- **arg3 (arg3):** (HELP WANTED - needs testing)
-- **ySpeed (arg4):** y-speed when spinning. Negative values for upwards movement, positive values for downwards movement (HELP WANTED - needs testing/confirmation, test with values other than 1 and -1)
+- **xOffset (arg3):** spawn x-position offset. Can cause the enemy to appear on-screen out of thin air
+- **direction (arg4):** vertical movement direction when spinning. Negative values for upwards movement, 0 and positive values for downwards movement
 
 
 ## goldfish (34)
@@ -310,7 +356,8 @@ Teal-coloured variant of the classic ray enemy. Flies leftwards before spinning 
 Purple (not gold) enemy that flies in leftwards from the right of the screen and shoots several bullets in a spread formation before flying rightwards off-screen (HELP WANTED - needs testing on its own). Normally encountered in formations.
 
 ### args:
-(HELP WANTED - needs testing)
+- **yPos (arg2):** y-position to spawn at
+- **xOffset (arg3):** TODO - shifts horizontal spawn point, negative makes them suddenly appear on screen
 
 
 ## turretred (35)
@@ -462,22 +509,22 @@ Large green enemy that flies in from the right before stopping at the far left, 
 ## car (51)
 ![car](images/enemies/car.png)
 
-Various cars that spawn at the bottom of the screen and move in from the right. The car type can be specified and multiple cars can be linked to form a train.
+Various cars that spawn at the bottom of the screen and move in from the right. The car type can be specified. 220 ticks apart to give illusion of train
 
 ### args:
-- **type (arg2):** (HELP WANTED - needs testing for unknown values and possible unused car types. Also all car types need testing on their own)
-  - **0:** unknown
+- **type (arg2):**
+  - **0:** red front car equipped with a gun. There is a hole where the missile launcher normally sits
   - **1:** red front car equipped with a missile launcher and a gun
   - **2:** red front car equipped with a red turret that shoots orbs upwards in a spread formation and a gun
   - **3:** empty car with only a chassis
-  - **4:** gold passive car that releases fruit when destroyed
-  - **5:** unknown
+  - **4:** gold passive car
+  - **5:** silver passive car
   - **6:** silver car equipped with two guns
   - **7:** silver car equipped with a missile launcher
   - **8:** silver car equipped with a red turret that shoots orbs upwards in a spread formation
-- **link (arg3):** (HELP WANTED - needs testing)
+- **return (arg3):**
   - **0:** setting disabled
-  - **1:** link all previously spawned cars together to form a train
+  - **1:** moves back and forth like the boss. Only works with car types 0, 1 and 2
 
 
 ## gunboat (52)
@@ -497,7 +544,9 @@ Boat enemy that spawns at the bottom of the screen and travels across horizontal
 Smaller boat enemy that spawns at the bottom of the screen and travels across horizontally while shooting missiles.
 
 ### args:
-(HELP WANTED - test arg2 to see if its direction can be changed like gunboat and flameboat)
+- **direction (arg2):**
+  - **0:** moves from left to right
+  - **1:** moves from right to left
 
 
 ## flameboat (54)
@@ -739,10 +788,14 @@ None (HELP WANTED - needs testing)
 ## virus (77)
 ![virus](images/enemies/virus.png)
 
-Small yellow virus that homes in on the player before flying off-screen (HELP WANTED - needs testing on its own). Normally encountered in formations or spawned from ulcers.
+Alien virus with identical behaviour to fish_green. Normally encountered in formations or spawned from ulcers.
 
 ### args:
-(HELP WANTED - needs testing)
+- **yPos (arg2):** y-position to spawn at
+- **xOffset (arg3):** spawn x-position offset. Can cause the enemy to appear on-screen out of thin air
+- **direction (arg4):**
+  - **0:** starts flying rightwards
+  - **1:** starts flying leftwards
 
 
 ## spinner (78)
