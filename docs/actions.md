@@ -58,8 +58,8 @@ None (HELP WANTED - needs confirmation)
 Control sky display.
 
 ### args:
-- **startPoint (arg1):** starting display point for the sky gradient
-- **scrollSpeed (arg2):** speed that it should scroll through the sky gradient
+- **startPoint (arg1):** starting display point for the sky gradient. Only works once at the start of the file
+- **scrollSpeed (arg2):** speed that it should scroll through the sky gradient. Upon reaching the end of the valid sky range, it will scroll in the opposite direction
 
 
 ## waterNormal (8)
@@ -130,23 +130,23 @@ Spawn a planet in the background.
 - **ySpeed (arg4):** y-speed of the planet. Positive values result in downward movement, negative values result in upward movement
 
 
-## stopTiles (15)
+## stopRandomTiles (15)
 
-Stop spawning tiles on a specific layer.
+Stop spawning random tiles on a specific layer.
 
 ### args:
 - **layer (arg1):** layer number
 
 
-## waitForHillPop (16)
+## startRandomTiles (16)
 
-TODO
+Start spawning random tiles on a specific layer.
 
 ### args:
-- **layer (arg1):** TODO
+- **layer (arg1):** layer number
 
 
-## randomTiles (17)
+## setRandomTiles (17)
 
 Set the range of tiles that can be randomly spawned on a specific layer.
 
