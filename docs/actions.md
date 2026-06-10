@@ -7,10 +7,10 @@ This page aims to document all known event actions, their numerical values and t
 
 ## waitUntilNoEnemies (1)
 
-Wait until no enemies remain on screen before executing subsequent events. (HELP WANTED - needs confirmation)
+(HELP WANTED - does not seem to do anything? But is present throughout the official level data)
 
 ### args:
-None (HELP WANTED - needs confirmation)
+(HELP WANTED - needs confirmation)
 
 
 ## requirePlayers (2)
@@ -47,10 +47,10 @@ Unused during normal gameplay.
 
 ## loopCodeFromZero (6)
 
-Restart execution from the start of the file.
+Restart execution from the start of the file, effectively creating an infinite loop.
 
 ### args:
-None (HELP WANTED - needs confirmation)
+None
 
 
 ## skyGradient (7)
