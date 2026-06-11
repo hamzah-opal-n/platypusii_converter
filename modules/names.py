@@ -32,7 +32,8 @@ ACTION_NAMES = {
 }
 
 ACTION_ARG_NAMES = {
-    2: ["minPlayers"],
+    2: ["players"],
+    3: ["players"],
     7: ["startPoint", "scrollSpeed"],
     8: ["type"],
     9: ["type"],

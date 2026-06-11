@@ -18,15 +18,15 @@ This page aims to document all known event actions, their numerical values and t
 Require a minimum number of players to allow execution of the next event (all other future events are not affected).
 
 ### args:
-- **minPlayers (arg1):** the minimum number of players required for the next event to be executed
+- **players (arg1):** number of players
 
 
 ## maxplayers (3)
 
-Unused during normal gameplay.
+Require a maximum number of players to allow execution of the next event (all other future events are not affected).
 
 ### args:
-(HELP WANTED - needs testing)
+- **players (arg1):** number of players
 
 
 ## endarea (4)
@@ -34,15 +34,15 @@ Unused during normal gameplay.
 Advance to the next area in the level.
 
 ### args:
-None (HELP WANTED - needs confirmation)
+None
 
 
 ## endlevel (5)
 
-Unused during normal gameplay.
+Ends the level.
 
 ### args:
-(HELP WANTED - needs testing)
+None
 
 
 ## restart (6)
@@ -175,10 +175,10 @@ Spawn a specific tile on a specific layer, temporarily overriding random tile sp
 
 ## layerreset (20)
 
-(HELP WANTED - needs testing)
+Resets the tile range for a specific layer to its default values.
 
 ### args:
-(HELP WANTED - needs testing)
+- **layer (arg1):** layer number
 
 
 ## wave (21)
