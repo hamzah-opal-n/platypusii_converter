@@ -28,10 +28,10 @@ Unused during normal gameplay.
 ## arch (3)
 ![arch](images/scenery/arch.png)
 
-Red arch-shaped structure. The top of the structure damages the player upon impact, but the player can safely fly below or above it.
+Red arch-shaped structure constructed out of sections on layers 0, 1, 2 and 3. The top section on layer 1 damages the player upon impact, but the player can safely fly below or above it.
 
 ### args:
-None (HELP WANTED - needs testing)
+- **layer (arg2):** layer to isolate. Set to 0 to display all layers, layer 0 cannot be isolated.
 
 
 ## pylon (4)
