@@ -28,37 +28,37 @@ Unused during normal gameplay.
 ## arch (3)
 ![arch](images/scenery/arch.png)
 
-Red arch-shaped structure constructed out of sections on layers 0, 1, 2 and 3. The top section on layer 1 damages the player upon impact, but the player can safely fly below or above it.
+Red arch-shaped structure constructed out of sections on different layers. The top section on layer 1 damages the player upon contact, but the player can safely fly below or above it.
 
 ### args:
-- **layer (arg2):** layer to isolate. Set to 0 to display all layers, layer 0 cannot be isolated.
+- **layer (arg2):** layer to isolate. Set to 0 to display all layers, layer 0 cannot be isolated
 
 
 ## pylon (4)
 ![pylon](images/scenery/pylon.png)
 
-A whole row of power lines on the classic grey poles across different layers. The power lines damage the player upon impact.
+A whole row of power lines on the classic grey poles across different layers. The power lines on layer 1 damage the player upon contact.
 
 ### args:
-None (HELP WANTED - needs testing)
+- **layer (arg2):** layer to isolate. Set to 0 to display all layers, layer 1 cannot be isolated
 
 
 ## telegraph (5)
 ![telegraph](images/scenery/telegraph.png)
 
-A whole row of power lines on brown poles across different layers. The power lines damage the player upon impact.
+A whole row of power lines on brown poles across different layers. The power lines on layer 1 damage the player upon contact.
 
 ### args:
-None (HELP WANTED - needs testing)
+- **layer (arg2):** layer to isolate. Set to 0 to display all layers, layer 1 cannot be isolated
 
 
 ## buoy (6)
 ![buoy](images/scenery/buoy.png)
 
-A single buoy. Layer can be customised.
+A single buoy. Layer/sprite can be customised.
 
 ### args:
-- **layer (arg2):** layer to spawn on (HELP WANTED - needs testing)
+- **layer (arg2):** layer/sprite to use
 
 
 ## buoy_row (7)
@@ -67,7 +67,7 @@ A single buoy. Layer can be customised.
 A whole row of buoys that appear across different background layers.
 
 ### args:
-None (HELP WANTED - needs testing)
+None
 
 
 ## windmill (8)
@@ -88,12 +88,13 @@ TODO
 None (HELP WANTED - needs testing)
 
 
-## unknownScenery10 (10)
+## rock (10)
 
-Unused during normal gameplay.
+Falling rock that is usually seen during volcanic eruptions. Disappears and shows a splash animation once it hits the water.
 
 ### args:
-(HELP WANTED - needs testing)
+- **layer (arg2):** layer to spawn on. There are no rock sprites for layers 1 and 2, but the corresponding splash will display anyway
+- **xPos (arg3):** x-position to spawn at
 
 
 ## waterfall (11)
