@@ -1,8 +1,8 @@
 # Scenery
 
-This page aims to document all known scenery types, their numerical values and their functionality. All scenery names have been chosen based on their sprite filenames in Platypus II.
+This page aims to document all known scenery types, their numerical values and their functionality. All scenery names were found in the Platypus II executable using a hex editor.
 
-Scenery type numbers are used in spawnScenery (action 23) as arg1.
+Scenery type numbers are used in scenery (action 23) as arg1.
 
 (HELP WANTED - see if all of these are correct/there are any unused scenery objects and arguments)
 
@@ -17,7 +17,8 @@ Cloud that moves from right to left. Sprite can be customised. Spawns at a rando
 - **xPos (arg3):** x-position to spawn at. If greater than 0, spawn directly on the screen at the specified position. Otherwise, spawn off-screen and slowly move from right to left (HELP WANTED - needs confirmation)
 
 
-## unknownScenery2 (2)
+## wheel (2)
+![wheel](images/scenery/wheel.png)
 
 Unused during normal gameplay.
 
@@ -61,8 +62,8 @@ A single buoy. Layer/sprite can be customised.
 - **layer (arg2):** layer/sprite to use
 
 
-## buoy_row (7)
-![buoy_row](images/scenery/buoy_row.png)
+## buoyline (7)
+![buoyline](images/scenery/buoyline.png)
 
 A whole row of buoys that appear across different background layers.
 
@@ -89,6 +90,7 @@ None (HELP WANTED - needs testing)
 
 
 ## rock (10)
+![rock](images/scenery/rock.png)
 
 Falling rock that is usually seen during volcanic eruptions. Disappears and shows a splash animation once it hits the water.
 
@@ -106,7 +108,8 @@ Flowing waterfall. Spawns on top of an instance of tile number 54 on the chosen 
 - **layer (arg2):** layer to spawn on (HELP WANTED - needs testing)
 
 
-## unknownScenery12 (12)
+## splash (12)
+![splash](images/scenery/splash.png)
 
 Unused during normal gameplay.
 
@@ -132,7 +135,8 @@ Boat that moves from right to left in the far background. Sprite is chosen at ra
 None (HELP WANTED - test if the sprite can be chosen)
 
 
-## unknownScenery15 (15)
+## wallgun (15)
+![wallgun](images/scenery/wallgun.png)
 
 Unused during normal gameplay.
 
@@ -241,8 +245,8 @@ Distant reddie that flies from left to right. Spawns at a random y-position.
 None (HELP WANTED - needs testing)
 
 
-## roof_start (27)
-![roof_start](images/scenery/roof_start.png)
+## roof (27)
+![roof](images/scenery/roof.png)
 
 Begin spawning the cave roof tiles seen in level 3. On each layer, spawn a single instance of tile number 1 before randomly spawning tiles from number 2 to 4 (HELP WANTED - needs testing to see if additional tiles can be added, and what happens if two roof_start actions are called without roof_end).
 
@@ -250,8 +254,8 @@ Begin spawning the cave roof tiles seen in level 3. On each layer, spawn a singl
 None (HELP WANTED - needs testing)
 
 
-## roof_end (28)
-![roof_end](images/scenery/roof_end.png)
+## roofend (28)
+![roofend](images/scenery/roofend.png)
 
 Finish spawning the cave roof tiles seen in level 3. On each layer, spawn a single instance of tile number 5 before stopping random tile spawns. (HELP WANTED - needs testing to see if additional tiles can be added, and what happens if two roof_end actions are called without roof_start).
 
@@ -259,7 +263,8 @@ Finish spawning the cave roof tiles seen in level 3. On each layer, spawn a sing
 None (HELP WANTED - needs testing)
 
 
-## unknownScenery29 (29)
+## roofbit (29)
+![roofbit](images/scenery/roofbit.png)
 
 Unused during normal gameplay.
 
@@ -267,8 +272,8 @@ Unused during normal gameplay.
 (HELP WANTED - needs testing)
 
 
-## last_start (30)
-![last_start](images/scenery/last_start.png)
+## last (30)
+![last](images/scenery/last.png)
 
 Begin spawning the alien mouth roof tiles seen in level 5.  On each layer, spawn a single instance of tile number 1 before randomly spawning tiles from number 2 to 4 (HELP WANTED - needs testing to see if additional tiles can be added, and what happens if two last_start actions are called).
 
@@ -276,7 +281,8 @@ Begin spawning the alien mouth roof tiles seen in level 5.  On each layer, spawn
 None (HELP WANTED - needs testing)
 
 
-## unknownScenery31 (31)
+## lastbit (31)
+![lastbit](images/scenery/lastbit.png)
 
 Unused during normal gameplay.
 
@@ -312,7 +318,8 @@ NUX's ship from the game of the same name. Spawned on layer 4 and positioned bas
 - **yOffset (arg3):** spawn y-position offset. Negative values shift y-position upwards, positive values shift y-position downwards (HELP WANTED - needs testing)
 
 
-## unknownScenery35 (35)
+## krider (35)
+![krider](images/scenery/krider.png)
 
 Unused during normal gameplay.
 

@@ -1,11 +1,11 @@
 # List of Actions
 
-This page aims to document all known event actions, their numerical values and their functionality. All action names have been chosen to best reflect their functionality in the context of Platypus II.
+This page aims to document all known event actions, their numerical values and their functionality. All action names were found in the Platypus II executable using a hex editor.
 
 (HELP WANTED - see if all of these are correct/there are any unused actions and arguments)
 
 
-## waitUntilNoEnemies (1)
+## wait (1)
 
 (HELP WANTED - does not seem to do anything? But is present throughout the official level data)
 
@@ -13,7 +13,7 @@ This page aims to document all known event actions, their numerical values and t
 (HELP WANTED - needs confirmation)
 
 
-## requirePlayers (2)
+## minplayers (2)
 
 Require a minimum number of players to allow execution of the next event (all other future events are not affected).
 
@@ -21,7 +21,7 @@ Require a minimum number of players to allow execution of the next event (all ot
 - **minPlayers (arg1):** the minimum number of players required for the next event to be executed
 
 
-## unknownAction3 (3)
+## maxplayers (3)
 
 Unused during normal gameplay.
 
@@ -29,7 +29,7 @@ Unused during normal gameplay.
 (HELP WANTED - needs testing)
 
 
-## goToNextArea (4)
+## endarea (4)
 
 Advance to the next area in the level.
 
@@ -37,7 +37,7 @@ Advance to the next area in the level.
 None (HELP WANTED - needs confirmation)
 
 
-## unknownAction5 (5)
+## endlevel (5)
 
 Unused during normal gameplay.
 
@@ -45,7 +45,7 @@ Unused during normal gameplay.
 (HELP WANTED - needs testing)
 
 
-## loopCodeFromZero (6)
+## restart (6)
 
 Restart execution from the start of the file, effectively creating an infinite loop.
 
@@ -53,7 +53,7 @@ Restart execution from the start of the file, effectively creating an infinite l
 None
 
 
-## skyGradient (7)
+## sky (7)
 
 Control sky display.
 
@@ -62,7 +62,7 @@ Control sky display.
 - **scrollSpeed (arg2):** speed that it should scroll through the sky gradient. Upon reaching the end of the valid sky range, it will scroll in the opposite direction
 
 
-## waterNormal (8)
+## water (8)
 
 Control water display (as seen in levels 1, 2 and 4).
 
@@ -73,7 +73,7 @@ Control water display (as seen in levels 1, 2 and 4).
   - 2: on, splash enabled
 
 
-## waterLava (9)
+## lava (9)
 
 Control lava display (as seen in level 3).
 
@@ -84,7 +84,7 @@ Control lava display (as seen in level 3).
   - 2: on, splash enabled
 
 
-## waterAlien (10)
+## wateryellow (10)
 
 Control alien water display (as seen in level 5).
 
@@ -95,31 +95,31 @@ Control alien water display (as seen in level 5).
   - 2: on, splash enabled
 
 
-## snowNormal (11)
+## snow (11)
 
-Control intensity of snowfall (as seen in level 1).
-
-### args:
-- **intensity (arg1):** intensity of the effect from 0 (off) to 100 (max)
-
-
-## snowAsh (12)
-
-Control intensity of ashfall (as seen in level 3).
+Control intensity of snow (as seen in level 1).
 
 ### args:
 - **intensity (arg1):** intensity of the effect from 0 (off) to 100 (max)
 
 
-## snowRain (13)
+## soot (12)
 
-Control intensity of rainfall (as seen in level 2).
+Control intensity of soot (as seen in level 3).
 
 ### args:
 - **intensity (arg1):** intensity of the effect from 0 (off) to 100 (max)
 
 
-## spawnPlanet (14)
+## rain (13)
+
+Control intensity of rain (as seen in level 2).
+
+### args:
+- **intensity (arg1):** intensity of the effect from 0 (off) to 100 (max)
+
+
+## planet (14)
 
 Spawn a planet in the background.
 
@@ -130,7 +130,7 @@ Spawn a planet in the background.
 - **ySpeed (arg4):** y-speed of the planet. Positive values result in downward movement, negative values result in upward movement
 
 
-## stopRandomTiles (15)
+## layerblock (15)
 
 Stop spawning random tiles on a specific layer.
 
@@ -138,7 +138,7 @@ Stop spawning random tiles on a specific layer.
 - **layer (arg1):** layer number
 
 
-## startRandomTiles (16)
+## layerunblock (16)
 
 Start spawning random tiles on a specific layer.
 
@@ -146,7 +146,7 @@ Start spawning random tiles on a specific layer.
 - **layer (arg1):** layer number
 
 
-## setRandomTiles (17)
+## layerrange (17)
 
 Set the range of tiles that can be randomly spawned on a specific layer.
 
@@ -156,7 +156,7 @@ Set the range of tiles that can be randomly spawned on a specific layer.
 - **tileMax (arg3):** highest tile number
 
 
-## forceTile (18)
+## layercue (18)
 
 Spawn a specific tile on a specific layer, temporarily overriding random tile spawns.
 
@@ -165,7 +165,7 @@ Spawn a specific tile on a specific layer, temporarily overriding random tile sp
 - **tile (arg2):** tile number
 
 
-## unknownAction19 (19)
+## layerwait (19)
 
 (HELP WANTED - needs testing)
 
@@ -173,7 +173,7 @@ Spawn a specific tile on a specific layer, temporarily overriding random tile sp
 (HELP WANTED - needs testing)
 
 
-## unknownAction20 (20)
+## layerreset (20)
 
 (HELP WANTED - needs testing)
 
@@ -181,9 +181,9 @@ Spawn a specific tile on a specific layer, temporarily overriding random tile sp
 (HELP WANTED - needs testing)
 
 
-## spawnFormation (21)
+## wave (21)
 
-Spawns several enemies in a specified formation. The full list of enemy types can be seen [here](enemies.md) and the list of formations can be seen [here](formations.md).
+Spawns several enemies in a specified wave. The full list of enemy types can be seen [here](enemies.md) and the list of wave types can be seen [here](formations.md).
 
 ### args:
 - **object (arg1):** enemy type
@@ -199,7 +199,7 @@ Spawns several enemies in a specified formation. The full list of enemy types ca
   - **6:** Lightning
 
 
-## spawnEnemy (22)
+## enemy (22)
 
 Spawn an enemy object. The full list of enemy types and their corresponding arguments can be seen [here](enemies.md).
 
@@ -208,7 +208,7 @@ Spawn an enemy object. The full list of enemy types and their corresponding argu
 - **arg2 - arg8:** depends on enemy type
 
 
-## spawnScenery (23)
+## scenery (23)
 
 Spawn a scenery object. The full list of scenery types and their corresponding arguments can be seen [here](scenery.md).
 
@@ -217,7 +217,7 @@ Spawn a scenery object. The full list of scenery types and their corresponding a
 - **arg2 - arg8:** depends on scenery type
 
 
-## balloonCrateCoins (24)
+## coins (24)
 
 Spawn a balloon crate that contains coins.
 
@@ -225,7 +225,7 @@ Spawn a balloon crate that contains coins.
 None (HELP WANTED - needs confirmation)
 
 
-## balloonCrateDoublePoints (25)
+## x2 (25)
 
 Spawn a balloon crate that contains a Double Points Crown.
 
@@ -233,7 +233,7 @@ Spawn a balloon crate that contains a Double Points Crown.
 None (HELP WANTED - needs confirmation)
 
 
-## balloonCrateWeaponPods (26)
+## pods (26)
 
 Spawn a balloon crate that contains Weapon Pods.
 
@@ -241,7 +241,7 @@ Spawn a balloon crate that contains Weapon Pods.
 None (HELP WANTED - needs confirmation)
 
 
-## balloonCrateShield (27)
+## shield (27)
 
 Spawn a balloon crate that contains a shield.
 
@@ -249,7 +249,7 @@ Spawn a balloon crate that contains a shield.
 None (HELP WANTED - needs confirmation)
 
 
-## balloonCrateExtraLife (28)
+## life (28)
 
 Spawn a balloon crate that contains an extra life.
 
@@ -257,7 +257,7 @@ Spawn a balloon crate that contains an extra life.
 None (HELP WANTED - needs confirmation)
 
 
-## balloonCrateLightningStar (29)
+## lightning (29)
 
 Spawn a balloon crate that contains a Lightning star.
 

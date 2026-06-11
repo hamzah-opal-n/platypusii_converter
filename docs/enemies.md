@@ -1,8 +1,8 @@
 # Enemies
 
-This page aims to document all known enemy types, their numerical values and their functionality. All enemy names have been chosen based on their sprite filenames in Platypus II.
+This page aims to document all known enemy types, their numerical values and their functionality. All enemy names were found in the Platypus II executable using a hex editor.
 
-Enemy type numbers are used in both spawnFormation (action 21) and spawnEnemy (action 22) as arg1. The subsequent arguments discussed under each enemy type on this page only apply to spawnEnemy (action 22).
+Enemy type numbers are used in both wave (action 21) and enemy (action 22) as arg1. The subsequent arguments discussed under each enemy type on this page only apply to enemy (action 22).
 
 (HELP WANTED - see if all of these are correct/there are any unused actions and arguments)
 
@@ -126,7 +126,8 @@ Red-hot rock that falls from the top of the screen during volcanic eruptions. Si
 - **yPos (arg3):** y-position to spawn at
 
 
-## unknownEnemy11 (11)
+## arch (11)
+![arch](images/enemies/arch.png)
 
 Unused during normal gameplay.
 
@@ -134,7 +135,8 @@ Unused during normal gameplay.
 (HELP WANTED - needs testing)
 
 
-## unknownEnemy12 (12)
+## pylon (12)
+![pylon](images/enemies/pylon.png)
 
 Unused during normal gameplay.
 
@@ -142,7 +144,8 @@ Unused during normal gameplay.
 (HELP WANTED - needs testing)
 
 
-## unknownEnemy13 (13)
+## telegraph (13)
+![telegraph](images/enemies/telegraph.png)
 
 Unused during normal gameplay.
 
@@ -150,8 +153,8 @@ Unused during normal gameplay.
 (HELP WANTED - needs testing)
 
 
-## flamejet (14)
-![flamejet](images/enemies/flamejet.png)
+## lava (14)
+![lava](images/enemies/lava.png)
 
 Spawns a jet of flames upwards.
 
@@ -256,8 +259,8 @@ Yellow flying saucer enemy that flies leftwards from the right of the screen, oc
 - **xOffset (arg3):** spawn x-position offset. Can cause the enemy to appear on-screen out of thin air
 
 
-## saucer_red (25)
-![saucer_red](images/enemies/saucer_red.png)
+## saucerred (25)
+![saucerred](images/enemies/saucerred.png)
 
 Reddish-brown flying saucer enemy that flies leftwards from the right of the screen. Normally encountered in formations that grant weapon stars upon complete destruction.
 
@@ -286,8 +289,8 @@ Grey fish-shaped enemy that flies leftwards from the right of the screen before 
 - **type (arg4):** some kind of behaviour modifier. TODO
 
 
-## fish_red (28)
-![fish_red](images/enemies/fish_red.png)
+## fishred (28)
+![fishred](images/enemies/fishred.png)
 
 Reddish-brown fish-shaped enemy that flies leftwards from the right of the screen and occasionally fires lasers (HELP WANTED - needs testing on its own). Normally encountered in formations that grant weapon stars upon complete destruction.
 
@@ -295,8 +298,8 @@ Reddish-brown fish-shaped enemy that flies leftwards from the right of the scree
 (HELP WANTED - needs testing)
 
 
-## fish_green (29)
-![fish_green](images/enemies/fish_green.png)
+## homingfish (29)
+![homingfish](images/enemies/homingfish.png)
 
 Green fish-shaped enemy that briefly attempts to home in on the player before flying off-screen. Normally encountered in formations.
 
@@ -360,8 +363,8 @@ Purple (not gold) enemy that flies in leftwards from the right of the screen and
 - **xOffset (arg3):** TODO - shifts horizontal spawn point, negative makes them suddenly appear on screen
 
 
-## turretred (35)
-![turretred](images/enemies/turretred.png)
+## hovergun (35)
+![hovergun](images/enemies/hovergun.png)
 
 Red flying turret with squid fins that shoots orbs. Flies directly downwards from the top of the screen until it reaches a specified y-position, then flies to the right before finally moving leftwards off-screen.
 
@@ -370,10 +373,10 @@ Red flying turret with squid fins that shoots orbs. Flies directly downwards fro
 - **yTarget (arg3):** final y-position after downwards movement (HELP WANTED - needs testing)
 
 
-## turretpurple (36)
-![turretpurple](images/enemies/turretpurple.png)
+## hoverlauncher (36)
+![hoverlauncher](images/enemies/hoverlauncher.png)
 
-Has identical behaviour to turretred, but is purple and shoots missiles instead.
+Has identical behaviour to hovergun, but is purple and shoots missiles instead.
 
 ### args:
 - **xPos (arg2):** x-position to spawn at (HELP WANTED - needs testing)
@@ -389,8 +392,8 @@ Purple enemy that flies in from the left before reaching the right of the screen
 - **yPos (arg2):** y-position to spawn at
 
 
-## flipplane_orange (38)
-![flipplane_orange](images/enemies/flipplane_orange.png)
+## flipplaneorange (38)
+![flipplaneorange](images/enemies/flipplaneorange.png)
 
 Slower orange variant of flipplane.
 
@@ -407,8 +410,8 @@ Red flipplane that flies from the left to the right of the screen while dropping
 - **yPos (arg2):** y-position to spawn at
 
 
-## squidyellow (40)
-![squidyellow](images/enemies/squidyellow.png)
+## lasersquid (40)
+![lasersquid](images/enemies/lasersquid.png)
 
 Small yellow squid enemy that hovers around its position on the right of the screen while shooting lasers directly leftwards before moving leftwards off-screen.
 
@@ -416,8 +419,8 @@ Small yellow squid enemy that hovers around its position on the right of the scr
 - **yPos (arg2):** y-position to spawn at
 
 
-## squidgreen (41)
-![squidgreen](images/enemies/squidgreen.png)
+## gunsquid (41)
+![gunsquid](images/enemies/gunsquid.png)
 
 Large green squid variant with similar movement patterns but shoots several bullets in a spread formation.
 
@@ -425,8 +428,8 @@ Large green squid variant with similar movement patterns but shoots several bull
 - **yPos (arg2):** y-position to spawn at
 
 
-## squidcan (42)
-![squidcan](images/enemies/squidcan.png)
+## lightningsquid (42)
+![lightningsquid](images/enemies/lightningsquid.png)
 
 Brown trashcan-shaped squid variant with similar movement patterns but shoots lightning.
 
@@ -434,8 +437,8 @@ Brown trashcan-shaped squid variant with similar movement patterns but shoots li
 - **yPos (arg2):** y-position to spawn at
 
 
-## squidcangreen (43)
-![squidcangreen](images/enemies/squidcangreen.png)
+## bombsquid (43)
+![bombsquid](images/enemies/bombsquid.png)
 
 Teal trashcan-shaped squid variant with similar movement patterns but drops bombs.
 
@@ -578,7 +581,7 @@ Large green segmented aircraft that looks and moves like a worm. Each body segme
 None (HELP WANTED - needs testing)
 
 
-## unknownEnemy57 (57)
+## boss2seg (57)
 
 Unused during normal gameplay.
 
@@ -586,7 +589,7 @@ Unused during normal gameplay.
 (HELP WANTED - needs testing)
 
 
-## boss2_intro (58)
+## boss2flyby (58)
 
 Non-destructible variant of boss2 that flies from left to right. Used to introduce the boss before the actual fight begins.
 
@@ -594,7 +597,7 @@ Non-destructible variant of boss2 that flies from left to right. Used to introdu
 None (HELP WANTED - needs testing)
 
 
-## unknownEnemy59 (59)
+## boss2segflyby (59)
 
 Unused during normal gameplay.
 
@@ -611,7 +614,7 @@ Tall yellow turret that rises from the bottom of the screen at a random x-positi
 None (HELP WANTED - needs testing)
 
 
-## unknownEnemy61CRASH (61)
+## boss3base (61)
 
 Crashes the game. Unused during normal gameplay.
 
@@ -637,7 +640,7 @@ Large segmented orange serpent that flies around the screen along seemingly rand
 None (HELP WANTED - needs testing)
 
 
-## boss5_unknown (64)
+## boss5seg (64)
 
 Unused variant of boss5 (HELP WANTED - needs more description).
 
@@ -645,7 +648,7 @@ Unused variant of boss5 (HELP WANTED - needs more description).
 None (HELP WANTED - needs testing)
 
 
-## boss5_intro (65)
+## boss5enter (65)
 
 Non-destructible variant of boss5 that flies straight up from the bottom of the screen while leaving behind some splashes (HELP WANTED - needs confirmation on splash spawns). Used to introduce the boss before the actual fight begins.
 
@@ -698,7 +701,7 @@ Large green brain equipped with a gun along with four segmented arms that end wi
 None (HELP WANTED - needs testing)
 
 
-## unknownEnemy67 (67)
+## boss6base (67)
 
 Unused during normal gameplay.
 
@@ -706,7 +709,7 @@ Unused during normal gameplay.
 (HELP WANTED - needs testing)
 
 
-## unknownEnemy68CRASH (68)
+## boss6arm (68)
 
 Crashes the game. Unused during normal gameplay.
 
@@ -714,7 +717,7 @@ Crashes the game. Unused during normal gameplay.
 None
 
 
-## unknownEnemy69CRASH (69)
+## boss6eye (69)
 
 Crashes the game. Unused during normal gameplay.
 
@@ -843,3 +846,11 @@ Shorter yellow serpent that flies upwards from the bottom of the screen at a ran
 
 ### args:
 None (HELP WANTED - needs testing)
+
+
+## miniserpentseg (83)
+
+TODO
+
+### args:
+TODO
