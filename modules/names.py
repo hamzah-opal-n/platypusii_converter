@@ -46,7 +46,7 @@ ACTION_ARG_NAMES = {
     16: ["layer"],
     17: ["layer", "tileMin", "tileMax"],
     18: ["layer", "tile"],
-    21: ["object", "formation", "yPos", "bonus"],
+    21: ["object", "type", "yPos", "bonus"],
     22: ["object"],
     23: ["object"]
 }

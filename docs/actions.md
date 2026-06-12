@@ -183,11 +183,11 @@ Resets the tile range for a specific layer to its default values.
 
 ## wave (21)
 
-Spawns several enemies in a specified wave. The full list of enemy types can be seen [here](enemies.md) and the list of wave types can be seen [here](formations.md).
+Spawns several enemies in a specified wave. The full list of enemy types can be seen [here](enemies.md) and the list of wave types can be seen [here](waves.md).
 
 ### args:
 - **object (arg1):** enemy type
-- **formation (arg2):** formation type
+- **type (arg2):** wave type
 - **yPos (arg3):** y-position to spawn at, possibly ignored for random formations (HELP WANTED - needs testing)
 - **bonus (arg4):** weapon star to release upon destroying the entire formation (HELP WANTED - test to see if it can be used on *any* enemy formation). Values listed below:
   - **0:** no weapon star
