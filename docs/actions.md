@@ -58,8 +58,8 @@ None
 Control sky display.
 
 ### args:
-- **startPoint (arg1):** starting display point for the sky gradient. Only works once at the start of the file
-- **scrollSpeed (arg2):** speed that it should scroll through the sky gradient. Upon reaching the end of the valid sky range, it will scroll in the opposite direction
+- **origin (arg1):** starting display point for the sky gradient. Only works once at the start of the file
+- **speed (arg2):** speed that it should scroll through the sky gradient. Upon reaching the end of the valid sky range, it will scroll in the opposite direction
 
 
 ## water (8)
