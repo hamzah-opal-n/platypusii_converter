@@ -58,8 +58,8 @@ None
 Control sky display.
 
 ### args:
-- **origin (arg1):** starting display point for the sky gradient. Only works once at the start of the file
-- **speed (arg2):** speed that it should scroll through the sky gradient. Upon reaching the end of the valid sky range, it will scroll in the opposite direction
+- **y (arg1):** starting display point for the sky gradient. Only works once at the start of the file
+- **dy (arg2):** speed that it should scroll through the sky gradient. Upon reaching the end of the valid sky range, it will scroll in the opposite direction
 
 
 ## water (8)
@@ -100,7 +100,7 @@ Control alien water display (as seen in level 5).
 Control intensity of snow (as seen in level 1).
 
 ### args:
-- **intensity (arg1):** intensity of the effect from 0 (off) to 100 (max)
+- **spawn (arg1):** intensity of the effect from 0 (off) to 100 (max?)
 
 
 ## soot (12)
@@ -108,7 +108,7 @@ Control intensity of snow (as seen in level 1).
 Control intensity of soot (as seen in level 3).
 
 ### args:
-- **intensity (arg1):** intensity of the effect from 0 (off) to 100 (max)
+- **spawn (arg1):** intensity of the effect from 0 (off) to 100 (max?)
 
 
 ## rain (13)
@@ -116,7 +116,7 @@ Control intensity of soot (as seen in level 3).
 Control intensity of rain (as seen in level 2).
 
 ### args:
-- **intensity (arg1):** intensity of the effect from 0 (off) to 100 (max)
+- **spawn (arg1):** intensity of the effect from 0 (off) to 100 (max?)
 
 
 ## planet (14)
@@ -124,10 +124,10 @@ Control intensity of rain (as seen in level 2).
 Spawn a planet in the background.
 
 ### args:
-- **sprite (arg1):** sprite number of the planet
-- **xPos (arg2):** x-position to spawn at. If greater than 0, spawn directly on the screen at the specified position. Otherwise, spawn off-screen and slowly move from right to left (HELP WANTED - needs confirmation)
-- **yPos (arg3):** y-position to spawn at
-- **ySpeed (arg4):** y-speed of the planet. Positive values result in downward movement, negative values result in upward movement
+- **img (arg1):** sprite number of the planet
+- **x (arg2):** x-position to spawn at. If greater than 0, spawn directly on the screen at the specified position. Otherwise, spawn off-screen and slowly move from right to left (HELP WANTED - needs confirmation)
+- **y (arg3):** y-position to spawn at
+- **dy (arg4):** y-speed of the planet. Positive values result in downward movement, negative values result in upward movement
 
 
 ## layerblock (15)
@@ -135,7 +135,7 @@ Spawn a planet in the background.
 Stop spawning random tiles on a specific layer.
 
 ### args:
-- **layer (arg1):** layer number
+- **layername (arg1):** layer number
 
 
 ## layerunblock (16)
@@ -143,7 +143,7 @@ Stop spawning random tiles on a specific layer.
 Start spawning random tiles on a specific layer.
 
 ### args:
-- **layer (arg1):** layer number
+- **layername (arg1):** layer number
 
 
 ## layerrange (17)
@@ -151,9 +151,9 @@ Start spawning random tiles on a specific layer.
 Set the range of tiles that can be randomly spawned on a specific layer.
 
 ### args:
-- **layer (arg1):** layer number
-- **tileMin (arg2):** lowest tile number
-- **tileMax (arg3):** highest tile number
+- **layername (arg1):** layer number
+- **lowimg (arg2):** lowest tile number
+- **highimg (arg3):** highest tile number
 
 
 ## layercue (18)
@@ -161,8 +161,8 @@ Set the range of tiles that can be randomly spawned on a specific layer.
 Spawn a specific tile on a specific layer, temporarily overriding random tile spawns.
 
 ### args:
-- **layer (arg1):** layer number
-- **tile (arg2):** tile number
+- **layername (arg1):** layer number
+- **img (arg2):** tile number
 
 
 ## layerwait (19)
@@ -178,7 +178,7 @@ Spawn a specific tile on a specific layer, temporarily overriding random tile sp
 Resets the tile range for a specific layer to its default values.
 
 ### args:
-- **layer (arg1):** layer number
+- **layername (arg1):** layer number
 
 
 ## wave (21)
@@ -186,10 +186,10 @@ Resets the tile range for a specific layer to its default values.
 Spawns several enemies in a specified wave. The full list of enemy types can be seen [here](enemies.md) and the list of wave types can be seen [here](waves.md).
 
 ### args:
-- **object (arg1):** enemy type
-- **type (arg2):** wave type
-- **yPos (arg3):** y-position to spawn at, possibly ignored for random formations (HELP WANTED - needs testing)
-- **bonus (arg4):** weapon star to release upon destroying the entire formation (HELP WANTED - test to see if it can be used on *any* enemy formation). Values listed below:
+- **enemytype (arg1):** enemy type
+- **wavetype (arg2):** wave type
+- **y (arg3):** y-position to spawn at, possibly ignored for random formations (HELP WANTED - needs testing)
+- **star (arg4):** weapon star to release upon destroying the entire formation (HELP WANTED - test to see if it can be used on *any* enemy formation). Values listed below:
   - **0:** no weapon star
   - **1:** shootable star that cycles between Wide, Auto, Pulse and Rockets
   - **2:** Wide
@@ -204,7 +204,7 @@ Spawns several enemies in a specified wave. The full list of enemy types can be 
 Spawn an enemy object. The full list of enemy types and their corresponding arguments can be seen [here](enemies.md).
 
 ### args:
-- **object (arg1):** enemy type
+- **enemytype (arg1):** enemy type
 - **arg2 - arg8:** depends on enemy type
 
 
@@ -213,7 +213,7 @@ Spawn an enemy object. The full list of enemy types and their corresponding argu
 Spawn a scenery object. The full list of scenery types and their corresponding arguments can be seen [here](scenery.md).
 
 ### args:
-- **object (arg1):** scenery type
+- **scenerytype (arg1):** scenery type
 - **arg2 - arg8:** depends on scenery type
 
 
