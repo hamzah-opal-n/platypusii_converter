@@ -13,8 +13,8 @@ Scenery type numbers are used in scenery (action 23) as arg1.
 Cloud that moves from right to left. Sprite can be customised. Spawns at a random y-position with a random x-speed.
 
 ### args:
-- **sprite (arg2):** sprite number to use
-- **xPos (arg3):** x-position to spawn at. If greater than 0, spawn directly on the screen at the specified position. Otherwise, spawn off-screen and slowly move from right to left (HELP WANTED - needs confirmation)
+- **img (arg2):** sprite number to use
+- **x (arg3):** x-position to spawn at. If greater than 0, spawn directly on the screen at the specified position. Otherwise, spawn off-screen and slowly move from right to left (HELP WANTED - needs confirmation)
 
 
 ## wheel (2)
@@ -32,7 +32,7 @@ Unused during normal gameplay.
 Red arch-shaped structure constructed out of sections on different layers. The top section on layer 1 damages the player upon contact, but the player can safely fly below or above it.
 
 ### args:
-- **layer (arg2):** layer to isolate. Set to 0 to display all layers, layer 0 cannot be isolated
+- **sololayer (arg2):** layer to isolate. Set to 0 to display all layers, layer 0 cannot be isolated
 
 
 ## pylon (4)
@@ -41,7 +41,7 @@ Red arch-shaped structure constructed out of sections on different layers. The t
 A whole row of power lines on the classic grey poles across different layers. The power lines on layer 1 damage the player upon contact.
 
 ### args:
-- **layer (arg2):** layer to isolate. Set to 0 to display all layers, layer 1 cannot be isolated
+- **sololayer (arg2):** layer to isolate. Set to 0 to display all layers, layer 1 cannot be isolated
 
 
 ## telegraph (5)
@@ -50,7 +50,7 @@ A whole row of power lines on the classic grey poles across different layers. Th
 A whole row of power lines on brown poles across different layers. The power lines on layer 1 damage the player upon contact.
 
 ### args:
-- **layer (arg2):** layer to isolate. Set to 0 to display all layers, layer 1 cannot be isolated
+- **sololayer (arg2):** layer to isolate. Set to 0 to display all layers, layer 1 cannot be isolated
 
 
 ## buoy (6)
@@ -59,7 +59,7 @@ A whole row of power lines on brown poles across different layers. The power lin
 A single buoy. Layer/sprite can be customised.
 
 ### args:
-- **layer (arg2):** layer/sprite to use
+- **img (arg2):** layer/sprite to use
 
 
 ## buoyline (7)
@@ -77,7 +77,7 @@ None
 TODO
 
 ### args:
-- **layer (arg2):** layer to spawn on (HELP WANTED - needs testing, find where the graphics for the spinning blades are located)
+- **img (arg2):** layer to spawn on (HELP WANTED - needs testing, find where the graphics for the spinning blades are located)
 
 
 ## volcano (9)
@@ -95,8 +95,8 @@ None (HELP WANTED - needs testing)
 Falling rock that is usually seen during volcanic eruptions. Disappears and shows a splash animation once it hits the water.
 
 ### args:
-- **layer (arg2):** layer to spawn on. There are no rock sprites for layers 1 and 2, but the corresponding splash will display anyway
-- **xPos (arg3):** x-position to spawn at
+- **img (arg2):** layer to spawn on. There are no rock sprites for layers 1 and 2, but the corresponding splash will display anyway
+- **x (arg3):** x-position to spawn at
 
 
 ## waterfall (11)
@@ -105,7 +105,7 @@ Falling rock that is usually seen during volcanic eruptions. Disappears and show
 Flowing waterfall. Spawns on top of an instance of tile number 54 on the chosen layer (Note: in-game, sprite number 2 is used for layer 1 spawns, while sprite number 1 is used for layer 3 spawns).
 
 ### args:
-- **layer (arg2):** layer to spawn on (HELP WANTED - needs testing)
+- **type (arg2):** layer to spawn on (HELP WANTED - needs testing)
 
 
 ## splash (12)
@@ -168,7 +168,7 @@ None
 Green parrot that flies from right to left at a slight upward angle. Sprite/layer can be customised. Spawns at a random y-position.
 
 ### args:
-- **sprite (arg2):** sprite number to use (HELP WANTED - needs testing)
+- **img (arg2):** sprite number to use (HELP WANTED - needs testing)
 
 
 ## bird (19)
@@ -204,9 +204,9 @@ None (HELP WANTED - needs testing)
 Large missile that launches upwards sometime after spawning. Spawned on layer 5 and positioned based on the newest tile.
 
 ### args:
-- **xOffset (arg2):** spawn x-position offset. Negative values shift x-position to the left, positive values shift x-position to the right (HELP WANTED - needs testing)
-- **yOffset (arg3):** spawn y-position offset. Negative values shift y-position upwards, positive values shift y-position downwards (HELP WANTED - needs testing)
-- **launchDelay (arg4):** time to wait before launching after spawning, in game ticks (HELP WANTED - needs testing)
+- **layerx (arg2):** spawn x-position offset. Negative values shift x-position to the left, positive values shift x-position to the right (HELP WANTED - needs testing)
+- **layery (arg3):** spawn y-position offset. Negative values shift y-position upwards, positive values shift y-position downwards (HELP WANTED - needs testing)
+- **time (arg4):** time to wait before launching after spawning, in game ticks (HELP WANTED - needs testing)
 
 
 ## yellowie (23)
@@ -305,7 +305,7 @@ None (HELP WANTED - needs testing)
 Distant mine that spawns at a random y-position with random velocity.
 
 ### args:
-- **sprite (arg2):** sprite number to use. 0 to use a random sprite
+- **img (arg2):** sprite number to use. 0 to use a random sprite
 
 
 ## nuxship (34)
@@ -314,8 +314,8 @@ Distant mine that spawns at a random y-position with random velocity.
 NUX's ship from the game of the same name. Spawned on layer 4 and positioned based on the newest tile.
 
 ### args:
-- **xOffset (arg2):** spawn x-position offset. Negative values shift x-position to the left, positive values shift x-position to the right (HELP WANTED - needs testing)
-- **yOffset (arg3):** spawn y-position offset. Negative values shift y-position upwards, positive values shift y-position downwards (HELP WANTED - needs testing)
+- **layerx (arg2):** spawn x-position offset. Negative values shift x-position to the left, positive values shift x-position to the right (HELP WANTED - needs testing)
+- **layery (arg3):** spawn y-position offset. Negative values shift y-position upwards, positive values shift y-position downwards (HELP WANTED - needs testing)
 
 
 ## krider (35)

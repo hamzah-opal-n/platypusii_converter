@@ -731,7 +731,7 @@ None
 Small brightly coloured worm that flies from right to left (HELP WANTED - needs testing on its own). Normally encountered in formations.
 
 ### args:
-(HELP WANTED - needs testing)
+- **y (arg2):** y-position to spawn at
 
 
 ## eyeball (71)
@@ -740,7 +740,7 @@ Small brightly coloured worm that flies from right to left (HELP WANTED - needs 
 Large blinking eye that flies in from the left and hovers around the horizontal center of the screen before flying rightwards off-screen. Fires a ring of eight bullets outwards from its center.
 
 ### args:
-- **yPos (arg2):** y-position to spawn at
+- **y (arg2):** y-position to spawn at
 
 
 ## blob (72)
@@ -749,7 +749,7 @@ Large blinking eye that flies in from the left and hovers around the horizontal 
 Pink jellyfish that flies from left to right.
 
 ### args:
-- **yPos (arg2):** y-position to spawn at
+- **y (arg2):** y-position to spawn at
 
 
 ## rollship (73)
@@ -794,9 +794,9 @@ None (HELP WANTED - needs testing)
 Alien virus with identical behaviour to fish_green. Normally encountered in formations or spawned from ulcers.
 
 ### args:
-- **yPos (arg2):** y-position to spawn at
-- **xOffset (arg3):** spawn x-position offset. Can cause the enemy to appear on-screen out of thin air
-- **direction (arg4):**
+- **y (arg2):** y-position to spawn at
+- **offsetx (arg3):** spawn x-position offset. Can cause the enemy to appear on-screen out of thin air
+- **path (arg4):**
   - **0:** starts flying rightwards
   - **1:** starts flying leftwards
 
@@ -816,7 +816,7 @@ Small spinning eyeball that flies from right to left (HELP WANTED - needs testin
 Sharp tooth that flies in the direction it's facing upon encountering the player. Can spawn on either the top or bottom of the screen.
 
 ### args:
-- **direction (arg2):**
+- **type (arg2):**
   - **0:** spawn at the top of the screen and fly downwards
   - **1:** spawn at the bottom of the screen and fly upwards
 
@@ -836,7 +836,7 @@ Small pink jellyfish that flies from right to left (HELP WANTED - needs testing 
 Blue gunship-like enemy that shoots globs at the player. Flies in from the left and hovers around the horizontal center of the screen before flying rightwards off-screen.
 
 ### args:
-- **yPos (arg2):** y-position to spawn at
+- **y (arg2):** y-position to spawn at
 
 
 ## miniserpent (82)
