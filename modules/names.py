@@ -151,7 +151,7 @@ SCENERY = [
     ("bird", []),
     ("birdred", []),
     ("birdyellow", []),
-    ("icbm", ["layerx", "layerx", "time"]),
+    ("icbm", ["layerx", "layery", "time"]),
     ("yellowie", []),
     ("yellowie2", []),
     ("greenie", []),
