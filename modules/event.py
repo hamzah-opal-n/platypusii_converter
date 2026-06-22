@@ -17,33 +17,32 @@ class Event:
             for i in range(8):
                 self.arg_names.append(f"arg{i + 1}")
 
-            # Population action name
-            if self.action_number in ACTION_NAMES:
-                self.action_name = ACTION_NAMES[self.action_number]
-            else:
+            # Populate action name
+            try:
+                self.action_name = ACTIONS[self.action_number][0]
+            except IndexError:
                 self.action_name = self.action_number
 
             # Populate arg names
-            if self.action_number in ACTION_ARG_NAMES:
-                for i in range(len(ACTION_ARG_NAMES[self.action_number])):
-                    self.arg_names[i] = ACTION_ARG_NAMES[self.action_number][i]
+            try:
+                for i in range(len(ACTIONS[self.action_number][1])):
+                    self.arg_names[i] = ACTIONS[self.action_number][1][i]
+            except IndexError:
+                pass
 
             # Enemy and scenery type and arg names
-            if self.arg_names[0] == "object":
-                object_dict = ENEMY_NAMES
-                arg_dict = ENEMY_ARG_NAMES
+            if (self.action_number >= 21) and (self.action_number <= 23):
+                object_dict = ENEMIES
                 if self.action_number == 23:  # spawnScenery
-                    object_dict = SCENERY_NAMES
-                    arg_dict = SCENERY_ARG_NAMES
+                    object_dict = SCENERY
                 # Enemy and scenery name
-                if self.arg_values[0] in object_dict:
-                    self.arg_values_text[0] = object_dict[self.arg_values[0]]
-                else:
+                try:
+                    self.arg_values_text[0] = object_dict[self.arg_values[0]][0]
+                    if self.action_number > 21:
+                        for i in range(len(object_dict[self.arg_values[0]][1])):
+                            self.arg_names[i+1] = object_dict[self.arg_values[0]][1][i]
+                except IndexError:
                     self.arg_values_text[0] = self.arg_values[0]
-                # Enemy and scenery arg names
-                if self.arg_values[0] in arg_dict:
-                    for i in range(len(arg_dict[self.arg_values[0]])):
-                        self.arg_names[i+1] = arg_dict[self.arg_values[0]][i]
 
         # Create event from JSON
         elif input_format == "JSON":
@@ -57,17 +56,17 @@ class Event:
             if type(self.action_name) is int:
                 self.action_number = self.action_name
             else:
-                self.action_number = [number for number, name in ACTION_NAMES.items() if self.action_name == name][0]
+                self.action_number = ACTION_INDEXES[self.action_name]
 
             # Loading argument values from json/text
             for arg_value in self.arg_values_text:
                 if type(arg_value) is int:
                     self.arg_values.append(arg_value)
                 else:
-                    object_dict = ENEMY_NAMES
+                    object_dict = ENEMY_INDEXES
                     if self.action_number == 23:  # spawnScenery
-                        object_dict = SCENERY_NAMES
-                    self.arg_values.append([number for number, name in object_dict.items() if arg_value == name][0])
+                        object_dict = SCENERY_INDEXES
+                    self.arg_values.append(object_dict[arg_value])
 
 
         # If no format specified - use dummy values
