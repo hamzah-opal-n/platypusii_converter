@@ -6,7 +6,7 @@ LEVEL_DATA_EXTENSION = ".dat"
 JSON_EXTENSION = ".json"
 TITLE_TEXT = ("------------------------------------\n"
               "| Platypus II Level Data Converter |\n"
-              "|        Update: 2026-06-11        |\n"
+              "|        Update: 2026-06-22        |\n"
               "|    Developed by ASTRAN FELINE    |\n"
               "------------------------------------")
 MENU = (f"\n(D)ecompile {LEVEL_DATA_EXTENSION} files\n"
