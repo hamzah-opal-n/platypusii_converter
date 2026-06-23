@@ -762,7 +762,9 @@ Pink jellyfish that flies from left to right.
 Small blue fish-like enemy that flies leftwards from the right before spinning and flying upwards or downwards (HELP WANTED - needs testing on its own). Normally encountered in formations.
 
 ### args:
-(HELP WANTED - needs testing)
+- **y (arg2):** y-position to spawn at
+- **offsetx (arg3):** spawn x-position offset. Can cause the enemy to appear on-screen out of thin air
+- **turn (arg4):** -1 turn up, 0 random turn, 1 turn down
 
 
 ## chicken (74)

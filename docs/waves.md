@@ -49,7 +49,7 @@ Identical to saucer waves
 ![zipper](images/enemies/zipper.png)
 
 ### wave types:
-- **0:** spawn 4 (level 1) or 5 (levels 2 to 4) enemies in succession at random y-positions
+- **0:** spawn 4 (level 1) or 5 (levels 2 to 4) enemies in succession at random y-positions (range 125 to 475)
 - **1:** spawn 4 (level 1) or 5 (levels 2 to 4) enemies in a "\\" formation
 - **2:** spawn 5 enemies in a ">" formation (HELP WANTED - test number of enemies on levels 3 to 5)
 - **3:** spawn 4 (level 1) or 5 (levels 2 to 4) enemies in a "/" formation
@@ -132,23 +132,29 @@ Identical to saucer waves
 ![worm](images/enemies/worm.png)
 
 ### wave types:
-- **0:** spawn 5 enemies in succession at random y-positions
+- **0:** spawn 5 enemies with x-offset 80 at random y-positions (range: 125 to 475)
 
 
 ## rollship (73)
 ![rollship](images/enemies/rollship.png)
 
 ### wave types:
-- **0:** spawn 6 enemies at random y-positions with randomised vertical movement direction
-- **1:** spawn 6 enemies in two rows of 3. Upon spinning, the top row flies upwards while the bottom row flies downwards
+- **0:** spawn 6 enemies (4 on level 1) with x-offset 80 at random y-positions (range: 125 to 475) with random vertical movement direction
+- **1:** spawn 6 enemies (4 on level 1) in two rows of 3. Upon spinning, the top row flies upwards while the bottom row flies downwards
 - **2:** similar to wave type 1 except the enemies are staggered, alternating between the top and bottom rows starting with the top
+
+| wavetype | n   | y                | offsety                    | offsetx         | turn                |
+|----------|-----|------------------|----------------------------|-----------------|---------------------|
+| `0`      | `6` | `rand(125, 475)` | `0`                        | `i * 80`        | `0`                 |
+| `1`      | `6` | `y`              | `(((i % 2) * 2) - 1) * 25` | `(i // 2) * 80` | `((i % 2) * 2) - 1` |
+| `2`      | `6` | `y`              | `(((i % 2) * 2) - 1) * 60` | `i * 80`        | `((i % 2) * 2) - 1` |
 
 
 ## chicken (74)
 ![chicken](images/enemies/chicken.png)
 
 ### wave types:
-- **0:** spawn 5 enemies at random y-positions
+- **0:** spawn 5 enemies with x-offset 70 at random y-positions (range: 125 to 475)
 - **1:** spawn 5 enemies in a "\\" formation
 - **2:** spawn 5 enemies in a ">" formation
 - **3:** spawn 5 enemies in a "/" formation
@@ -173,11 +179,11 @@ Identical to saucer waves
 ![spinner](images/enemies/spinner.png)
 
 ### wave types:
-- **0:** spawn 7 enemies in succession at random y-positions
+- **0:** spawn 7 enemies (4 on level 1) with x-offset 80 at random y-positions (range: 125 to 475)
 
 
 ## squid (80)
 ![squid](images/enemies/squid.png)
 
 ### wave types:
-- **0:** spawn 4 enemies in succession at random y-positions
+- **0:** spawn 4 enemies in succession at random y-positions (range: 125 to 475)
