@@ -8,13 +8,20 @@ Enemy type numbers are used in both wave (action 21) and enemy (action 22) as ar
 
 (HELP WANTED - test the number of enemies in each wave when used in each level)
 
+(level 1 notes: max wave size is 4 enemies for most waves, 8 for saucerred, 5 for zipper wave type 2. x-offset multiplied by 1.3x)
+
 
 ## domeship (21)
 ![domeship](images/enemies/domeship.png)
 
 ### wave types:
-- **0:** spawn 4 (level 1) or 6 (levels 3 and 5) enemies with x-offset 60 at the same y-position. x-offset x1.3 on level 1
-- **1:** spawn 4 (level 1) or 6 (levels 3 and 5) enemies with x-offset 110 at random y-positions (range 100 to 500)
+- **0:** spawn 6 (4 on level 1) enemies in succession at the same y-position
+- **1:** spawn 6 (4 on level 1) enemies in succession at random y-positions
+
+| wavetype | n   | y                  | offsety | offsetx   |
+|----------|-----|--------------------|---------|-----------|
+| `0`      | `6` | `y`                | `0`     | `i * 60`  |
+| `1`      | `6` | `rand(100?, 500?)` | `0`     | `i * 110` |
 
 
 ## domeship2 (22)
@@ -22,6 +29,11 @@ Enemy type numbers are used in both wave (action 21) and enemy (action 22) as ar
 
 ### wave types:
 Identical to domeship waves
+
+| wavetype | n   | y                  | offsety | offsetx   |
+|----------|-----|--------------------|---------|-----------|
+| `0`      | `6` | `y`                | `0`     | `i * 60`  |
+| `1`      | `6` | `rand(100?, 500?)` | `0`     | `i * 110` |
 
 
 ## saucer (23)
@@ -49,10 +61,17 @@ Identical to saucer waves
 ![zipper](images/enemies/zipper.png)
 
 ### wave types:
-- **0:** spawn 4 (level 1) or 5 (levels 2 to 4) enemies in succession at random y-positions (range 125 to 475)
-- **1:** spawn 4 (level 1) or 5 (levels 2 to 4) enemies in a "\\" formation
-- **2:** spawn 5 enemies in a ">" formation (HELP WANTED - test number of enemies on levels 3 to 5)
-- **3:** spawn 4 (level 1) or 5 (levels 2 to 4) enemies in a "/" formation
+- **0:** spawn 5 (4 on level 1) enemies in succession at random y-positions
+- **1:** spawn 5 (4 on level 1) enemies in a "\\" formation
+- **2:** spawn 5 enemies in a ">" formation
+- **3:** spawn 5 (4 on level 1) enemies in a "/" formation
+
+| wavetype | n   | y                  | offsety                                        | offsetx               |
+|----------|-----|--------------------|------------------------------------------------|-----------------------|
+| `0`      | `5` | `rand(125?, 475?)` | `0`                                            | `i * 70`              |
+| `1`      | `5` | `y`                | `i * -50`                                      | `i * 70`              |
+| `2`      | `5` | `y`                | `(((i % 2) * -2) + 1) * (((i + 1) // 2) * 50)` | `((i + 1) // 2) * 70` |
+| `3`      | `5` | `y`                | `i * 50`                                       | `i * 70`              |
 
 
 ## fish (27)
@@ -71,7 +90,13 @@ Identical to saucer waves
 
 3: 4x fish with path = -1 and offsetx = n * 60, y = 610 + (n * -40)
 
-4: 6x fish with path = 0, turn = ((n % 2) * 2) - 1 and offsetx = (n // 2) * 80, y = y + (((n % 2) * 52) - 26) + (((n // 2) * 40) * ((n % 2) * -2) + 1)
+| wavetype | n   | y            | offsety                                                            | offsetx               | path | turn                |
+|----------|-----|--------------|--------------------------------------------------------------------|-----------------------|------|---------------------|
+| `0`      | `6` | `rand(?, ?)` | `0`                                                                | `i * ?`               | `0`  | `0`                 |
+| `1`      | `4` | `-10`        | `i * -50`                                                          | `i * 70`              | `1`  | `0`                 |
+| `2`      | `6` | `300`        | `(((i % 2) * -2) + 1) * (((i + 1) // 2) * 50)`                     | `((i + 1) // 2) * 70` | `0`  | `0`                 |
+| `3`      | `4` | `610`        | `i * 50`                                                           | `i * 70`              | `-1` | `0`                 |
+| `4`      | `6` | `y`          | `(((i % 2) * 52) - 26) + ((((i % 2) * 2) - 1) * ((i // 2) * 40)))` | `(i // 2) * 80`       | `0`  | `((i % 2) * 2) - 1` |
 
 
 ## fishred (28)
@@ -109,6 +134,21 @@ Identical to saucer waves
 - **2:** similar to wave type 0 except all x-speeds are negative (leftwards movement)
 
 
+## ray (32)
+![ray](images/enemies/ray.png)
+
+### wave types:
+- **0:** spawn 6 enemies at random y-positions with randomised vertical movement direction
+- **1:** spawn 6 enemies in two rows of 3. Upon spinning, the top row flies downwards while the bottom row flies upwards
+- **2:** similar to wave type 1 except the enemies are staggered, alternating between the top and bottom rows starting with the top
+
+| wavetype | n   | y            | offsety                    | offsetx          | turn                 |
+|----------|-----|--------------|----------------------------|------------------|----------------------|
+| `0`      | `6` | `rand(?, ?)` | `0`                        | `i * 100`        | `0`                  |
+| `1`      | `6` | `y`          | `(((i % 2) * 2) - 1) * 25` | `(i // 2) * 100` | `((i % 2) * -2) + 1` |
+| `2`      | `6` | `y`          | `(((i % 2) * 2) - 1) * 60` | `i * 100`        | `((i % 2) * -2) + 1` |
+
+
 ## v2ray (33)
 ![v2ray](images/enemies/v2ray.png)
 
@@ -116,6 +156,12 @@ Identical to saucer waves
 - **0:** spawn 6 enemies at random y-positions with randomised vertical movement direction
 - **1:** spawn 6 enemies in two rows of 3. Upon spinning, the top row flies downwards while the bottom row flies upwards
 - **2:** similar to wave type 1 except the enemies are staggered, alternating between the top and bottom rows starting with the top
+
+| wavetype | n   | y            | offsety                    | offsetx          | turn                 |
+|----------|-----|--------------|----------------------------|------------------|----------------------|
+| `0`      | `6` | `rand(?, ?)` | `0`                        | `i * 100`        | `0`                  |
+| `1`      | `6` | `y`          | `(((i % 2) * 2) - 1) * 25` | `(i // 2) * 100` | `((i % 2) * -2) + 1` |
+| `2`      | `6` | `y`          | `(((i % 2) * 2) - 1) * 60` | `i * 100`        | `((i % 2) * -2) + 1` |
 
 
 ## goldfish (34)
@@ -132,7 +178,11 @@ Identical to saucer waves
 ![worm](images/enemies/worm.png)
 
 ### wave types:
-- **0:** spawn 5 enemies with x-offset 80 at random y-positions (range: 125 to 475)
+- **0:** spawn 5 enemies in succession at random y-positions
+
+| wavetype | n   | y                | offsety | offsetx  |
+|----------|-----|------------------|---------|----------|
+| `0`      | `5` | `rand(125, 475)` | `0`     | `i * 80` |
 
 
 ## rollship (73)
@@ -154,10 +204,17 @@ Identical to saucer waves
 ![chicken](images/enemies/chicken.png)
 
 ### wave types:
-- **0:** spawn 5 enemies with x-offset 70 at random y-positions (range: 125 to 475)
+- **0:** spawn 5 enemies with x-offset 70 at random y-positions
 - **1:** spawn 5 enemies in a "\\" formation
 - **2:** spawn 5 enemies in a ">" formation
 - **3:** spawn 5 enemies in a "/" formation
+
+| wavetype | n   | y                | offsety                                        | offsetx               |
+|----------|-----|------------------|------------------------------------------------|-----------------------|
+| `0`      | `5` | `rand(125, 475)` | `0`                                            | `i * 70`              |
+| `1`      | `5` | `y`              | `i * -50`                                      | `i * 70`              |
+| `2`      | `5` | `y`              | `(((i % 2) * -2) + 1) * (((i + 1) // 2) * 50)` | `((i + 1) // 2) * 70` |
+| `3`      | `5` | `y`              | `i * 50`                                       | `i * 70`              |
 
 
 ## bug (75)
@@ -179,11 +236,19 @@ Identical to saucer waves
 ![spinner](images/enemies/spinner.png)
 
 ### wave types:
-- **0:** spawn 7 enemies (4 on level 1) with x-offset 80 at random y-positions (range: 125 to 475)
+- **0:** spawn 7 enemies (4 on level 1) in succession at random y-positions
+
+| wavetype | n   | y                | offsety | offsetx  |
+|----------|-----|------------------|---------|----------|
+| `0`      | `7` | `rand(125, 475)` | `0`     | `i * 80` |
 
 
 ## squid (80)
 ![squid](images/enemies/squid.png)
 
 ### wave types:
-- **0:** spawn 4 enemies in succession at random y-positions (range: 125 to 475)
+- **0:** spawn 4 enemies in succession at random y-positions
+
+| wavetype | n   | y                | offsety | offsetx |
+|----------|-----|------------------|---------|---------|
+| `0`      | `4` | `rand(125, 475)` | `0`     | `i * ?` |

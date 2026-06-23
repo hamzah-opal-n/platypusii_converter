@@ -343,7 +343,7 @@ Unused classic ray enemy. Otherwise identical to the new v2ray.
 ### args:
 - **y (arg2):** y-position to spawn at
 - **offsetx (arg3):** spawn x-position offset. Can cause the enemy to appear on-screen out of thin air
-- **turn (arg4):** vertical movement direction when spinning. Negative values for upwards movement, 0 and positive values for downwards movement
+- **turn (arg4):** vertical movement direction when spinning. -1 up, 0 random, 1 down
 
 
 ## v2ray (33)
@@ -354,7 +354,7 @@ Teal-coloured variant of the classic ray enemy. Flies leftwards before spinning 
 ### args:
 - **y (arg2):** y-position to spawn at
 - **offsetx (arg3):** spawn x-position offset. Can cause the enemy to appear on-screen out of thin air
-- **turn (arg4):** vertical movement direction when spinning. Negative values for upwards movement, 0 and positive values for downwards movement
+- **turn (arg4):** vertical movement direction when spinning. -1 up, 0 random, 1 down
 
 
 ## goldfish (34)
@@ -736,6 +736,7 @@ Small brightly coloured worm that flies from right to left (HELP WANTED - needs 
 
 ### args:
 - **y (arg2):** y-position to spawn at
+- **offsetx (arg3):** spawn x-position offset. Can cause the enemy to appear on-screen out of thin air
 
 
 ## eyeball (71)
@@ -773,7 +774,8 @@ Small blue fish-like enemy that flies leftwards from the right before spinning a
 Purple bird-like creature that flies from left to right (HELP WANTED - needs testing on its own). Normally encountered in formations.
 
 ### args:
-(HELP WANTED - needs testing)
+- **y (arg2):** y-position to spawn at
+- **offsetx (arg3):** spawn x-position offset. Can cause the enemy to appear on-screen out of thin air
 
 
 ## bug (75)
@@ -813,7 +815,8 @@ Alien virus with identical behaviour to fish_green. Normally encountered in form
 Small spinning eyeball that flies from right to left (HELP WANTED - needs testing on its own). Normally encountered in formations.
 
 ### args:
-(HELP WANTED - needs testing)
+- **y (arg2):** y-position to spawn at
+- **offsetx (arg3):** spawn x-position offset. Can cause the enemy to appear on-screen out of thin air
 
 
 ## fang (79)
@@ -833,7 +836,8 @@ Sharp tooth that flies in the direction it's facing upon encountering the player
 Small pink jellyfish that flies from right to left (HELP WANTED - needs testing on its own). Normally encountered in formations.
 
 ### args:
-(HELP WANTED - needs testing)
+- **y (arg2):** y-position to spawn at
+- **offsetx (arg3):** spawn x-position offset. Can cause the enemy to appear on-screen out of thin air
 
 
 ## podship (81)
