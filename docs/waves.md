@@ -13,22 +13,22 @@ Enemy type numbers are used in both wave (action 21) and enemy (action 22) as ar
 ![domeship](images/enemies/domeship.png)
 
 ### wave types:
-- **0:** spawn 4 (level 1) or 6 (levels 3 and 5) enemies in succession (HELP WANTED - test number of enemies on levels 2 and 4)
-- **1:** similar to wave type 0 except y-positions are randomised
+- **0:** spawn 4 (level 1) or 6 (levels 3 and 5) enemies with x-offset 60 at the same y-position. x-offset x1.3 on level 1
+- **1:** spawn 4 (level 1) or 6 (levels 3 and 5) enemies with x-offset 110 at random y-positions (range 100 to 500)
 
 
 ## domeship2 (22)
 ![domeship2](images/enemies/domeship2.png)
 
 ### wave types:
-Identical to domeship waves (HELP WANTED - test in levels 1 to 4)
+Identical to domeship waves
 
 
 ## saucer (23)
 ![saucer](images/enemies/saucer.png)
 
 ### wave types:
-- **0:** spawn 3 enemies in succession at random y-positions
+- **0:** spawn 3 enemies with x-offset 120 at random y-positions. Ignores y arg.
 
 
 ## saucer2 (24)
@@ -60,10 +60,18 @@ Identical to saucer waves
 
 ### wave types:
 - **0:** spawn 4 (level 1) or 6 (levels 2 to 4) enemies at random y-positions with randomised vertical movement direction
-- **1:** spawn 4 enemies that fly diagonally downwards before flipping their vertical trajectory near the middle of the screen. Enemies are spawned from back to front. Ignores yPos value? (HELP WANTED - test with a yPos value other than 0)
-- **2:** spawn 2 (level 1) or 3 (levels 2 to 4) pairs of enemies that fly in diagonally from opposite directions before flipping their vertical trajectory near the middle of the screen. Enemy pairs are spawned from back to front. Ignores yPos value? (HELP WANTED - test with a yPos value other than 0)
+- **1:** spawn 4 enemies that fly diagonally downwards before flipping their vertical trajectory near the middle of the screen. Enemies are spawned from back to front. Ignores y value
+- **2:** spawn 2 (level 1) or 3 (levels 2 to 4) pairs of enemies that fly in diagonally from opposite directions before flipping their vertical trajectory near the middle of the screen. Enemy pairs are spawned from back to front. Ignores y value
 - **3:** similar to wave type 1 except all vertical movement and y-positions are flipped
 - **4:** spawn 4 (level 1) or 6 (levels 2 to 4) enemies in a "<" formation. The top half then flies upwards while the bottom half flies downwards
+
+1: 4x fish with path = 1 and offsetx = n * 60, y = -10 + (n * 40)
+
+2: 6x fish with path = ((n % 2) * -2) + 1 and offsetx = (n // 2) * 60, y = 300 + (((n % 2) * 540) - 270) + (((n // 2) * 40) * ((n % 2) * -2) + 1)
+
+3: 4x fish with path = -1 and offsetx = n * 60, y = 610 + (n * -40)
+
+4: 6x fish with path = 0, turn = ((n % 2) * 2) - 1 and offsetx = (n // 2) * 80, y = y + (((n % 2) * 52) - 26) + (((n // 2) * 40) * ((n % 2) * -2) + 1)
 
 
 ## fishred (28)

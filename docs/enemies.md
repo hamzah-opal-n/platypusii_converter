@@ -286,7 +286,8 @@ Grey fish-shaped enemy that flies leftwards from the right of the screen before 
 ### args:
 - **y (arg2):** y-position to spawn at
 - **offsetx (arg3):** spawn x-position offset. Can cause the enemy to appear on-screen out of thin air
-- **path (arg4):** some kind of behaviour modifier. TODO
+- **path (arg4):** -1 ^, 0 straight then turn (see arg5), 1 v. 300 y height before turning in -1 and 1.
+- **turn (arg5):** -1 turn up, 0 random turn, 1 turn down
 
 
 ## fishred (28)
@@ -295,7 +296,10 @@ Grey fish-shaped enemy that flies leftwards from the right of the screen before 
 Reddish-brown fish-shaped enemy that flies leftwards from the right of the screen and occasionally fires lasers (HELP WANTED - needs testing on its own). Normally encountered in formations that grant weapon stars upon complete destruction.
 
 ### args:
-(HELP WANTED - needs testing)
+- **y (arg2):** y-position to spawn at
+- **offsetx (arg3):** spawn x-position offset. Can cause the enemy to appear on-screen out of thin air
+- **path (arg4):** -1 fly up to final height, 0 straight then turn back, 1 fly down to final height?
+- **disty (arg5):** -1 or 1 path: y-distance to travel before going straight? 0 path: 1 to turn down, -1 to turn up
 
 
 ## homingfish (29)
@@ -327,7 +331,7 @@ Yellow horseshoe-shaped enemy that flies upwards from the bottom before turning 
 
 ### args:
 - **x (arg2):** x-position to spawn at
-- **arg3 (arg3):** (HELP WANTED - possibly unused)
+- **offsety (arg3):** spawn y-position offset. Can cause the enemy to appear on-screen out of thin air
 - **dx (arg4):** horizontal movement speed. Negative values for leftwards movement, positive values for rightwards movement
 
 
@@ -339,7 +343,7 @@ Unused classic ray enemy. Otherwise identical to the new v2ray.
 ### args:
 - **y (arg2):** y-position to spawn at
 - **offsetx (arg3):** spawn x-position offset. Can cause the enemy to appear on-screen out of thin air
-- **path (arg4):** vertical movement direction when spinning. Negative values for upwards movement, 0 and positive values for downwards movement
+- **turn (arg4):** vertical movement direction when spinning. Negative values for upwards movement, 0 and positive values for downwards movement
 
 
 ## v2ray (33)
@@ -350,7 +354,7 @@ Teal-coloured variant of the classic ray enemy. Flies leftwards before spinning 
 ### args:
 - **y (arg2):** y-position to spawn at
 - **offsetx (arg3):** spawn x-position offset. Can cause the enemy to appear on-screen out of thin air
-- **path (arg4):** vertical movement direction when spinning. Negative values for upwards movement, 0 and positive values for downwards movement
+- **turn (arg4):** vertical movement direction when spinning. Negative values for upwards movement, 0 and positive values for downwards movement
 
 
 ## goldfish (34)
