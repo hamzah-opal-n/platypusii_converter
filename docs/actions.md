@@ -18,7 +18,9 @@ This page aims to document all known event actions, their numerical values and t
 Require a minimum number of players to allow execution of the next event (all other future events are not affected).
 
 ### args:
-- **players (arg1):** number of players
+| arg# | Name      | Description       |
+|------|-----------|-------------------|
+| `1`  | `players` | Number of players |
 
 
 ## maxplayers (3)
@@ -26,7 +28,9 @@ Require a minimum number of players to allow execution of the next event (all ot
 Require a maximum number of players to allow execution of the next event (all other future events are not affected).
 
 ### args:
-- **players (arg1):** number of players
+| arg# | Name      | Description       |
+|------|-----------|-------------------|
+| `1`  | `players` | Number of players |
 
 
 ## endarea (4)
@@ -58,8 +62,10 @@ None
 Control sky display.
 
 ### args:
-- **y (arg1):** starting display point for the sky gradient. Only works once at the start of the file
-- **dy (arg2):** speed that it should scroll through the sky gradient. Upon reaching the end of the valid sky range, it will scroll in the opposite direction
+| arg# | Name | Description                                                                                                                                  |
+|------|------|----------------------------------------------------------------------------------------------------------------------------------------------|
+| `1`  | `y`  | Starting display point for the sky gradient. Only works once at the start of the file                                                        |
+| `2`  | `dy` | Speed that it should scroll through the sky gradient. Upon reaching the end of the valid sky range, it will scroll in the opposite direction |
 
 
 ## water (8)
@@ -67,10 +73,9 @@ Control sky display.
 Control water display (as seen in levels 1, 2 and 4).
 
 ### args:
-- **type (arg1):**
-  - 0: off
-  - 1: on, splash disabled
-  - 2: on, splash enabled
+| arg# | Name   | Description                                                                                                                                                                                                                                                      |
+|------|--------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `1`  | `type` | Display type:<table> <thead> <tr> <th>Value</th> <th>Description</th> </tr> </thead> <tbody> <tr> <td>`0`</td> <td>Off</td> </tr> <tr> <td>`1`</td> <td>On, splashes disabled</td> </tr> <tr> <td>`2`</td> <td>On, splashes enabled</td> </tr> </tbody> </table> |
 
 
 ## lava (9)
@@ -78,10 +83,9 @@ Control water display (as seen in levels 1, 2 and 4).
 Control lava display (as seen in level 3).
 
 ### args:
-- **type (arg1):**
-  - 0: off
-  - 1: on, splash disabled
-  - 2: on, splash enabled
+| arg# | Name   | Description                                                                                                                                                                                                                                                      |
+|------|--------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `1`  | `type` | Display type:<table> <thead> <tr> <th>Value</th> <th>Description</th> </tr> </thead> <tbody> <tr> <td>`0`</td> <td>Off</td> </tr> <tr> <td>`1`</td> <td>On, splashes disabled</td> </tr> <tr> <td>`2`</td> <td>On, splashes enabled</td> </tr> </tbody> </table> |
 
 
 ## wateryellow (10)
@@ -89,10 +93,9 @@ Control lava display (as seen in level 3).
 Control alien water display (as seen in level 5).
 
 ### args:
-- **type (arg1):**
-  - 0: off
-  - 1: on, splash disabled
-  - 2: on, splash enabled
+| arg# | Name   | Description                                                                                                                                                                                                                                                      |
+|------|--------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `1`  | `type` | Display type:<table> <thead> <tr> <th>Value</th> <th>Description</th> </tr> </thead> <tbody> <tr> <td>`0`</td> <td>Off</td> </tr> <tr> <td>`1`</td> <td>On, splashes disabled</td> </tr> <tr> <td>`2`</td> <td>On, splashes enabled</td> </tr> </tbody> </table> |
 
 
 ## snow (11)
@@ -100,7 +103,9 @@ Control alien water display (as seen in level 5).
 Control intensity of snow (as seen in level 1).
 
 ### args:
-- **spawn (arg1):** intensity of the effect from 0 (off) to 100 (max?)
+| arg# | Name    | Description                                        |
+|------|---------|----------------------------------------------------|
+| `1`  | `spawn` | Intensity of the effect from 0 (off) to 100 (max?) |
 
 
 ## soot (12)
@@ -108,7 +113,9 @@ Control intensity of snow (as seen in level 1).
 Control intensity of soot (as seen in level 3).
 
 ### args:
-- **spawn (arg1):** intensity of the effect from 0 (off) to 100 (max?)
+| arg# | Name    | Description                                        |
+|------|---------|----------------------------------------------------|
+| `1`  | `spawn` | Intensity of the effect from 0 (off) to 100 (max?) |
 
 
 ## rain (13)
@@ -116,7 +123,9 @@ Control intensity of soot (as seen in level 3).
 Control intensity of rain (as seen in level 2).
 
 ### args:
-- **spawn (arg1):** intensity of the effect from 0 (off) to 100 (max?)
+| arg# | Name    | Description                                        |
+|------|---------|----------------------------------------------------|
+| `1`  | `spawn` | Intensity of the effect from 0 (off) to 100 (max?) |
 
 
 ## planet (14)
@@ -124,10 +133,12 @@ Control intensity of rain (as seen in level 2).
 Spawn a planet in the background.
 
 ### args:
-- **img (arg1):** sprite number of the planet
-- **x (arg2):** x-position to spawn at. If greater than 0, spawn directly on the screen at the specified position. Otherwise, spawn off-screen and slowly move from right to left (HELP WANTED - needs confirmation)
-- **y (arg3):** y-position to spawn at
-- **dy (arg4):** y-speed of the planet. Positive values result in downward movement, negative values result in upward movement
+| arg# | Name  | Description                                                                                                                                                                                    |
+|------|-------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `1`  | `img` | Sprite number.                                                                                                                                                                                 |
+| `2`  | `x`   | Spawn x-position. If greater than 0, spawn directly on the screen at the specified position. Otherwise, spawn off-screen and slowly move from right to left (HELP WANTED - needs confirmation) |
+| `3`  | `y`   | Spawn y-position.                                                                                                                                                                              |
+| `4`  | `dy`  | Set y-speed. Positive values result in downward movement, negative values result in upward movement.                                                                                           |
 
 
 ## layerblock (15)
@@ -135,7 +146,9 @@ Spawn a planet in the background.
 Stop spawning random tiles on a specific layer.
 
 ### args:
-- **layername (arg1):** layer number
+| arg# | Name        | Description   |
+|------|-------------|---------------|
+| `1`  | `layername` | Layer number. |
 
 
 ## layerunblock (16)
@@ -143,7 +156,9 @@ Stop spawning random tiles on a specific layer.
 Start spawning random tiles on a specific layer.
 
 ### args:
-- **layername (arg1):** layer number
+| arg# | Name        | Description   |
+|------|-------------|---------------|
+| `1`  | `layername` | Layer number. |
 
 
 ## layerrange (17)
@@ -151,9 +166,11 @@ Start spawning random tiles on a specific layer.
 Set the range of tiles that can be randomly spawned on a specific layer.
 
 ### args:
-- **layername (arg1):** layer number
-- **lowimg (arg2):** lowest tile number
-- **highimg (arg3):** highest tile number
+| arg# | Name        | Description          |
+|------|-------------|----------------------|
+| `1`  | `layername` | Layer number.        |
+| `2`  | `lowimg`    | Lowest tile number.  |
+| `3`  | `highimg`   | Highest tile number. |
 
 
 ## layercue (18)
@@ -161,8 +178,10 @@ Set the range of tiles that can be randomly spawned on a specific layer.
 Spawn a specific tile on a specific layer, temporarily overriding random tile spawns.
 
 ### args:
-- **layername (arg1):** layer number
-- **img (arg2):** tile number
+| arg# | Name        | Description   |
+|------|-------------|---------------|
+| `1`  | `layername` | Layer number. |
+| `2`  | `img`       | Tile number.  |
 
 
 ## layerwait (19)
@@ -178,7 +197,9 @@ Spawn a specific tile on a specific layer, temporarily overriding random tile sp
 Resets the tile range for a specific layer to its default values.
 
 ### args:
-- **layername (arg1):** layer number
+| arg# | Name        | Description   |
+|------|-------------|---------------|
+| `1`  | `layername` | Layer number. |
 
 
 ## wave (21)
@@ -186,17 +207,12 @@ Resets the tile range for a specific layer to its default values.
 Spawns several enemies in a specified wave. The full list of enemy types can be seen [here](enemies.md) and the list of wave types can be seen [here](waves.md).
 
 ### args:
-- **enemytype (arg1):** enemy type
-- **wavetype (arg2):** wave type
-- **y (arg3):** y-position to spawn at, possibly ignored for random formations (HELP WANTED - needs testing)
-- **star (arg4):** weapon star to release upon destroying the entire formation (HELP WANTED - test to see if it can be used on *any* enemy formation). Values listed below:
-  - **0:** no weapon star
-  - **1:** shootable star that cycles between Wide, Auto, Pulse and Rockets
-  - **2:** Wide
-  - **3:** Auto
-  - **4:** Pulse
-  - **5:** Rockets
-  - **6:** Lightning
+| arg# | Name        | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+|------|-------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `1`  | `enemytype` | Enemy type.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+| `2`  | `wavetype`  | Wave type.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
+| `3`  | `y`         | Spawn y-position. Not all waves use this value.                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
+| `4`  | `star`      | Weapon star to release upon destroying the entire formation: <table> <thead> <tr> <th>Value</th> <th>Star</th> </tr> </thead> <tbody> <tr> <td>`0`</td> <td>None</td> </tr> <tr> <td>`1`</td> <td>Shootable star that cycles between Wide, Auto, Pulse and Rockets</td> </tr> <tr> <td>`2`</td> <td>Wide</td> </tr> <tr> <td>`3`</td> <td>Auto</td> </tr> <tr> <td>`4`</td> <td>Pulse</td> </tr> <tr> <td>`5`</td> <td>Rocket</td> </tr> <tr> <td>`6`</td> <td>Lightning</td> </tr> </tbody> </table> |
 
 
 ## enemy (22)
@@ -204,8 +220,10 @@ Spawns several enemies in a specified wave. The full list of enemy types can be 
 Spawn an enemy object. The full list of enemy types and their corresponding arguments can be seen [here](enemies.md).
 
 ### args:
-- **enemytype (arg1):** enemy type
-- **arg2 - arg8:** depends on enemy type
+| arg#    | Name        | Description            |
+|---------|-------------|------------------------|
+| `1`     | `enemytype` | Enemy type.            |
+| `2`-`8` | -           | Depends on enemy type. |
 
 
 ## scenery (23)
@@ -213,8 +231,10 @@ Spawn an enemy object. The full list of enemy types and their corresponding argu
 Spawn a scenery object. The full list of scenery types and their corresponding arguments can be seen [here](scenery.md).
 
 ### args:
-- **scenerytype (arg1):** scenery type
-- **arg2 - arg8:** depends on scenery type
+| arg#    | Name          | Description              |
+|---------|---------------|--------------------------|
+| `1`     | `scenerytype` | Scenery type.            |
+| `2`-`8` | -             | Depends on scenery type. |
 
 
 ## coins (24)

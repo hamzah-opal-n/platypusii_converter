@@ -13,10 +13,12 @@ Enemy type numbers are used in both wave (action 21) and enemy (action 22) as ar
 Normal enemy bullet. Unused on its own during normal gameplay.
 
 ### args:
-- **x (arg2):** x-position to spawn at
-- **y (arg3):** y-position to spawn at
-- **a (arg4):** movement angle (in degrees). 0 degrees is directly leftwards, positive values change direction clockwise, negative values change direction counter-clockwise
-- **d (arg5):** movement speed. Negative values result in backwards movement, 0 uses default speed
+| arg# | Name | Description                                                                                                                                                                                        |
+|------|------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `2`  | `x`  | Spawn x-position                                                                                                                                                                                   |
+| `3`  | `y`  | Spawn y-position                                                                                                                                                                                   |
+| `4`  | `a`  | Movement angle, in degrees. <ul> <li>0 degrees is directly leftwards.</li> <li>Positive values change direction clockwise.</li> <li>Negative values change direction counter-clockwise.</li> </ul> |
+| `5`  | `d`  | Movement speed. <ul> <li>Negative values result in reversed movement.</li> <li>A value of 0 causes the projectile to fallback on its default speed.</li> </ul>                                     |
 
 
 ## flame (2)
@@ -25,10 +27,12 @@ Normal enemy bullet. Unused on its own during normal gameplay.
 Flame that can be fired by an enemy or flamejet. Deals damage to the player and disappears after a while. Unused on its own during normal gameplay.
 
 ### args:
-- **x (arg2):** x-position to spawn at
-- **y (arg3):** y-position to spawn at
-- **a (arg4):** movement angle (in degrees). 0 degrees is directly leftwards, positive values change direction clockwise, negative values change direction counter-clockwise
-- **d (arg5):** movement speed. Negative values result in backwards movement, 0 uses default speed
+| arg# | Name | Description                                                                                                                                                                                        |
+|------|------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `2`  | `x`  | Spawn x-position                                                                                                                                                                                   |
+| `3`  | `y`  | Spawn y-position                                                                                                                                                                                   |
+| `4`  | `a`  | Movement angle, in degrees. <ul> <li>0 degrees is directly leftwards.</li> <li>Positive values change direction clockwise.</li> <li>Negative values change direction counter-clockwise.</li> </ul> |
+| `5`  | `d`  | Movement speed. <ul> <li>Negative values result in reversed movement.</li> <li>A value of 0 causes the projectile to fallback on its default speed.</li> </ul>                                     |
 
 
 ## missile (3)
@@ -37,10 +41,12 @@ Flame that can be fired by an enemy or flamejet. Deals damage to the player and 
 Missile that homes in on the player while leaving a smoke trail. Explodes after a while if not destroyed by the player. Unused on its own during normal gameplay.
 
 ### args:
-- **x (arg2):** x-position to spawn at
-- **y (arg3):** y-position to spawn at
-- **a (arg4):** movement angle (in degrees). 0 degrees is directly leftwards, positive values change direction clockwise, negative values change direction counter-clockwise
-- **d (arg5):** movement speed. Negative values result in backwards movement, 0 uses default speed
+| arg# | Name | Description                                                                                                                                                                                        |
+|------|------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `2`  | `x`  | Spawn x-position                                                                                                                                                                                   |
+| `3`  | `y`  | Spawn y-position                                                                                                                                                                                   |
+| `4`  | `a`  | Movement angle, in degrees. <ul> <li>0 degrees is directly leftwards.</li> <li>Positive values change direction clockwise.</li> <li>Negative values change direction counter-clockwise.</li> </ul> |
+| `5`  | `d`  | Movement speed. <ul> <li>Negative values result in reversed movement.</li> <li>A value of 0 causes the projectile to fallback on its default speed.</li> </ul>                                     |
 
 
 ## laser (4)
@@ -49,10 +55,12 @@ Missile that homes in on the player while leaving a smoke trail. Explodes after 
 Laser that is fired by some enemies. Unused on its own during normal gameplay.
 
 ### args:
-- **x (arg2):** x-position to spawn at
-- **y (arg3):** y-position to spawn at
-- **a (arg4):** movement angle (in degrees). 0 degrees is directly leftwards, positive values change direction clockwise, negative values change direction counter-clockwise
-- **d (arg5):** movement speed. Negative values result in backwards movement, 0 uses default speed
+| arg# | Name | Description                                                                                                                                                                                        |
+|------|------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `2`  | `x`  | Spawn x-position                                                                                                                                                                                   |
+| `3`  | `y`  | Spawn y-position                                                                                                                                                                                   |
+| `4`  | `a`  | Movement angle, in degrees. <ul> <li>0 degrees is directly leftwards.</li> <li>Positive values change direction clockwise.</li> <li>Negative values change direction counter-clockwise.</li> </ul> |
+| `5`  | `d`  | Movement speed. <ul> <li>Negative values result in reversed movement.</li> <li>A value of 0 causes the projectile to fallback on its default speed.</li> </ul>                                     |
 
 
 ## orb (5)
@@ -61,10 +69,12 @@ Laser that is fired by some enemies. Unused on its own during normal gameplay.
 Large projectile that is typically fired upwards from red turrets before falling down. Unused on its own during normal gameplay.
 
 ### args:
-- **x (arg2):** x-position to spawn at
-- **y (arg3):** y-position to spawn at
-- **a (arg4):** movement angle (in degrees). 0 degrees is directly leftwards, positive values change direction clockwise, negative values change direction counter-clockwise
-- **d (arg5):** movement speed. Negative values result in backwards movement, 0 uses default speed
+| arg# | Name | Description                                                                                                                                                                                        |
+|------|------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `2`  | `x`  | Spawn x-position                                                                                                                                                                                   |
+| `3`  | `y`  | Spawn y-position                                                                                                                                                                                   |
+| `4`  | `a`  | Movement angle, in degrees. <ul> <li>0 degrees is directly leftwards.</li> <li>Positive values change direction clockwise.</li> <li>Negative values change direction counter-clockwise.</li> </ul> |
+| `5`  | `d`  | Movement speed. <ul> <li>Negative values result in reversed movement.</li> <li>A value of 0 causes the projectile to fallback on its default speed.</li> </ul>                                     |
 
 
 ## glob (6)
@@ -73,10 +83,12 @@ Large projectile that is typically fired upwards from red turrets before falling
 Indestructible projectile that is fired by some enemies in level 5 (e.g. podship). Unused on its own during normal gameplay.
 
 ### args:
-- **x (arg2):** x-position to spawn at
-- **y (arg3):** y-position to spawn at
-- **a (arg4):** movement angle (in degrees). 0 degrees is directly leftwards, positive values change direction clockwise, negative values change direction counter-clockwise
-- **d (arg5):** movement speed. Negative values result in backwards movement, 0 uses default speed
+| arg# | Name | Description                                                                                                                                                                                        |
+|------|------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `2`  | `x`  | Spawn x-position                                                                                                                                                                                   |
+| `3`  | `y`  | Spawn y-position                                                                                                                                                                                   |
+| `4`  | `a`  | Movement angle, in degrees. <ul> <li>0 degrees is directly leftwards.</li> <li>Positive values change direction clockwise.</li> <li>Negative values change direction counter-clockwise.</li> </ul> |
+| `5`  | `d`  | Movement speed. <ul> <li>Negative values result in reversed movement.</li> <li>A value of 0 causes the projectile to fallback on its default speed.</li> </ul>                                     |
 
 
 ## bomb (7)
@@ -85,10 +97,12 @@ Indestructible projectile that is fired by some enemies in level 5 (e.g. podship
 Explosive bomb that is dropped by bomber and squidcangreen. Explodes into bombfrags when shot by the player. Unused on its own during normal gameplay.
 
 ### args:
-- **x (arg2):** x-position to spawn at
-- **y (arg3):** y-position to spawn at
-- **a (arg4):** movement angle (in degrees). 0 degrees is directly leftwards, positive values change direction clockwise, negative values change direction counter-clockwise
-- **d (arg5):** movement speed. Negative values result in backwards movement, 0 uses default speed
+| arg# | Name | Description                                                                                                                                                                                        |
+|------|------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `2`  | `x`  | Spawn x-position                                                                                                                                                                                   |
+| `3`  | `y`  | Spawn y-position                                                                                                                                                                                   |
+| `4`  | `a`  | Movement angle, in degrees. <ul> <li>0 degrees is directly leftwards.</li> <li>Positive values change direction clockwise.</li> <li>Negative values change direction counter-clockwise.</li> </ul> |
+| `5`  | `d`  | Movement speed. <ul> <li>Negative values result in reversed movement.</li> <li>A value of 0 causes the projectile to fallback on its default speed.</li> </ul>                                     |
 
 
 ## bombfrag (8)
@@ -97,10 +111,12 @@ Explosive bomb that is dropped by bomber and squidcangreen. Explodes into bombfr
 Damaging fragments emitted when a bomb or mine explodes. Unused on its own during normal gameplay.
 
 ### args:
-- **x (arg2):** x-position to spawn at
-- **y (arg3):** y-position to spawn at
-- **a (arg4):** movement angle (in degrees). 0 degrees is directly leftwards, positive values change direction clockwise, negative values change direction counter-clockwise
-- **d (arg5):** movement speed. Negative values result in backwards movement, 0 uses default speed
+| arg# | Name | Description                                                                                                                                                                                        |
+|------|------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `2`  | `x`  | Spawn x-position                                                                                                                                                                                   |
+| `3`  | `y`  | Spawn y-position                                                                                                                                                                                   |
+| `4`  | `a`  | Movement angle, in degrees. <ul> <li>0 degrees is directly leftwards.</li> <li>Positive values change direction clockwise.</li> <li>Negative values change direction counter-clockwise.</li> </ul> |
+| `5`  | `d`  | Movement speed. <ul> <li>Negative values result in reversed movement.</li> <li>A value of 0 causes the projectile to fallback on its default speed.</li> </ul>                                     |
 
 
 ## mine (9)
