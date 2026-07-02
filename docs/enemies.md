@@ -951,7 +951,7 @@ Blue gunship-like enemy that shoots globs at the player. Flies in from the left 
 Shorter yellow serpent that flies upwards from the bottom of the screen at a random position, turns to the left or right, then falls back down to the bottom of the screen before repeating. Its tail shoots lasers in a spread formation. Only its body segments can be damaged and it explodes after all body segments have been fully damaged.
 
 ### args:
-TODO
+None
 
 
 ## miniserpentseg (83)
