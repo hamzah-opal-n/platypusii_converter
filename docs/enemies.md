@@ -573,19 +573,10 @@ Large green enemy that flies in from the right before stopping at the far left, 
 Various cars that spawn at the bottom of the screen and move in from the right. The car type can be specified. Car types 3 onwards possess a chain on the front side. Cars can be spawned 220 ticks apart to create the illusion of a train.
 
 ### args:
-- **type (arg2):**
-  - **0:** red front car equipped with a gun. There is a hole where the missile launcher normally sits
-  - **1:** red front car equipped with a missile launcher and a gun
-  - **2:** red front car equipped with a red turret that shoots orbs upwards in a spread formation and a gun
-  - **3:** empty car with only a chassis
-  - **4:** gold passive car
-  - **5:** silver passive car
-  - **6:** silver car equipped with two guns
-  - **7:** silver car equipped with a missile launcher
-  - **8:** silver car equipped with a red turret that shoots orbs upwards in a spread formation
-- **special (arg3):**
-  - **0:** setting disabled
-  - **1:** moves back and forth like the boss. Only works with car types 0, 1 and 2
+| arg# | Name   | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
+|------|--------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `2`  | `type` | Car type to spawn: <table> <thead> <tr> <th>Value</th> <th>Type</th> </tr> </thead> <tbody> <tr> <td>`0`</td> <td>Red front car equipped with a gun. There is a hole where the missile launcher normally sits</td> </tr> <tr> <td>`1`</td> <td>Red front car equipped with a missile launcher and a gun</td> </tr> <tr> <td>`2`</td> <td>Red front car equipped with a red turret that shoots orbs upwards in a spread formation and a gun</td> </tr> <tr> <td>`3`</td> <td>Empty car with only a chassis</td> </tr> <tr> <td>`4`</td> <td>Gold passive car</td> </tr> <tr> <td>`5`</td> <td>Silver passive car</td> </tr> <tr> <td>`6`</td> <td>Silver car equipped with two guns</td> </tr> <tr> <td>`7`</td> <td>Silver car equipped with a missile launcher</td> </tr> <tr> <td>`8`</td> <td>Silver car equipped with a red turret that shoots orbs upwards in a spread formation</td> </tr> </tbody> </table> |
+| `3`  | `path` | Enemy movement path: <table> <thead> <tr> <th>Value</th> <th>Path</th> </tr> </thead> <tbody> <tr> <td>`0`</td> <td>Move from right to left as normal</td> </tr> <tr> <td>`1`</td> <td>Move from right to left as usual but upon reaching the left edge of the screen, move back to the right edge of the screen before moving leftwards off-screen <ul> <li> Only works with car types `0`, `1` and `2` </li> </ul> </td> </tr> </tbody> </table>                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
 
 
 ## gunboat (52)

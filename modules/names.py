@@ -92,7 +92,7 @@ ENEMIES = [
     ("lasership", ["y"]),
     ("flameship", ["y"]),
     ("homingship", ["y"]),
-    ("car", ["type", "special"]),
+    ("car", ["type", "path"]),
     ("gunboat", ["path"]),
     ("missileboat", ["path"]),
     ("flameboat", ["path"]),
