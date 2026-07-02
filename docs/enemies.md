@@ -294,13 +294,14 @@ Yellow flying saucer enemy that flies leftwards from the right of the screen, oc
 ## saucerred (25)
 ![saucerred](images/enemies/saucerred.png)
 
-Reddish-brown flying saucer enemy that flies leftwards from the right of the screen. Normally encountered in formations that grant weapon stars upon complete destruction.
+Reddish-brown flying saucer enemy that flies leftwards from the right of the screen and has vertical movement based on a negative sine function. Normally encountered in formations that grant weapon stars upon complete destruction.
 
 ### args:
 | arg# | Name      | Description                                                                                                                                                                        |
 |------|-----------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `2`  | `y`       | Spawn y-position.                                                                                                                                                                  |
 | `3`  | `offsetx` | Spawn x-position offset. <ul> <li> This value is generally used for arranging waves </li> <li> Negative values can cause the enemy to appear on-screen out of thin air </li> </ul> |
+| `4`  | `a`       | Spawn angle. <ul> <li> This value shifts the starting angle of the sinusoidal vertical movement </li> </ul>                                                                        |
 
 
 ## zipper (26)

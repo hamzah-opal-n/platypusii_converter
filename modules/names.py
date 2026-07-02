@@ -66,7 +66,7 @@ ENEMIES = [
     ("domeship2", ["y", "offsetx"]),
     ("saucer", ["y", "offsetx"]),
     ("saucer2", ["y", "offsetx"]),
-    ("saucerred", ["y", "offsetx"]),
+    ("saucerred", ["y", "offsetx", "a"]),
     ("zipper", ["y", "offsetx"]),
     ("fish", ["y", "offsetx", "path", "my"]),
     ("fishred", ["y", "offsetx"]),
