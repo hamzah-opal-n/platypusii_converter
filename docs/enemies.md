@@ -125,11 +125,11 @@ Damaging fragments emitted when a bomb or mine explodes. Unused on its own durin
 Bomb that is tied to a balloon. Shooting the balloon will cause the bomb to fall. The balloon type can be customised. Spawns with a random y-speed.
 
 ### args:
-- **type (arg2):**
-  - **0:** pale balloon. Shooting it releases some fruit
-  - **1:** red balloon. Shooting it releases 12 bombfrags
-- **y (arg3):** y-position to spawn at. Use 0 for random positions
-- **x (arg4):** x-position to spawn at. Non-zero values cause the mine to spawn on-screen out of thin air at the specified coordinates. Use 0 to spawn off-screen as usual
+| arg# | Name   | Description                                                                                                                                                                                                                                                                |
+|------|--------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `2`  | `type` | Balloon type: <table> <thead> <tr> <th>Value</th> <th>Balloon</th> </tr> </thead> <tbody> <tr> <td>`0`</td> <td>Pale balloon. Shooting it releases some fruit</td> </tr> <tr> <td>`1`</td> <td>Red balloon. Shooting it releases 12 bombfrags</td> </tr> </tbody> </table> |
+| `3`  | `y`    | Spawn y-position.                                                                                                                                                                                                                                                          |
+| `4`  | `x`    | Spawn x-position. <ul> <li> Non-zero values cause the mine to spawn on-screen out of thin air at the specified coordinates </li> <li> Use 0 to spawn off-screen as usual </li> </ul>                                                                                       |
 
 
 ## rock (10)
@@ -138,8 +138,10 @@ Bomb that is tied to a balloon. Shooting the balloon will cause the bomb to fall
 Red-hot rock that falls from the top of the screen during volcanic eruptions. Size/sprite is randomised. Unused on its own during normal gameplay.
 
 ### args:
-- **x (arg2):** x-position to spawn at
-- **y (arg3):** y-position to spawn at
+| arg# | Name | Description      |
+|------|------|------------------|
+| `2`  | `x`  | Spawn x-position |
+| `3`  | `y`  | Spawn y-position |
 
 
 ## arch (11)
@@ -202,8 +204,10 @@ None
 Destructible building that damages the player on contact. Spawns out of thin air at the specified position. Unused during normal gameplay. For the standard version that spawns at the bottom of the screen and leaves behind a base, see [scenery type 16](scenery.md#building-16).
 
 ### args:
-- **layerx (arg2):** spawn x-position
-- **layery (arg3):** spawn y-position
+| arg# | Name | Description      |
+|------|------|------------------|
+| `2`  | `x`  | Spawn x-position |
+| `3`  | `y`  | Spawn y-position |
 
 
 ## tank (18)
@@ -212,8 +216,10 @@ Destructible building that damages the player on contact. Spawns out of thin air
 Destructible tank that damages the player on contact. Spawns out of thin air at the specified position. Unused during normal gameplay. For the standard version that spawns at the bottom of the screen and leaves behind a base, see [scenery type 17](scenery.md#tank-17).
 
 ### args:
-- **layerx (arg2):** spawn x-position
-- **layery (arg3):** spawn y-position
+| arg# | Name | Description      |
+|------|------|------------------|
+| `2`  | `x`  | Spawn x-position |
+| `3`  | `y`  | Spawn y-position |
 
 
 ## wallgun (19)
@@ -222,8 +228,10 @@ Destructible tank that damages the player on contact. Spawns out of thin air at 
 Destructible wall-mounted gun that aims and fires bullets at the player. Leaves behind its base panel after it is destroyed. If a tile on layer 1 is spawned simultaneously before it, positioning will be based on the top-right corner of the tile. Otherwise, positioning is based on the top-right corner of the whole screen.
 
 ### args:
-- **layerx (arg2):** spawn x-position offset. Negative values shift x-position to the left, positive values shift x-position to the right
-- **layery (arg3):** spawn y-position offset. Negative values shift y-position upwards, positive values shift y-position downwards
+| arg# | Name     | Description                                                   |
+|------|----------|---------------------------------------------------------------|
+| `2`  | `layerx` | Spawn x-position. <ul> <li> Based on layer 1 tile </li> </ul> |
+| `3`  | `layery` | Spawn y-position. <ul> <li> Based on layer 1 tile </li> </ul> |
 
 
 ## icbm (20)
@@ -241,8 +249,10 @@ Large missile that flies downwards from the left of the screen at an angle.
 Small spherical/dome-shaped enemy that flies straight from the left before doing a loop and flying off-screen to the left. Normally encountered in formations.
 
 ### args:
-- **y (arg2):** y-position to spawn at. If this value is 300 or more, the enemy will do an upwards loop. Otherwise, it will do a downwards loop
-- **offsetx (arg3):** spawn x-position offset. Can cause the enemy to appear on-screen out of thin air
+| arg# | Name      | Description                                                                                                                                                                        |
+|------|-----------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `2`  | `y`       | Spawn y-position. <ul> <li> If this value is ≥ 300, the flight path will be vertically flipped </li> </ul>                                                                         |
+| `3`  | `offsetx` | Spawn x-position offset. <ul> <li> This value is generally used for arranging waves </li> <li> Negative values can cause the enemy to appear on-screen out of thin air </li> </ul> |
 
 
 ## domeship2 (22)
@@ -251,8 +261,10 @@ Small spherical/dome-shaped enemy that flies straight from the left before doing
 Sprite-swapped variant of domeship with otherwise identical behaviour. Normally encountered in formations.
 
 ### args:
-- **y (arg2):** y-position to spawn at. If this value is 300 or more, the enemy will do an upwards loop. Otherwise, it will do a downwards loop
-- **offsetx (arg3):** spawn x-position offset. Can cause the enemy to appear on-screen out of thin air
+| arg# | Name      | Description                                                                                                                                                                        |
+|------|-----------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `2`  | `y`       | Spawn y-position. <ul> <li> If this value is ≥ 300, the flight path will be vertically flipped </li> </ul>                                                                         |
+| `3`  | `offsetx` | Spawn x-position offset. <ul> <li> This value is generally used for arranging waves </li> <li> Negative values can cause the enemy to appear on-screen out of thin air </li> </ul> |
 
 
 ## saucer (23)
@@ -261,8 +273,10 @@ Sprite-swapped variant of domeship with otherwise identical behaviour. Normally 
 Grey flying saucer enemy that flies leftwards from the right of the screen, occasionally shooting bullets at the player. Normally encountered in formations.
 
 ### args:
-- **y (arg2):** y-position to spawn at
-- **offsetx (arg3):** spawn x-position offset. Can cause the enemy to appear on-screen out of thin air
+| arg# | Name      | Description                                                                                                                                                                        |
+|------|-----------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `2`  | `y`       | Spawn y-position.                                                                                                                                                                  |
+| `3`  | `offsetx` | Spawn x-position offset. <ul> <li> This value is generally used for arranging waves </li> <li> Negative values can cause the enemy to appear on-screen out of thin air </li> </ul> |
 
 
 ## saucer2 (24)
@@ -271,8 +285,10 @@ Grey flying saucer enemy that flies leftwards from the right of the screen, occa
 Yellow flying saucer enemy that flies leftwards from the right of the screen, occasionally shooting bullets at the player. Normally encountered in formations.
 
 ### args:
-- **y (arg2):** y-position to spawn at
-- **offsetx (arg3):** spawn x-position offset. Can cause the enemy to appear on-screen out of thin air
+| arg# | Name      | Description                                                                                                                                                                        |
+|------|-----------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `2`  | `y`       | Spawn y-position.                                                                                                                                                                  |
+| `3`  | `offsetx` | Spawn x-position offset. <ul> <li> This value is generally used for arranging waves </li> <li> Negative values can cause the enemy to appear on-screen out of thin air </li> </ul> |
 
 
 ## saucerred (25)
@@ -281,8 +297,10 @@ Yellow flying saucer enemy that flies leftwards from the right of the screen, oc
 Reddish-brown flying saucer enemy that flies leftwards from the right of the screen. Normally encountered in formations that grant weapon stars upon complete destruction.
 
 ### args:
-- **y (arg2):** y-position to spawn at
-- **offsetx (arg3):** spawn x-position offset. Can cause the enemy to appear on-screen out of thin air
+| arg# | Name      | Description                                                                                                                                                                        |
+|------|-----------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `2`  | `y`       | Spawn y-position.                                                                                                                                                                  |
+| `3`  | `offsetx` | Spawn x-position offset. <ul> <li> This value is generally used for arranging waves </li> <li> Negative values can cause the enemy to appear on-screen out of thin air </li> </ul> |
 
 
 ## zipper (26)
@@ -291,7 +309,10 @@ Reddish-brown flying saucer enemy that flies leftwards from the right of the scr
 Small orange gunship-like enemy that flies rightwards from the left of the screen until it reaches the right, then slowly moves off-screen to the left (HELP WANTED - needs testing on its own). Normally encountered in formations.
 
 ### args:
-(HELP WANTED - needs testing)
+| arg# | Name      | Description                                                                                                                                                                        |
+|------|-----------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `2`  | `y`       | Spawn y-position.                                                                                                                                                                  |
+| `3`  | `offsetx` | Spawn x-position offset. <ul> <li> This value is generally used for arranging waves </li> <li> Negative values can cause the enemy to appear on-screen out of thin air </li> </ul> |
 
 
 ## fish (27)
@@ -300,10 +321,12 @@ Small orange gunship-like enemy that flies rightwards from the left of the scree
 Grey fish-shaped enemy that flies leftwards from the right of the screen before turning upwards or downwards. Occasionally fires lasers. Normally encountered in formations.
 
 ### args:
-- **y (arg2):** y-position to spawn at
-- **offsetx (arg3):** spawn x-position offset. Can cause the enemy to appear on-screen out of thin air
-- **path (arg4):** -1 ^, 0 straight then turn (see arg5), 1 v. 300 y height before turning in -1 and 1.
-- **turn (arg5):** -1 turn up, 0 random turn, 1 turn down
+| arg# | Name      | Description                                                                                                                                                                                                                                                                                                                                                                    |
+|------|-----------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `2`  | `y`       | Spawn y-position.                                                                                                                                                                                                                                                                                                                                                              |
+| `3`  | `offsetx` | Spawn x-position offset. <ul> <li> This value is generally used for arranging waves </li> <li> Negative values can cause the enemy to appear on-screen out of thin air </li> </ul>                                                                                                                                                                                             |
+| `4`  | `path`    | Enemy flight path: <table> <thead> <tr> <th>Value</th> <th>Path</th> </tr> </thead> <tbody> <tr> <td>`-1`</td> <td>^ path, max at y=300</td> </tr> <tr> <td>`0`</td> <td>Fly straight then begin turning vertically upon reaching the horizontally center. Direction can be set using arg5.</td> </tr> <tr> <td>`1`</td> <td>v path, min at y=300</td> </tr> </tbody> </table> |
+| `5`  | `my`      | Set y-movement direction when arg4 = 0: <table> <thead> <tr> <th>Value</th> <th>Direction</th> </tr> </thead> <tbody> <tr> <td>`-1`</td> <td>Upwards</td> </tr> <tr> <td>`0`</td> <td>Random</td> </tr> <tr> <td>`1`</td> <td>Downwards</td> </tr> </tbody> </table>                                                                                                           |
 
 
 ## fishred (28)
@@ -324,11 +347,11 @@ Reddish-brown fish-shaped enemy that flies leftwards from the right of the scree
 Green fish-shaped enemy that briefly attempts to home in on the player before flying off-screen. Normally encountered in formations.
 
 ### args:
-- **y (arg2):** y-position to spawn at
-- **offsetx (arg3):** spawn x-position offset. Can cause the enemy to appear on-screen out of thin air
-- **path (arg4):**
-  - **0:** starts flying rightwards
-  - **1:** starts flying leftwards
+| arg# | Name      | Description                                                                                                                                                                                                                                                                          |
+|------|-----------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `2`  | `y`       | Spawn y-position.                                                                                                                                                                                                                                                                    |
+| `3`  | `offsetx` | Spawn x-position offset. <ul> <li> This value is generally used for arranging waves </li> <li> Negative values can cause the enemy to appear on-screen out of thin air </li> </ul>                                                                                                   |
+| `4`  | `path`    | Enemy flight path (TODO CONFIRM): <table> <thead> <tr> <th>Value</th> <th>Path</th> </tr> </thead> <tbody> <tr> <td>`0`</td> <td>Fly rightwards from the left of the screen</td> </tr> <tr> <td>`1`</td> <td>Fly leftwards from the right of the screen</td> </tr> </tbody> </table> |
 
 
 ## horseshoe (30)
@@ -337,7 +360,10 @@ Green fish-shaped enemy that briefly attempts to home in on the player before fl
 Blue horseshoe-shaped enemy that flies in from the right before turning and flying leftwards, then turning once more to fly rightwards off-screen (HELP WANTED - needs testing on its own). Normally encountered in formations.
 
 ### args:
-(HELP WANTED - needs testing)
+| arg# | Name      | Description                                                                                                                                                                        |
+|------|-----------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `2`  | `y`       | Spawn y-position.                                                                                                                                                                  |
+| `3`  | `offsetx` | Spawn x-position offset. <ul> <li> This value is generally used for arranging waves </li> <li> Negative values can cause the enemy to appear on-screen out of thin air </li> </ul> |
 
 
 ## jumper (31)
@@ -346,9 +372,11 @@ Blue horseshoe-shaped enemy that flies in from the right before turning and flyi
 Yellow horseshoe-shaped enemy that flies upwards from the bottom before turning and flying downwards off-screen. Has slight horizontal speed during its flight path. Normally encountered in formations. Single and formation spawns do not work in level 1.
 
 ### args:
-- **x (arg2):** x-position to spawn at
-- **offsety (arg3):** spawn y-position offset. Can cause the enemy to appear on-screen out of thin air
-- **dx (arg4):** horizontal movement speed. Negative values for leftwards movement, positive values for rightwards movement
+| arg# | Name      | Description                                                                                                                                                                        |
+|------|-----------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `2`  | `x`       | Spawn y-position.                                                                                                                                                                  |
+| `3`  | `offsety` | Spawn y-position offset. <ul> <li> This value is generally used for arranging waves </li> <li> Negative values can cause the enemy to appear on-screen out of thin air </li> </ul> |
+| `4`  | `dx`      | Set x-speed.                                                                                                                                                                       |
 
 
 ## ray (32)
@@ -357,9 +385,11 @@ Yellow horseshoe-shaped enemy that flies upwards from the bottom before turning 
 Unused classic ray enemy. Otherwise identical to the new v2ray.
 
 ### args:
-- **y (arg2):** y-position to spawn at
-- **offsetx (arg3):** spawn x-position offset. Can cause the enemy to appear on-screen out of thin air
-- **turn (arg4):** vertical movement direction when spinning. -1 up, 0 random, 1 down
+| arg# | Name      | Description                                                                                                                                                                                                                                            |
+|------|-----------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `2`  | `y`       | Spawn y-position.                                                                                                                                                                                                                                      |
+| `3`  | `offsetx` | Spawn x-position offset. <ul> <li> This value is generally used for arranging waves </li> <li> Negative values can cause the enemy to appear on-screen out of thin air </li> </ul>                                                                     |
+| `4`  | `my`      | Set y-movement direction: <table> <thead> <tr> <th>Value</th> <th>Direction</th> </tr> </thead> <tbody> <tr> <td>`-1`</td> <td>Upwards</td> </tr> <tr> <td>`0`</td> <td>Random</td> </tr> <tr> <td>`1`</td> <td>Downwards</td> </tr> </tbody> </table> |
 
 
 ## v2ray (33)
@@ -368,9 +398,11 @@ Unused classic ray enemy. Otherwise identical to the new v2ray.
 Teal-coloured variant of the classic ray enemy. Flies leftwards before spinning and flying upwards or downwards.
 
 ### args:
-- **y (arg2):** y-position to spawn at
-- **offsetx (arg3):** spawn x-position offset. Can cause the enemy to appear on-screen out of thin air
-- **turn (arg4):** vertical movement direction when spinning. -1 up, 0 random, 1 down
+| arg# | Name      | Description                                                                                                                                                                                                                                            |
+|------|-----------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `2`  | `y`       | Spawn y-position.                                                                                                                                                                                                                                      |
+| `3`  | `offsetx` | Spawn x-position offset. <ul> <li> This value is generally used for arranging waves </li> <li> Negative values can cause the enemy to appear on-screen out of thin air </li> </ul>                                                                     |
+| `4`  | `my`      | Set y-movement direction: <table> <thead> <tr> <th>Value</th> <th>Direction</th> </tr> </thead> <tbody> <tr> <td>`-1`</td> <td>Upwards</td> </tr> <tr> <td>`0`</td> <td>Random</td> </tr> <tr> <td>`1`</td> <td>Downwards</td> </tr> </tbody> </table> |
 
 
 ## goldfish (34)
@@ -379,8 +411,10 @@ Teal-coloured variant of the classic ray enemy. Flies leftwards before spinning 
 Purple (not gold) enemy that flies in leftwards from the right of the screen and shoots several bullets in a spread formation before flying rightwards off-screen (HELP WANTED - needs testing on its own). Normally encountered in formations.
 
 ### args:
-- **y (arg2):** y-position to spawn at
-- **offsetx (arg3):** TODO - shifts horizontal spawn point, negative makes them suddenly appear on screen
+| arg# | Name      | Description                                                                                                                                                                        |
+|------|-----------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `2`  | `y`       | Spawn y-position.                                                                                                                                                                  |
+| `3`  | `offsetx` | Spawn x-position offset. <ul> <li> This value is generally used for arranging waves </li> <li> Negative values can cause the enemy to appear on-screen out of thin air </li> </ul> |
 
 
 ## hovergun (35)
@@ -389,8 +423,10 @@ Purple (not gold) enemy that flies in leftwards from the right of the screen and
 Red flying turret with squid fins that shoots orbs. Flies directly downwards from the top of the screen until it reaches a specified y-position, then flies to the right before finally moving leftwards off-screen.
 
 ### args:
-- **x (arg2):** x-position to spawn at (HELP WANTED - needs testing)
-- **endy (arg3):** final y-position after downwards movement (HELP WANTED - needs testing)
+| arg# | Name   | Description                                |
+|------|--------|--------------------------------------------|
+| `2`  | `x`    | Spawn x-position.                          |
+| `3`  | `endy` | Final y-position after downwards movement. |
 
 
 ## hoverlauncher (36)
@@ -399,8 +435,10 @@ Red flying turret with squid fins that shoots orbs. Flies directly downwards fro
 Has identical behaviour to hovergun, but is purple and shoots missiles instead.
 
 ### args:
-- **x (arg2):** x-position to spawn at (HELP WANTED - needs testing)
-- **endy (arg3):** final y-position after downwards movement (HELP WANTED - needs testing)
+| arg# | Name   | Description                                |
+|------|--------|--------------------------------------------|
+| `2`  | `x`    | Spawn x-position.                          |
+| `3`  | `endy` | Final y-position after downwards movement. |
 
 
 ## flipplane (37)
@@ -556,9 +594,9 @@ Various cars that spawn at the bottom of the screen and move in from the right. 
 Boat enemy that spawns at the bottom of the screen and travels across horizontally while shooting orbs upwards in a spread formation.
 
 ### args:
-- **path (arg2):**
-  - **0:** moves from left to right
-  - **1:** moves from right to left
+| arg# | Name      | Description                                                                                                                                                                                                                       |
+|------|-----------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `2`  | `path`    | Enemy movement path: <table> <thead> <tr> <th>Value</th> <th>Path</th> </tr> </thead> <tbody> <tr> <td>`0`</td> <td>Move from left to right</td> </tr> <tr> <td>`1`</td> <td>Move from right to left</td> </tr> </tbody> </table> |
 
 
 ## missileboat (53)
@@ -567,9 +605,9 @@ Boat enemy that spawns at the bottom of the screen and travels across horizontal
 Smaller boat enemy that spawns at the bottom of the screen and travels across horizontally while shooting missiles.
 
 ### args:
-- **path (arg2):**
-  - **0:** moves from left to right
-  - **1:** moves from right to left
+| arg# | Name      | Description                                                                                                                                                                                                                       |
+|------|-----------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `2`  | `path`    | Enemy movement path: <table> <thead> <tr> <th>Value</th> <th>Path</th> </tr> </thead> <tbody> <tr> <td>`0`</td> <td>Move from left to right</td> </tr> <tr> <td>`1`</td> <td>Move from right to left</td> </tr> </tbody> </table> |
 
 
 ## flameboat (54)
@@ -578,9 +616,9 @@ Smaller boat enemy that spawns at the bottom of the screen and travels across ho
 Boat enemy that spawns at the bottom of the screen and travels across horizontally while shooting flames aimed at the player.
 
 ### args:
-- **path (arg2):**
-  - **0:** moves from left to right
-  - **1:** moves from right to left
+| arg# | Name      | Description                                                                                                                                                                                                                       |
+|------|-----------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `2`  | `path`    | Enemy movement path: <table> <thead> <tr> <th>Value</th> <th>Path</th> </tr> </thead> <tbody> <tr> <td>`0`</td> <td>Move from left to right</td> </tr> <tr> <td>`1`</td> <td>Move from right to left</td> </tr> </tbody> </table> |
 
 
 ## boss1 (55)
@@ -751,8 +789,10 @@ None
 Small brightly coloured worm that flies from right to left (HELP WANTED - needs testing on its own). Normally encountered in formations.
 
 ### args:
-- **y (arg2):** y-position to spawn at
-- **offsetx (arg3):** spawn x-position offset. Can cause the enemy to appear on-screen out of thin air
+| arg# | Name      | Description                                                                                                                                                                        |
+|------|-----------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `2`  | `y`       | Spawn y-position.                                                                                                                                                                  |
+| `3`  | `offsetx` | Spawn x-position offset. <ul> <li> This value is generally used for arranging waves </li> <li> Negative values can cause the enemy to appear on-screen out of thin air </li> </ul> |
 
 
 ## eyeball (71)
@@ -779,9 +819,11 @@ Pink jellyfish that flies from left to right.
 Small blue fish-like enemy that flies leftwards from the right before spinning and flying upwards or downwards (HELP WANTED - needs testing on its own). Normally encountered in formations.
 
 ### args:
-- **y (arg2):** y-position to spawn at
-- **offsetx (arg3):** spawn x-position offset. Can cause the enemy to appear on-screen out of thin air
-- **turn (arg4):** -1 turn up, 0 random turn, 1 turn down
+| arg# | Name      | Description                                                                                                                                                                                                                                            |
+|------|-----------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `2`  | `y`       | Spawn y-position.                                                                                                                                                                                                                                      |
+| `3`  | `offsetx` | Spawn x-position offset. <ul> <li> This value is generally used for arranging waves </li> <li> Negative values can cause the enemy to appear on-screen out of thin air </li> </ul>                                                                     |
+| `4`  | `my`      | Set y-movement direction: <table> <thead> <tr> <th>Value</th> <th>Direction</th> </tr> </thead> <tbody> <tr> <td>`-1`</td> <td>Upwards</td> </tr> <tr> <td>`0`</td> <td>Random</td> </tr> <tr> <td>`1`</td> <td>Downwards</td> </tr> </tbody> </table> |
 
 
 ## chicken (74)
@@ -790,8 +832,10 @@ Small blue fish-like enemy that flies leftwards from the right before spinning a
 Purple bird-like creature that flies from left to right (HELP WANTED - needs testing on its own). Normally encountered in formations.
 
 ### args:
-- **y (arg2):** y-position to spawn at
-- **offsetx (arg3):** spawn x-position offset. Can cause the enemy to appear on-screen out of thin air
+| arg# | Name      | Description                                                                                                                                                                        |
+|------|-----------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `2`  | `y`       | Spawn y-position.                                                                                                                                                                  |
+| `3`  | `offsetx` | Spawn x-position offset. <ul> <li> This value is generally used for arranging waves </li> <li> Negative values can cause the enemy to appear on-screen out of thin air </li> </ul> |
 
 
 ## bug (75)
@@ -815,14 +859,14 @@ None (HELP WANTED - needs testing)
 ## virus (77)
 ![virus](images/enemies/virus.png)
 
-Alien virus with identical behaviour to fish_green. Normally encountered in formations or spawned from ulcers.
+Alien virus with identical behaviour to homingfish. Normally encountered in formations or spawned from ulcers.
 
 ### args:
-- **y (arg2):** y-position to spawn at
-- **offsetx (arg3):** spawn x-position offset. Can cause the enemy to appear on-screen out of thin air
-- **path (arg4):**
-  - **0:** starts flying rightwards
-  - **1:** starts flying leftwards
+| arg# | Name      | Description                                                                                                                                                                                                                                                                          |
+|------|-----------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `2`  | `y`       | Spawn y-position.                                                                                                                                                                                                                                                                    |
+| `3`  | `offsetx` | Spawn x-position offset. <ul> <li> This value is generally used for arranging waves </li> <li> Negative values can cause the enemy to appear on-screen out of thin air </li> </ul>                                                                                                   |
+| `4`  | `path`    | Enemy flight path (TODO CONFIRM): <table> <thead> <tr> <th>Value</th> <th>Path</th> </tr> </thead> <tbody> <tr> <td>`0`</td> <td>Fly rightwards from the left of the screen</td> </tr> <tr> <td>`1`</td> <td>Fly leftwards from the right of the screen</td> </tr> </tbody> </table> |
 
 
 ## spinner (78)
@@ -831,8 +875,10 @@ Alien virus with identical behaviour to fish_green. Normally encountered in form
 Small spinning eyeball that flies from right to left (HELP WANTED - needs testing on its own). Normally encountered in formations.
 
 ### args:
-- **y (arg2):** y-position to spawn at
-- **offsetx (arg3):** spawn x-position offset. Can cause the enemy to appear on-screen out of thin air
+| arg# | Name      | Description                                                                                                                                                                        |
+|------|-----------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `2`  | `y`       | Spawn y-position.                                                                                                                                                                  |
+| `3`  | `offsetx` | Spawn x-position offset. <ul> <li> This value is generally used for arranging waves </li> <li> Negative values can cause the enemy to appear on-screen out of thin air </li> </ul> |
 
 
 ## fang (79)
@@ -841,9 +887,9 @@ Small spinning eyeball that flies from right to left (HELP WANTED - needs testin
 Sharp tooth that flies in the direction it's facing upon encountering the player. Can spawn on either the top or bottom of the screen.
 
 ### args:
-- **type (arg2):**
-  - **0:** spawn at the top of the screen and fly downwards
-  - **1:** spawn at the bottom of the screen and fly upwards
+| arg# | Name   | Description                                                                                                                                                                                                                                                                                     |
+|------|--------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `2`  | `type` | Spawn location and flight path: <table> <thead> <tr> <th>Value</th> <th>Type</th> </tr> </thead> <tbody> <tr> <td>`0`</td> <td>Spawn at the top of the screen and fly downwards</td> </tr> <tr> <td>`1`</td> <td>Spawn at the bottom of the screen and fly upwards</td> </tr> </tbody> </table> |
 
 
 ## squid (80)
@@ -852,8 +898,10 @@ Sharp tooth that flies in the direction it's facing upon encountering the player
 Small pink jellyfish that flies from right to left (HELP WANTED - needs testing on its own). Normally encountered in formations.
 
 ### args:
-- **y (arg2):** y-position to spawn at
-- **offsetx (arg3):** spawn x-position offset. Can cause the enemy to appear on-screen out of thin air
+| arg# | Name      | Description                                                                                                                                                                        |
+|------|-----------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `2`  | `y`       | Spawn y-position.                                                                                                                                                                  |
+| `3`  | `offsetx` | Spawn x-position offset. <ul> <li> This value is generally used for arranging waves </li> <li> Negative values can cause the enemy to appear on-screen out of thin air </li> </ul> |
 
 
 ## podship (81)

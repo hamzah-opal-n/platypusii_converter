@@ -62,10 +62,10 @@ None
 Control sky display.
 
 ### args:
-| arg# | Name | Description                                                                                                                                  |
-|------|------|----------------------------------------------------------------------------------------------------------------------------------------------|
-| `1`  | `y`  | Starting display point for the sky gradient. Only works once at the start of the file                                                        |
-| `2`  | `dy` | Speed that it should scroll through the sky gradient. Upon reaching the end of the valid sky range, it will scroll in the opposite direction |
+| arg# | Name | Description                                                                                                                                                        |
+|------|------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `1`  | `y`  | Starting display point for the sky gradient. <ul> <li> Only works once at the start of the file (TODO TEST) </li> </ul>                                            |
+| `2`  | `dy` | Speed that it should scroll through the sky gradient. <ul> <li> Upon reaching the end of the valid sky range, it will scroll in the opposite direction </li> </ul> |
 
 
 ## water (8)
@@ -133,12 +133,12 @@ Control intensity of rain (as seen in level 2).
 Spawn a planet in the background.
 
 ### args:
-| arg# | Name  | Description                                                                                                                                                                                    |
-|------|-------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `1`  | `img` | Sprite number.                                                                                                                                                                                 |
-| `2`  | `x`   | Spawn x-position. If greater than 0, spawn directly on the screen at the specified position. Otherwise, spawn off-screen and slowly move from right to left (HELP WANTED - needs confirmation) |
-| `3`  | `y`   | Spawn y-position.                                                                                                                                                                              |
-| `4`  | `dy`  | Set y-speed. Positive values result in downward movement, negative values result in upward movement.                                                                                           |
+| arg# | Name  | Description                                                                                                                                                                                                                    |
+|------|-------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `1`  | `img` | Sprite number.                                                                                                                                                                                                                 |
+| `2`  | `x`   | Spawn x-position. <ul> <li> If greater than 0, spawn directly on the screen at the specified position </li> <li> Otherwise, spawn off-screen and slowly move from right to left (HELP WANTED - needs confirmation) </li> </ul> |
+| `3`  | `y`   | Spawn y-position.                                                                                                                                                                                                              |
+| `4`  | `dy`  | Set y-speed.                                                                                                                                                                                                                   |
 
 
 ## layerblock (15)
@@ -163,7 +163,7 @@ Start spawning random tiles on a specific layer.
 
 ## layerrange (17)
 
-Set the range of tiles that can be randomly spawned on a specific layer.
+Set the range of tiles that can be randomly spawned on a specific layer. Only tile numbers 1 to 99 are considered valid. If the resulting range contains no valid tiles, the game will freeze.
 
 ### args:
 | arg# | Name        | Description          |
@@ -175,7 +175,7 @@ Set the range of tiles that can be randomly spawned on a specific layer.
 
 ## layercue (18)
 
-Spawn a specific tile on a specific layer, temporarily overriding random tile spawns.
+Spawn a specific tile on a specific layer, temporarily overriding random tile spawns. Only tile numbers 1 to 99 are considered valid. If the game attempts to spawn an invalid tile, nothing will happen.
 
 ### args:
 | arg# | Name        | Description   |
@@ -211,7 +211,7 @@ Spawns several enemies in a specified wave. The full list of enemy types can be 
 |------|-------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `1`  | `enemytype` | Enemy type.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
 | `2`  | `wavetype`  | Wave type.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
-| `3`  | `y`         | Spawn y-position. Not all waves use this value.                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
+| `3`  | `y`         | Spawn y-position. <ul> <li> Not all waves use this value </li> </ul>                                                                                                                                                                                                                                                                                                                                                                                                                                  |
 | `4`  | `star`      | Weapon star to release upon destroying the entire formation: <table> <thead> <tr> <th>Value</th> <th>Star</th> </tr> </thead> <tbody> <tr> <td>`0`</td> <td>None</td> </tr> <tr> <td>`1`</td> <td>Shootable star that cycles between Wide, Auto, Pulse and Rockets</td> </tr> <tr> <td>`2`</td> <td>Wide</td> </tr> <tr> <td>`3`</td> <td>Auto</td> </tr> <tr> <td>`4`</td> <td>Pulse</td> </tr> <tr> <td>`5`</td> <td>Rocket</td> </tr> <tr> <td>`6`</td> <td>Lightning</td> </tr> </tbody> </table> |
 
 
