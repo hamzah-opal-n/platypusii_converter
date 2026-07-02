@@ -124,7 +124,7 @@ Damaging fragments emitted when a bomb or mine explodes. Unused on its own durin
 
 Bomb that is tied to a balloon. Shooting the balloon will cause the bomb to fall. The balloon type can be customised. Spawns with a random y-speed.
 
-### args:
+### args TODO CONFIRM ARG4:
 | arg# | Name   | Description                                                                                                                                                                                                                                                                |
 |------|--------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `2`  | `type` | Balloon type: <table> <thead> <tr> <th>Value</th> <th>Balloon</th> </tr> </thead> <tbody> <tr> <td>`0`</td> <td>Pale balloon. Shooting it releases some fruit</td> </tr> <tr> <td>`1`</td> <td>Red balloon. Shooting it releases 12 bombfrags</td> </tr> </tbody> </table> |
@@ -137,7 +137,7 @@ Bomb that is tied to a balloon. Shooting the balloon will cause the bomb to fall
 
 Red-hot rock that falls from the top of the screen during volcanic eruptions. Size/sprite is randomised. Unused on its own during normal gameplay.
 
-### args:
+### args TODO CONFIRM:
 | arg# | Name | Description      |
 |------|------|------------------|
 | `2`  | `x`  | Spawn x-position |
@@ -150,7 +150,7 @@ Red-hot rock that falls from the top of the screen during volcanic eruptions. Si
 Unused during normal gameplay.
 
 ### args:
-(HELP WANTED - needs testing)
+(TODO TEST)
 
 
 ## pylon (12)
@@ -159,7 +159,7 @@ Unused during normal gameplay.
 Unused during normal gameplay.
 
 ### args:
-(HELP WANTED - needs testing)
+(TODO TEST)
 
 
 ## telegraph (13)
@@ -168,7 +168,7 @@ Unused during normal gameplay.
 Unused during normal gameplay.
 
 ### args:
-(HELP WANTED - needs testing)
+(TODO TEST)
 
 
 ## lava (14)
@@ -203,7 +203,7 @@ None
 
 Destructible building that damages the player on contact. Spawns out of thin air at the specified position. Unused during normal gameplay. For the standard version that spawns at the bottom of the screen and leaves behind a base, see [scenery type 16](scenery.md#building-16).
 
-### args:
+### args TODO TEST POSITION WITH TILE:
 | arg# | Name | Description      |
 |------|------|------------------|
 | `2`  | `x`  | Spawn x-position |
@@ -215,7 +215,7 @@ Destructible building that damages the player on contact. Spawns out of thin air
 
 Destructible tank that damages the player on contact. Spawns out of thin air at the specified position. Unused during normal gameplay. For the standard version that spawns at the bottom of the screen and leaves behind a base, see [scenery type 17](scenery.md#tank-17).
 
-### args:
+### args TODO TEST POSITION WITH TILE:
 | arg# | Name | Description      |
 |------|------|------------------|
 | `2`  | `x`  | Spawn x-position |
@@ -240,7 +240,9 @@ Destructible wall-mounted gun that aims and fires bullets at the player. Leaves 
 Large missile that flies downwards from the left of the screen at an angle.
 
 ### args:
-- **y (arg2):** y-position to spawn at (TODO)
+| arg# | Name      | Description       |
+|------|-----------|-------------------|
+| `2`  | `y`       | Spawn y-position. |
 
 
 ## domeship (21)
@@ -347,19 +349,19 @@ Reddish-brown fish-shaped enemy that flies leftwards from the right of the scree
 Green fish-shaped enemy that briefly attempts to home in on the player before flying off-screen. Normally encountered in formations.
 
 ### args:
-| arg# | Name      | Description                                                                                                                                                                                                                                                                          |
-|------|-----------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `2`  | `y`       | Spawn y-position.                                                                                                                                                                                                                                                                    |
-| `3`  | `offsetx` | Spawn x-position offset. <ul> <li> This value is generally used for arranging waves </li> <li> Negative values can cause the enemy to appear on-screen out of thin air </li> </ul>                                                                                                   |
-| `4`  | `path`    | Enemy flight path (TODO CONFIRM): <table> <thead> <tr> <th>Value</th> <th>Path</th> </tr> </thead> <tbody> <tr> <td>`0`</td> <td>Fly rightwards from the left of the screen</td> </tr> <tr> <td>`1`</td> <td>Fly leftwards from the right of the screen</td> </tr> </tbody> </table> |
+| arg# | Name      | Description                                                                                                                                                                                                                                                           |
+|------|-----------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `2`  | `y`       | Spawn y-position.                                                                                                                                                                                                                                                     |
+| `3`  | `offsetx` | Spawn x-position offset. <ul> <li> This value is generally used for arranging waves </li> <li> Negative values can cause the enemy to appear on-screen out of thin air </li> </ul>                                                                                    |
+| `4`  | `path`    | Enemy flight path: <table> <thead> <tr> <th>Value</th> <th>Path</th> </tr> </thead> <tbody> <tr> <td>`0`</td> <td>Fly leftwards from the right of the screen</td> </tr> <tr> <td>`1`</td> <td>Fly rightwards from the left of the screen</td> </tr> </tbody> </table> |
 
 
 ## horseshoe (30)
 ![horseshoe](images/enemies/horseshoe.png)
 
-Blue horseshoe-shaped enemy that flies in from the right before turning and flying leftwards, then turning once more to fly rightwards off-screen (HELP WANTED - needs testing on its own). Normally encountered in formations.
+Blue horseshoe-shaped enemy that flies in from the right before turning and flying leftwards, then turning once more to fly rightwards off-screen. Normally encountered in formations.
 
-### args:
+### args TODO TEST ARG4:
 | arg# | Name      | Description                                                                                                                                                                        |
 |------|-----------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `2`  | `y`       | Spawn y-position.                                                                                                                                                                  |
@@ -447,7 +449,9 @@ Has identical behaviour to hovergun, but is purple and shoots missiles instead.
 Purple enemy that flies in from the left before reaching the right of the screen and turning to reveal its true wingspan and two mounted turrets. Shoots bullets at the player as it flies back off-screen to the left.
 
 ### args:
-- **y (arg2):** y-position to spawn at
+| arg# | Name      | Description       |
+|------|-----------|-------------------|
+| `2`  | `y`       | Spawn y-position. |
 
 
 ## flipplaneorange (38)
@@ -456,7 +460,9 @@ Purple enemy that flies in from the left before reaching the right of the screen
 Slower orange variant of flipplane.
 
 ### args:
-- **y (arg2):** y-position to spawn at
+| arg# | Name      | Description       |
+|------|-----------|-------------------|
+| `2`  | `y`       | Spawn y-position. |
 
 
 ## bomber (39)
@@ -465,16 +471,20 @@ Slower orange variant of flipplane.
 Red flipplane that flies from the left to the right of the screen while dropping bombs.
 
 ### args:
-- **y (arg2):** y-position to spawn at
+| arg# | Name      | Description       |
+|------|-----------|-------------------|
+| `2`  | `y`       | Spawn y-position. |
 
 
 ## lasersquid (40)
 ![lasersquid](images/enemies/lasersquid.png)
 
-Small yellow squid enemy that hovers around its position on the right of the screen while shooting lasers directly leftwards before moving leftwards off-screen.
+Small yellow squid enemy that hovers around its position on the right of the screen while shooting lasers directly leftwards before moving leftwards off-screen. TODO TEST ARG3 ONWARDS FOR EFFECTS ON ALL SQUID TYPES
 
 ### args:
-- **y (arg2):** y-position to spawn at
+| arg# | Name      | Description       |
+|------|-----------|-------------------|
+| `2`  | `y`       | Spawn y-position. |
 
 
 ## gunsquid (41)
@@ -483,7 +493,9 @@ Small yellow squid enemy that hovers around its position on the right of the scr
 Large green squid variant with similar movement patterns but shoots several bullets in a spread formation.
 
 ### args:
-- **y (arg2):** y-position to spawn at
+| arg# | Name      | Description       |
+|------|-----------|-------------------|
+| `2`  | `y`       | Spawn y-position. |
 
 
 ## lightningsquid (42)
@@ -492,7 +504,9 @@ Large green squid variant with similar movement patterns but shoots several bull
 Brown trashcan-shaped squid variant with similar movement patterns but shoots lightning.
 
 ### args:
-- **y (arg2):** y-position to spawn at
+| arg# | Name      | Description       |
+|------|-----------|-------------------|
+| `2`  | `y`       | Spawn y-position. |
 
 
 ## bombsquid (43)
@@ -501,7 +515,9 @@ Brown trashcan-shaped squid variant with similar movement patterns but shoots li
 Teal trashcan-shaped squid variant with similar movement patterns but drops bombs.
 
 ### args:
-- **y (arg2):** y-position to spawn at
+| arg# | Name      | Description       |
+|------|-----------|-------------------|
+| `2`  | `y`       | Spawn y-position. |
 
 
 ## yellowie (44)
@@ -510,7 +526,9 @@ Teal trashcan-shaped squid variant with similar movement patterns but drops bomb
 Yellow passive enemy that flies in from the left before stopping at the far right, then flying leftwards off-screen.
 
 ### args:
-- **y (arg2):** y-position to spawn at
+| arg# | Name      | Description       |
+|------|-----------|-------------------|
+| `2`  | `y`       | Spawn y-position. |
 
 
 ## greenie (45)
@@ -519,7 +537,9 @@ Yellow passive enemy that flies in from the left before stopping at the far righ
 Slow green passive enemy that flies from left to right.
 
 ### args:
-- **y (arg2):** y-position to spawn at
+| arg# | Name      | Description       |
+|------|-----------|-------------------|
+| `2`  | `y`       | Spawn y-position. |
 
 
 ## reddie (46)
@@ -528,7 +548,9 @@ Slow green passive enemy that flies from left to right.
 Large red passive enemy that flies from left to right.
 
 ### args:
-- **y (arg2):** y-position to spawn at
+| arg# | Name      | Description       |
+|------|-----------|-------------------|
+| `2`  | `y`       | Spawn y-position. |
 
 
 ## gunship (47)
@@ -537,7 +559,9 @@ Large red passive enemy that flies from left to right.
 Classic red gunship enemy that flies in from the left and hovers around the horizontal center of the screen while shooting bullets aimed at the player, before flying rightwards off-screen.
 
 ### args:
-- **y (arg2):** y-position to spawn at
+| arg# | Name      | Description       |
+|------|-----------|-------------------|
+| `2`  | `y`       | Spawn y-position. |
 
 
 ## lasership (48)
@@ -546,7 +570,9 @@ Classic red gunship enemy that flies in from the left and hovers around the hori
 Purple gunship variant that flies in from the right and hovers around in place while shooting lasers leftwards, before flying leftwards off-screen.
 
 ### args:
-- **y (arg2):** y-position to spawn at
+| arg# | Name      | Description       |
+|------|-----------|-------------------|
+| `2`  | `y`       | Spawn y-position. |
 
 
 ## flameship (49)
@@ -555,7 +581,9 @@ Purple gunship variant that flies in from the right and hovers around in place w
 Yellow gunship variant that with the same movement pattern as the original red gunship, but shoots flames aimed at the player instead.
 
 ### args:
-- **y (arg2):** y-position to spawn at
+| arg# | Name      | Description       |
+|------|-----------|-------------------|
+| `2`  | `y`       | Spawn y-position. |
 
 
 ## homingship (50)
@@ -564,7 +592,9 @@ Yellow gunship variant that with the same movement pattern as the original red g
 Large green enemy that flies in from the right before stopping at the far left, then flying back rightwards off-screen. Shoots missiles in pairs.
 
 ### args:
-- **y (arg2):** y-position to spawn at
+| arg# | Name      | Description       |
+|------|-----------|-------------------|
+| `2`  | `y`       | Spawn y-position. |
 
 
 ## car (51)
@@ -792,7 +822,10 @@ Small brightly coloured worm that flies from right to left (HELP WANTED - needs 
 Large blinking eye that flies in from the left and hovers around the horizontal center of the screen before flying rightwards off-screen. Fires a ring of eight bullets outwards from its center.
 
 ### args:
-- **y (arg2):** y-position to spawn at
+| arg# | Name      | Description                                                                                                                                                                        |
+|------|-----------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `2`  | `y`       | Spawn y-position.                                                                                                                                                                  |
+| `3`  | `offsetx` | Spawn x-position offset. <ul> <li> This value is generally used for arranging waves </li> <li> Negative values can cause the enemy to appear on-screen out of thin air </li> </ul> |
 
 
 ## blob (72)
@@ -801,7 +834,9 @@ Large blinking eye that flies in from the left and hovers around the horizontal 
 Pink jellyfish that flies from left to right.
 
 ### args:
-- **y (arg2):** y-position to spawn at
+| arg# | Name      | Description       |
+|------|-----------|-------------------|
+| `2`  | `y`       | Spawn y-position. |
 
 
 ## rollship (73)
@@ -835,7 +870,7 @@ Purple bird-like creature that flies from left to right (HELP WANTED - needs tes
 Yellow pterodactyl-like creature that flies in from the top and homes in on the player before moving leftwards off-screen (HELP WANTED - needs testing on its own). Normally encountered in formations.
 
 ### args:
-(HELP WANTED - needs testing)
+(TODO TEST)
 
 
 ## tonsil (76)
@@ -844,7 +879,7 @@ Yellow pterodactyl-like creature that flies in from the top and homes in on the 
 Fleshy hanging object that damages the player upon impact. Can be destroyed. Spawns at a random y-position.
 
 ### args:
-None (HELP WANTED - needs testing)
+(TODO TEST)
 
 
 ## virus (77)
@@ -853,11 +888,11 @@ None (HELP WANTED - needs testing)
 Alien virus with identical behaviour to homingfish. Normally encountered in formations or spawned from ulcers.
 
 ### args:
-| arg# | Name      | Description                                                                                                                                                                                                                                                                          |
-|------|-----------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `2`  | `y`       | Spawn y-position.                                                                                                                                                                                                                                                                    |
-| `3`  | `offsetx` | Spawn x-position offset. <ul> <li> This value is generally used for arranging waves </li> <li> Negative values can cause the enemy to appear on-screen out of thin air </li> </ul>                                                                                                   |
-| `4`  | `path`    | Enemy flight path (TODO CONFIRM): <table> <thead> <tr> <th>Value</th> <th>Path</th> </tr> </thead> <tbody> <tr> <td>`0`</td> <td>Fly rightwards from the left of the screen</td> </tr> <tr> <td>`1`</td> <td>Fly leftwards from the right of the screen</td> </tr> </tbody> </table> |
+| arg# | Name      | Description                                                                                                                                                                                                                                                           |
+|------|-----------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `2`  | `y`       | Spawn y-position.                                                                                                                                                                                                                                                     |
+| `3`  | `offsetx` | Spawn x-position offset. <ul> <li> This value is generally used for arranging waves </li> <li> Negative values can cause the enemy to appear on-screen out of thin air </li> </ul>                                                                                    |
+| `4`  | `path`    | Enemy flight path: <table> <thead> <tr> <th>Value</th> <th>Path</th> </tr> </thead> <tbody> <tr> <td>`0`</td> <td>Fly leftwards from the right of the screen</td> </tr> <tr> <td>`1`</td> <td>Fly rightwards from the left of the screen</td> </tr> </tbody> </table> |
 
 
 ## spinner (78)
@@ -877,7 +912,7 @@ Small spinning eyeball that flies from right to left (HELP WANTED - needs testin
 
 Sharp tooth that flies in the direction it's facing upon encountering the player. Can spawn on either the top or bottom of the screen.
 
-### args:
+### args TODO TEST OTHER ARGS:
 | arg# | Name   | Description                                                                                                                                                                                                                                                                                     |
 |------|--------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `2`  | `type` | Spawn location and flight path: <table> <thead> <tr> <th>Value</th> <th>Type</th> </tr> </thead> <tbody> <tr> <td>`0`</td> <td>Spawn at the top of the screen and fly downwards</td> </tr> <tr> <td>`1`</td> <td>Spawn at the bottom of the screen and fly upwards</td> </tr> </tbody> </table> |
@@ -901,7 +936,9 @@ Small pink jellyfish that flies from right to left (HELP WANTED - needs testing 
 Blue gunship-like enemy that shoots globs at the player. Flies in from the left and hovers around the horizontal center of the screen before flying rightwards off-screen.
 
 ### args:
-- **y (arg2):** y-position to spawn at
+| arg# | Name      | Description       |
+|------|-----------|-------------------|
+| `2`  | `y`       | Spawn y-position. |
 
 
 ## miniserpent (82)

@@ -112,7 +112,7 @@ ENEMIES = [
     ("boss6arm", []),
     ("boss6eye", []),
     ("worm", ["y", "offsetx"]),
-    ("eyeball", ["y"]),
+    ("eyeball", ["y", "offsetx"]),
     ("blob", ["y"]),
     ("rollship", ["y", "offsetx", "my"]),
     ("chicken", ["y", "offsetx"]),
