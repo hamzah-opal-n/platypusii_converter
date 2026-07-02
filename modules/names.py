@@ -71,7 +71,7 @@ ENEMIES = [
     ("fish", ["y", "offsetx", "path", "my"]),
     ("fishred", ["y", "offsetx"]),
     ("homingfish", ["y", "offsetx", "path"]),
-    ("horseshoe", ["y", "offsetx"]),
+    ("horseshoe", ["y", "offsetx", "my"]),
     ("jumper", ["x", "offsety", "dx"]),
     ("ray", ["y", "offsetx", "my"]),
     ("v2ray", ["y", "offsetx", "my"]),

@@ -361,11 +361,12 @@ Green fish-shaped enemy that briefly attempts to home in on the player before fl
 
 Blue horseshoe-shaped enemy that flies in from the right before turning and flying leftwards, then turning once more to fly rightwards off-screen. Normally encountered in formations.
 
-### args TODO TEST ARG4:
-| arg# | Name      | Description                                                                                                                                                                        |
-|------|-----------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `2`  | `y`       | Spawn y-position.                                                                                                                                                                  |
-| `3`  | `offsetx` | Spawn x-position offset. <ul> <li> This value is generally used for arranging waves </li> <li> Negative values can cause the enemy to appear on-screen out of thin air </li> </ul> |
+### args:
+| arg# | Name      | Description                                                                                                                                                                                                                                                    |
+|------|-----------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `2`  | `y`       | Spawn y-position.                                                                                                                                                                                                                                              |
+| `3`  | `offsetx` | Spawn x-position offset. <ul> <li> This value is generally used for arranging waves </li> <li> Negative values can cause the enemy to appear on-screen out of thin air </li> </ul>                                                                             |
+| `4`  | `my`      | Set initial y-movement direction: <table> <thead> <tr> <th>Value</th> <th>Direction</th> </tr> </thead> <tbody> <tr> <td>`-1`</td> <td>Upwards</td> </tr> <tr> <td>`0`</td> <td>Random</td> </tr> <tr> <td>`1`</td> <td>Downwards</td> </tr> </tbody> </table> |
 
 
 ## jumper (31)
