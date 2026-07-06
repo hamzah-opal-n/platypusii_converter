@@ -2,15 +2,13 @@
 
 This page aims to document all known event actions, their numerical values and their functionality. All action names were found in the Platypus II executable using a hex editor.
 
-(HELP WANTED - see if all of these are correct/there are any unused actions and arguments)
-
 
 ## wait (1)
 
-(HELP WANTED - does not seem to do anything? But is present throughout the official level data)
+(TODO - does not seem to do anything? But is present throughout the official level data)
 
 ### args:
-(HELP WANTED - needs confirmation)
+(TODO - needs confirmation)
 
 
 ## minplayers (2)
@@ -43,7 +41,7 @@ None
 
 ## endlevel (5)
 
-Ends the level.
+End the level.
 
 ### args:
 None
@@ -130,7 +128,7 @@ Control intensity of rain (as seen in level 2).
 
 ## planet (14)
 
-Spawn a planet in the background.
+Spawn a planet in the background. TODO confirm args
 
 ### args:
 | arg# | Name  | Description                                                                                                                                                                                                                    |
@@ -186,10 +184,10 @@ Spawn a specific tile on a specific layer, temporarily overriding random tile sp
 
 ## layerwait (19)
 
-(HELP WANTED - needs testing)
+(TODO - needs testing)
 
 ### args:
-(HELP WANTED - needs testing)
+(TODO - needs testing)
 
 
 ## layerreset (20)
@@ -239,7 +237,7 @@ Spawn a scenery object. The full list of scenery types and their corresponding a
 
 ## coins (24)
 
-Spawn a balloon crate that contains coins.
+Spawn a balloon crate that contains coins. TODO test args for all balloon crates
 
 ### args:
 None (HELP WANTED - needs confirmation)

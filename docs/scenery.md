@@ -4,8 +4,6 @@ This page aims to document all known scenery types, their numerical values and t
 
 Scenery type numbers are used in scenery (action 23) as arg1.
 
-(HELP WANTED - see if all of these are correct/there are any unused scenery objects and arguments)
-
 
 ## cloud (1)
 ![cloud](images/scenery/cloud.png)
@@ -27,7 +25,7 @@ Cloud that moves from right to left.
 Unused during normal gameplay.
 
 ### args:
-(HELP WANTED - needs testing)
+(TODO - needs testing)
 
 
 ## arch (3)
@@ -36,7 +34,9 @@ Unused during normal gameplay.
 Red arch-shaped structure constructed out of sections on different layers. The top section on layer 1 damages the player upon contact, but the player can safely fly below or above it.
 
 ### args:
-- **sololayer (arg2):** layer to isolate. Set to 0 to display all layers, layer 0 cannot be isolated
+| arg# | Name        | Description                                                                                                              |
+|------|-------------|--------------------------------------------------------------------------------------------------------------------------|
+| `2`  | `sololayer` | Layer to isolate. <ul> <li>A value of 0 will display all layers as normal</li> <li>Layer 0 cannot be isolated</li> </ul> |
 
 
 ## pylon (4)
@@ -45,7 +45,9 @@ Red arch-shaped structure constructed out of sections on different layers. The t
 A whole row of power lines on the classic grey poles across different layers. The power lines on layer 1 damage the player upon contact.
 
 ### args:
-- **sololayer (arg2):** layer to isolate. Set to 0 to display all layers, layer 1 cannot be isolated
+| arg# | Name        | Description                                                                                                              |
+|------|-------------|--------------------------------------------------------------------------------------------------------------------------|
+| `2`  | `sololayer` | Layer to isolate. <ul> <li>A value of 0 will display all layers as normal</li> <li>Layer 1 cannot be isolated</li> </ul> |
 
 
 ## telegraph (5)
@@ -54,7 +56,9 @@ A whole row of power lines on the classic grey poles across different layers. Th
 A whole row of power lines on brown poles across different layers. The power lines on layer 1 damage the player upon contact.
 
 ### args:
-- **sololayer (arg2):** layer to isolate. Set to 0 to display all layers, layer 1 cannot be isolated
+| arg# | Name        | Description                                                                                                              |
+|------|-------------|--------------------------------------------------------------------------------------------------------------------------|
+| `2`  | `sololayer` | Layer to isolate. <ul> <li>A value of 0 will display all layers as normal</li> <li>Layer 1 cannot be isolated</li> </ul> |
 
 
 ## buoy (6)
@@ -83,7 +87,7 @@ None
 TODO. The sprite numbers match the layers they spawn on.
 
 ### args:
-- **img (arg2):** layer to spawn on (HELP WANTED - needs testing, find where the graphics for the spinning blades are located)
+- **img (arg2):** layer to spawn on (TODO - needs testing, find where the graphics for the spinning blades are located)
 
 
 ## volcano (9)
@@ -92,7 +96,7 @@ TODO. The sprite numbers match the layers they spawn on.
 TODO
 
 ### args:
-None (HELP WANTED - needs testing)
+None (TODO - needs testing)
 
 
 ## rock (10)
@@ -102,7 +106,7 @@ Falling rock that is usually seen during volcanic eruptions. Disappears and show
 
 ### args:
 - **img (arg2):** layer to spawn on. There are no rock sprites for layers 1 and 2, but the corresponding splash will display anyway
-- **x (arg3):** x-position to spawn at
+- **x (arg3):** x-position to spawn at TODO
 
 
 ## waterfall (11)
@@ -122,7 +126,7 @@ Flowing waterfall. Spawns an instance of tile number 54 below it on the chosen l
 Unused during normal gameplay.
 
 ### args:
-(HELP WANTED - needs testing)
+(TODO - needs testing)
 
 
 ## boat (13)
@@ -183,7 +187,7 @@ None
 Green parrot that flies from right to left at a slight upward angle. Sprite/layer can be customised. Spawns at a random y-position.
 
 ### args:
-- **img (arg2):** sprite number to use (HELP WANTED - needs testing)
+- **img (arg2):** sprite number to use (TODO - needs testing)
 
 
 ## bird (19)
@@ -192,7 +196,7 @@ Green parrot that flies from right to left at a slight upward angle. Sprite/laye
 Distant blue bird that flies along a random path.
 
 ### args:
-None (HELP WANTED - needs testing)
+None (TODO - needs testing)
 
 
 ## birdred (20)
@@ -201,7 +205,7 @@ None (HELP WANTED - needs testing)
 Distant red bird that flies along a random path.
 
 ### args:
-None (HELP WANTED - needs testing)
+None (TODO - needs testing)
 
 
 ## birdyellow (21)
@@ -210,7 +214,7 @@ None (HELP WANTED - needs testing)
 Distant yellow bird that flies along a random path.
 
 ### args:
-None (HELP WANTED - needs testing)
+None (TODO - needs testing)
 
 
 ## icbm (22)
@@ -302,7 +306,7 @@ Spawn a single cave roof tile.
 ## last (30)
 ![last](images/scenery/last.png)
 
-Begin spawning the alien mouth roof tiles seen in level 5.  On each layer, spawn a single instance of tile number 1 before randomly spawning tiles from number 2 to 4 (HELP WANTED - needs testing to see if additional tiles can be added, and what happens if two last_start actions are called).
+Begin spawning the alien mouth roof tiles seen in level 5.  On each layer, spawn a single instance of tile number 1 before randomly spawning tiles from number 2 to 4. Strange things happen when more than one spawner is active simultaneously.
 
 ### args:
 None
@@ -325,7 +329,7 @@ Spawn a single alien mouth roof tile.
 Cameo appearance of Silthax, the main antagonist of NUX. Briefly pops up from the bottom of the screen before retreating.
 
 ### args:
-None (HELP WANTED - needs testing)
+None (TODO - needs testing)
 
 
 ## mine (33)
