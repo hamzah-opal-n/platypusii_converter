@@ -126,7 +126,7 @@ Bomb that is tied to a balloon. Shooting the balloon will cause the bomb to fall
 | arg# | Name   | Description                                                                                                                                                                                                                                                                |
 |------|--------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `2`  | `type` | Balloon type: <table> <thead> <tr> <th>Value</th> <th>Balloon</th> </tr> </thead> <tbody> <tr> <td>`0`</td> <td>Pale balloon. Shooting it releases some fruit</td> </tr> <tr> <td>`1`</td> <td>Red balloon. Shooting it releases 12 bombfrags</td> </tr> </tbody> </table> |
-| `3`  | `y`    | Spawn y-position.                                                                                                                                                                                                                                                          |
+| `3`  | `y`    | Spawn y-position. <ul> <li>A value of 0 will cause the enemy to be spawned at a random y-position</li> </ul>                                                                                                                                                               |
 | `4`  | `x`    | Spawn x-position. <ul> <li> Non-zero values cause the mine to spawn on-screen out of thin air at the specified coordinates </li> <li> Use 0 to spawn off-screen as usual </li> </ul>                                                                                       |
 
 
@@ -190,7 +190,7 @@ None
 ## dish (16)
 ![dish](images/enemies/dish.png)
 
-Destructible satellite dish that appears near the bottom of the screen and damages the player upon contact. Spawns on top of an instance of tile number 99 on layer 1. If this tile does not exist, it will spawn out of thin air in the middle of the screen.
+Destructible satellite dish that appears near the bottom of the screen and damages the player upon contact. Spawns an instance of tile number 99 below it on layer 1. If this tile does not exist, the enemy will spawn out of thin air in the middle of the screen.
 
 ### args:
 None
@@ -223,13 +223,13 @@ Destructible tank that damages the player on contact. Spawns out of thin air at 
 ## wallgun (19)
 ![wallgun](images/enemies/wallgun.png)
 
-Destructible wall-mounted gun that aims and fires bullets at the player. Leaves behind its base panel after it is destroyed. If a tile on layer 1 is spawned simultaneously before it, positioning will be based on the top-right corner of the tile. Otherwise, positioning is based on the top-right corner of the whole screen.
+Destructible wall-mounted gun that aims and fires bullets at the player. Leaves behind a ruined base panel (scenery type 15) after it is destroyed. Spawns on layer 1.
 
 ### args:
-| arg# | Name     | Description                                                   |
-|------|----------|---------------------------------------------------------------|
-| `2`  | `layerx` | Spawn x-position. <ul> <li> Based on layer 1 tile </li> </ul> |
-| `3`  | `layery` | Spawn y-position. <ul> <li> Based on layer 1 tile </li> </ul> |
+| arg# | Name     | Description                       |
+|------|----------|-----------------------------------|
+| `2`  | `layerx` | Spawn x-position, based on tiles. |
+| `3`  | `y`      | Spawn y-position.                 |
 
 
 ## icbm (20)

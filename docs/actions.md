@@ -105,7 +105,7 @@ Control intensity of snow (as seen in level 1).
 ### args:
 | arg# | Name    | Description                                        |
 |------|---------|----------------------------------------------------|
-| `1`  | `spawn` | Intensity of the effect from 0 (off) to 100 (max?) |
+| `1`  | `spawn` | Intensity of the effect from 0 (off) to 100 (max). |
 
 
 ## soot (12)
@@ -115,7 +115,7 @@ Control intensity of soot (as seen in level 3).
 ### args:
 | arg# | Name    | Description                                        |
 |------|---------|----------------------------------------------------|
-| `1`  | `spawn` | Intensity of the effect from 0 (off) to 100 (max?) |
+| `1`  | `spawn` | Intensity of the effect from 0 (off) to 100 (max). |
 
 
 ## rain (13)
@@ -125,7 +125,7 @@ Control intensity of rain (as seen in level 2).
 ### args:
 | arg# | Name    | Description                                        |
 |------|---------|----------------------------------------------------|
-| `1`  | `spawn` | Intensity of the effect from 0 (off) to 100 (max?) |
+| `1`  | `spawn` | Intensity of the effect from 0 (off) to 100 (max). |
 
 
 ## planet (14)
