@@ -289,9 +289,8 @@ None
 
 
 ## roofbit (29)
-![roofbit](images/scenery/roofbit.png)
 
-Spawn a cave roof tile.
+Spawn a single cave roof tile.
 
 ### args:
 | arg# | Name        | Description   |
@@ -310,9 +309,8 @@ None
 
 
 ## lastbit (31)
-![lastbit](images/scenery/lastbit.png)
 
-Spawn an alien mouth roof tile.
+Spawn a single alien mouth roof tile.
 
 ### args:
 | arg# | Name        | Description   |
@@ -356,7 +354,9 @@ NUX's ship from the game of the same name. Spawns on layer 4.
 ## krider (35)
 ![krider](images/scenery/krider.png)
 
-A row of red lights that illuminate in a scrolling pattern with a randomised direction. Normally spawned together with tile number 60. The sprite numbers match the layers they spawn on.
+A row of red lights that illuminate in a scrolling pattern with a randomised direction. Normally spawned automatically on top of tile number 60. The sprite numbers match the layers they spawn on.
+
+- The preview image above shows all frames at once for clarity
 
 ### args:
 | arg# | Name     | Description                       |
