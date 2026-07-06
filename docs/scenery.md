@@ -84,10 +84,12 @@ None
 ## windmill (8)
 ![windmill](images/scenery/windmill.png)
 
-TODO. The sprite numbers match the layers they spawn on.
+Lone windmill with a pair of spinning propellers. The graphics for the propellers cannot be changed. The sprite numbers match the layers they spawn on.
 
 ### args:
-- **img (arg2):** layer to spawn on (TODO - needs testing, find where the graphics for the spinning blades are located)
+| arg# | Name  | Description    |
+|------|-------|----------------|
+| `2`  | `img` | Sprite number. |
 
 
 ## volcano (9)
@@ -102,11 +104,16 @@ None (TODO - needs testing)
 ## rock (10)
 ![rock](images/scenery/rock.png)
 
-Falling rock that is usually seen during volcanic eruptions. Disappears and shows a splash animation once it hits the water.
+Falling rock that is usually seen during volcanic eruptions. Disappears and shows a splash animation once it hits the water. Spawns with a random sprite.
 
 ### args:
-- **img (arg2):** layer to spawn on. There are no rock sprites for layers 1 and 2, but the corresponding splash will display anyway
-- **x (arg3):** x-position to spawn at TODO
+| arg# | Name        | Description                                                                                          |
+|------|-------------|------------------------------------------------------------------------------------------------------|
+| `2`  | `layername` | Layer number.                                                                                        |
+| `3`  | `x`         | Spawn x-position.                                                                                    |
+| `4`  | `y`         | Spawn y-position.                                                                                    |
+| `5`  | `dx`        | Set x-speed.                                                                                         |
+| `6`  | `dy`        | Set y-speed. <ul> <li>A value of 0 causes the scenery to fallback on its default y-speed.</li> </ul> |
 
 
 ## waterfall (11)
@@ -123,10 +130,14 @@ Flowing waterfall. Spawns an instance of tile number 54 below it on the chosen l
 ## splash (12)
 ![splash](images/scenery/splash.png)
 
-Unused during normal gameplay.
+Splash that appears on the surface of water or lava.
 
 ### args:
-(TODO - needs testing)
+| arg# | Name        | Description                                                                                                                                                                            |
+|------|-------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `2`  | `x`         | Spawn x-position.                                                                                                                                                                      |
+| `3`  | `type`      | Splash type: <table> <thead> <tr> <th>Value</th> <th>Type</th> </tr> </thead> <tbody> <tr> <td>`0`</td> <td>Small</td> </tr> <tr> <td>`1`</td> <td>Normal</td> </tr> </tbody> </table> |
+| `4`  | `layername` | Layer number. <ul> <li>Only works with normal sized splashes</li> </ul>                                                                                                                |
 
 
 ## boat (13)
