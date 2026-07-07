@@ -195,10 +195,13 @@ None
 ## parrot (18)
 ![parrot](images/scenery/parrot.png)
 
-Green parrot that flies from right to left at a slight upward angle. Sprite/layer can be customised. Spawns at a random y-position.
+Green parrot that flies from right to left at a slight upward angle.
 
 ### args:
-- **img (arg2):** sprite number to use (TODO - needs testing)
+| arg# | Name  | Description                                                                                                    |
+|------|-------|----------------------------------------------------------------------------------------------------------------|
+| `2`  | `img` | Sprite number. <ul> <li>A value of 0 will cause the scenery to use a random sprite</li> </ul>                  |
+| `3`  | `y`   | Spawn y-position. <ul> <li>A value of 0 will cause the scenery to be spawned at a random y-position</li> </ul> |
 
 
 ## bird (19)
