@@ -143,7 +143,6 @@ Red-hot rock that falls from the top of the screen during volcanic eruptions. Si
 
 
 ## arch (11)
-![arch](images/enemies/arch.png)
 
 Invisible damaging hitbox that usually appears with the main arch object (scenery type 3).
 
@@ -155,7 +154,6 @@ Invisible damaging hitbox that usually appears with the main arch object (scener
 
 
 ## pylon (12)
-![pylon](images/enemies/pylon.png)
 
 Does not appear to do anything.
 
@@ -164,7 +162,6 @@ None
 
 
 ## telegraph (13)
-![telegraph](images/enemies/telegraph.png)
 
 Does not appear to do anything.
 
