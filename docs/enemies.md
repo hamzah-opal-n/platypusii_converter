@@ -600,7 +600,7 @@ Large green enemy that flies in from the right before stopping at the far left, 
 ## car (51)
 ![car](images/enemies/car.png)
 
-Various cars that spawn at the bottom of the screen and move in from the right. The car type can be specified. Car types 3 onwards possess a chain on the front side. Cars can be spawned 220 ticks apart to create the illusion of a train.
+Various cars that spawn at the bottom of the screen and move in from the right. The car type can be specified. Car types 3 onwards possess a chain on the right edge. Cars can be spawned 220 ticks apart to create the illusion of a train.
 
 ### args:
 | arg# | Name   | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
