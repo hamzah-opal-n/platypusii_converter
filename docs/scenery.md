@@ -22,10 +22,14 @@ Cloud that moves from right to left.
 ## wheel (2)
 ![wheel](images/scenery/wheel.png)
 
-Unused during normal gameplay.
+Car wheel that gets thrown upwards slightly with a random speed before falling downwards off-screen. Normally spawned upon destroying a car (enemy type 51).
 
 ### args:
-(TODO - needs testing)
+| arg# | Name | Description       |
+|------|------|-------------------|
+| `2`  | `x`  | Spawn x-position. |
+| `3`  | `y`  | Spawn y-position. |
+| `4`  | `dx` | Set x-speed.      |
 
 
 ## arch (3)
@@ -207,28 +211,28 @@ Green parrot that flies from right to left at a slight upward angle.
 ## bird (19)
 ![bird](images/scenery/bird.png)
 
-Distant blue bird that flies along a random path.
+Distant blue bird that spawns at a random y-position on the right edge of the screen and flies along a random path.
 
 ### args:
-None (TODO - needs testing)
+None
 
 
 ## birdred (20)
 ![birdred](images/scenery/birdred.png)
 
-Distant red bird that flies along a random path.
+Distant rid bird that spawns at a random y-position on the right edge of the screen and flies along a random path.
 
 ### args:
-None (TODO - needs testing)
+None
 
 
 ## birdyellow (21)
 ![birdyellow](images/scenery/birdyellow.png)
 
-Distant yellow bird that flies along a random path.
+Distant yellow bird that spawns at a random y-position on the right edge of the screen and flies along a random path.
 
 ### args:
-None (TODO - needs testing)
+None
 
 
 ## icbm (22)
@@ -340,10 +344,10 @@ Spawn a single alien mouth roof tile.
 ## greenhead (32)
 ![greenhead](images/scenery/greenhead.png)
 
-Cameo appearance of Silthax, the main antagonist of NUX. Briefly pops up from the bottom of the screen before retreating.
+Cameo appearance of Silthax, the main antagonist of NUX. Briefly pops up from the bottom of the screen at a fixed position before retreating.
 
 ### args:
-None (TODO - needs testing)
+None
 
 
 ## mine (33)

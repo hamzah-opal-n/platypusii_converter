@@ -184,10 +184,12 @@ Spawn a specific tile on a specific layer, temporarily overriding random tile sp
 
 ## layerwait (19)
 
-(TODO - needs testing)
+Wait until the next tile to be spawned on a specified layer fully appears on-screen.
 
 ### args:
-(TODO - needs testing)
+| arg# | Name        | Description   |
+|------|-------------|---------------|
+| `1`  | `layername` | Layer number. |
 
 
 ## layerreset (20)
@@ -237,47 +239,47 @@ Spawn a scenery object. The full list of scenery types and their corresponding a
 
 ## coins (24)
 
-Spawn a balloon crate that contains coins. TODO test args for all balloon crates
+Spawn a balloon crate that contains coins. The balloon crate spawns at a random x-position with random speed.
 
 ### args:
-None (HELP WANTED - needs confirmation)
+None
 
 
 ## x2 (25)
 
-Spawn a balloon crate that contains a Double Points Crown.
+Spawn a balloon crate that contains a Double Points Crown. The balloon crate spawns at a random x-position with random speed.
 
 ### args:
-None (HELP WANTED - needs confirmation)
+None
 
 
 ## pods (26)
 
-Spawn a balloon crate that contains Weapon Pods.
+Spawn a balloon crate that contains Weapon Pods. The balloon crate spawns at a random x-position with random speed.
 
 ### args:
-None (HELP WANTED - needs confirmation)
+None
 
 
 ## shield (27)
 
-Spawn a balloon crate that contains a shield.
+Spawn a balloon crate that contains a shield. The balloon crate spawns at a random x-position with random speed.
 
 ### args:
-None (HELP WANTED - needs confirmation)
+None
 
 
 ## life (28)
 
-Spawn a balloon crate that contains an extra life.
+Spawn a balloon crate that contains an extra life. The balloon crate spawns at a random x-position with random speed.
 
 ### args:
-None (HELP WANTED - needs confirmation)
+None
 
 
 ## lightning (29)
 
-Spawn a balloon crate that contains a Lightning star.
+Spawn a balloon crate that contains a Lightning star. The balloon crate spawns at a random x-position with random speed.
 
 ### args:
-None (HELP WANTED - needs confirmation, can the bonus be changed?)
+None

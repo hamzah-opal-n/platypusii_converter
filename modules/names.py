@@ -26,8 +26,8 @@ ACTIONS = [
     ("layerunblock", ["layername"]),  # _fp2layer_unblock
     ("layerrange", ["layername", "lowimg", "highimg"]),  # _fp2layer_setrange
     ("layercue", ["layername", "img"]),  # _fp2layer_create
-    ("layerwait", []),  # _fp2layer_ready
-    ("layerreset", []),  # _fp2layer_block
+    ("layerwait", ["layername"]),  # _fp2layer_ready
+    ("layerreset", ["layername"]),  # _fp2layer_block
     ("wave", ["enemytype", "wavetype", "y", "star"]),  # _fp2wave_create
     ("enemy", ["enemytype"]),  # _fp2enemy_create
     ("scenery", ["scenerytype"]),  # _fp2scenery_block
@@ -131,7 +131,7 @@ ENEMIES = [
 SCENERY = [
     ("none", []),
     ("cloud", ["img", "x", "y", "d"]),
-    ("wheel", []),
+    ("wheel", ["x", "y", "dx"]),
     ("arch", ["sololayer"]),
     ("pylon", ["sololayer"]),
     ("telegraph", ["sololayer"]),
