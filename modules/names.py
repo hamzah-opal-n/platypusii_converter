@@ -52,7 +52,7 @@ ENEMIES = [
     ("bombfrag", ["x", "y", "a", "d"]),
     ("mine", ["type", "y", "x"]),
     ("rock", ["x", "y"]),
-    ("arch", []),
+    ("arch", ["x", "y"]),
     ("pylon", []),
     ("telegraph", []),
     ("lava", []),

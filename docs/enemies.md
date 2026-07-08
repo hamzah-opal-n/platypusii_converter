@@ -145,28 +145,31 @@ Red-hot rock that falls from the top of the screen during volcanic eruptions. Si
 ## arch (11)
 ![arch](images/enemies/arch.png)
 
-Unused during normal gameplay.
+Invisible damaging hitbox that usually appears with the main arch object (scenery type 3).
 
 ### args:
-(TODO TEST)
+| arg# | Name | Description       |
+|------|------|-------------------|
+| `2`  | `x`  | Spawn x-position. |
+| `3`  | `y`  | Spawn y-position. |
 
 
 ## pylon (12)
 ![pylon](images/enemies/pylon.png)
 
-Unused during normal gameplay.
+Does not appear to do anything.
 
 ### args:
-(TODO TEST)
+None
 
 
 ## telegraph (13)
 ![telegraph](images/enemies/telegraph.png)
 
-Unused during normal gameplay.
+Does not appear to do anything.
 
 ### args:
-(TODO TEST)
+None
 
 
 ## lava (14)
@@ -376,7 +379,7 @@ Yellow horseshoe-shaped enemy that flies upwards from the bottom before turning 
 ### args:
 | arg# | Name      | Description                                                                                                                                                                        |
 |------|-----------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `2`  | `x`       | Spawn y-position.                                                                                                                                                                  |
+| `2`  | `x`       | Spawn x-position.                                                                                                                                                                  |
 | `3`  | `offsety` | Spawn y-position offset. <ul> <li> This value is generally used for arranging waves </li> <li> Negative values can cause the enemy to appear on-screen out of thin air </li> </ul> |
 | `4`  | `dx`      | Set x-speed.                                                                                                                                                                       |
 
